@@ -1,3 +1,15 @@
-.navbar {
-  color: blue;
+// Utilities
+@import '../../utilities/variables';
+
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  height: $navbar-height;
+  align-items: center;
+
+  background-color: $blue-gray;
+}
+
+.menu {
+  display: flex;
 }

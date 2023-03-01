@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.scss';
+import NavbarButton from './NavbarButton';
 
 const navbarItems = [
   {
@@ -7,17 +8,34 @@ const navbarItems = [
     to: '/home',
   },
   {
+    label: 'Blog',
+    to: '/blog',
+  },
+  {
+    label: 'Portfolio',
+    to: '/portfolio',
+  },
+  {
     label: 'About',
     to: '/about',
+  },
+  {
+    label: 'Contact',
+    to: '/contact',
   },
 ];
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      {navbarItems.map((item) => {
-        return <a href={`${item.to}`}>{item.label}</a>;
-      })}
+    <div className="navbar_container">
+      <div className="logo">
+        <img src="" alt="" />
+      </div>
+      <div className="menu">
+        {navbarItems.map((item) => (
+          <NavbarButton label={item.label} route={item.to} />
+        ))}
+      </div>
     </div>
   );
 };
