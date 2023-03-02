@@ -1,37 +1,39 @@
 import React from 'react';
 import './Footer.scss';
 
+const links = [
+  {
+    label: 'Instagram',
+    url: 'https://www.instagram.com/arnaldo10cisne/',
+  },
+  {
+    label: 'Github',
+    url: 'https://github.com/arnaldo10cisne',
+  },
+  {
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/in/arnaldo10cisne/',
+  },
+];
+
 const Footer = () => {
   return (
     <footer>
       <div className="social_media">
         <p>
-          <a
-            className="social_media__link"
-            href="https://www.instagram.com/arnaldo10cisne/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>{' '}
-          |{' '}
-          <a
-            className="social_media__link"
-            href="https://github.com/arnaldo10cisne"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>{' '}
-          |{' '}
-          <a
-            className="social_media__link"
-            href="https://www.linkedin.com/in/arnaldo10cisne/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Linkedin
-          </a>
+          {links.map((link) => (
+            <>
+              <a
+                className="social_media__link"
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link.label}
+              </a>
+              {' | '}
+            </>
+          ))}
         </p>
       </div>
       <div className="copyright">
