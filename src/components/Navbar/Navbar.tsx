@@ -2,14 +2,10 @@ import React from 'react';
 import './Navbar.scss';
 import NavbarButton from './NavbarButton';
 
-interface NavbarProps {
-  selectedButton: string;
-}
-
 const navbarItems = [
   {
     label: 'Home',
-    to: '/home',
+    to: '/',
   },
   {
     label: 'Blog',
@@ -29,7 +25,7 @@ const navbarItems = [
   },
 ];
 
-const Navbar = ({ selectedButton }: NavbarProps) => {
+const Navbar = () => {
   return (
     <div className="navbar_container">
       <div className="logo">

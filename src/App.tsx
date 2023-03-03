@@ -1,28 +1,29 @@
-import React from 'react';
-// import logo from './logo.svg';
+import React, { ReactElement } from 'react';
 import './App.scss';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import Layout from './components/Layout/Layout';
+import SitePage from './components/SitePage/SitePage';
+import HomePage from './components/HomePage/HomePage';
+import Blog from './components/Blog/Blog';
+import Portfolio from './components/Portfolio/Portfolio';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+
+const renderContent = (): ReactElement => {
+  return (
+    <>
+      <SitePage path="/" component={<HomePage />} />
+      <SitePage path="/blog" component={<Blog />} />
+      <SitePage path="/portfolio" component={<Portfolio />} />
+      <SitePage path="/about" component={<About />} />
+      <SitePage path="/contact" component={<Contact />} />
+    </>
+  );
+};
 
 function App() {
   return (
     <div className="App">
-      <Navbar selectedButton="" />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Footer />
+      <Layout pageToRender={renderContent()} />
     </div>
   );
 }
