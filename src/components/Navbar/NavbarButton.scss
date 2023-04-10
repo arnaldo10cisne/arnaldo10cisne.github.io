@@ -4,7 +4,7 @@
 // Utilities
 @import '../../utilities/variables';
 
-.button {
+@mixin basic_button() {
   border-left: 1px solid $main-yellow;
   padding-left: 20px;
   padding-right: 70px;
@@ -15,10 +15,21 @@
   color: $white;
   font-family: $main-font;
   font-size: 16px;
+}
+
+.button_unselected {
+  @include basic_button();
   transition-property: border-left padding-right;
   transition-duration: 0.2s;
   &:hover {
     border-left: 5px solid $main-yellow;
     padding-left: 16px;
   }
+}
+
+.button_selected {
+  @include basic_button();
+  font-weight: bolder;
+  border-left: $main-yellow solid 20px;
+  padding-right: 50px;
 }

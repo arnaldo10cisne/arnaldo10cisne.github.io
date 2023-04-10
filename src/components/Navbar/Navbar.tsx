@@ -26,6 +26,8 @@ const navbarItems = [
 ];
 
 const Navbar = () => {
+  const pathname = window.location.pathname;
+
   return (
     <div className="navbar_container">
       <div className="logo">
@@ -33,7 +35,11 @@ const Navbar = () => {
       </div>
       <div className="menu">
         {navbarItems.map((item) => (
-          <NavbarButton label={item.label} route={item.to} />
+          <NavbarButton
+            label={item.label}
+            route={item.to}
+            selected={pathname === item.to}
+          />
         ))}
       </div>
     </div>
