@@ -5,6 +5,10 @@
 @import '../../utilities/variables';
 
 .navbar_container {
+  position: fixed;
+  margin-top: -61px;
+  width: 100vw;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   height: $navbar-height;

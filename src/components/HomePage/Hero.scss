@@ -1,0 +1,26 @@
+// Global Styles
+@import '../../utilities/globalStyles';
+
+// Utilities
+@import '../../utilities/variables';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 61px);
+  background-color: $blue-gray-transparent;
+}
+
+.presentation_banner {
+  font-family: $main-font;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-weight: bold;
+
+  h1 {
+    font-size: 14rem;
+    color: $main-yellow;
+  }
+}
