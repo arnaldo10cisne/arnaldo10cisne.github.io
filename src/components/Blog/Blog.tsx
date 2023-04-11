@@ -1,4 +1,5 @@
 import React from 'react';
+import './Blog.scss';
 
 // This should be replaced by a network call to a backend holding the articles
 const articleTemplates = [
@@ -19,8 +20,8 @@ const articleTemplates = [
 const Blog = () => {
   return (
     <>
-      <h1>Blog</h1>
-      <h2>Articles</h2>
+      <h1 className="general__page_title">Blog</h1>
+      <h2 className="general__section_divider">Articles</h2>
       {articleTemplates.map((article) => {
         return (
           <>

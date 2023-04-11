@@ -1,4 +1,5 @@
 import React from 'react';
+import './Portfolio.scss';
 
 // This should be replaced by a network call to a backend holding the projects
 const projectsTemplates = [
@@ -47,8 +48,8 @@ const projectsTemplates = [
 const Portfolio = () => {
   return (
     <>
-      <h1>Portfolio</h1>
-      <h2>Projects</h2>
+      <h1 className="general__page_title">Portfolio</h1>
+      <h2 className="general__section_divider">Projects</h2>
       {projectsTemplates.map((project) => {
         return (
           <>
