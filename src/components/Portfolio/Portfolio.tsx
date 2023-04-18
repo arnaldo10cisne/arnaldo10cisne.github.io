@@ -48,8 +48,8 @@ const projectsTemplates = [
 const Portfolio = () => {
   return (
     <>
-      <h1 className="general__page_title">Portfolio</h1>
-      <h2 className="general__section_divider">Projects</h2>
+      <h1 className="global__page_title">Portfolio</h1>
+      <h2 className="global__section_divider">Projects</h2>
       {projectsTemplates.map((project) => {
         return (
           <>

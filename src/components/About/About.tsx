@@ -4,8 +4,8 @@ import './About.scss';
 const About = () => {
   return (
     <>
-      <h1 className="general__page_title">About</h1>
-      <h2 className="general__section_divider">About me</h2>
+      <h1 className="global__page_title">About</h1>
+      <h2 className="global__section_divider">About me</h2>
       <p>
         I was born in the city of Caracas, Venezuela. When i'm not working in my
         computer, I like to play piano, read books or play videogames. I really
@@ -14,7 +14,7 @@ const About = () => {
         conversations with other people. And, last but not least, I'm more of a
         cat person myself.
       </p>
-      <h2 className="general__section_divider">About my work</h2>
+      <h2 className="global__section_divider">About my work</h2>
       <p>
         I like to put heart on every project I begin, even more on projects
         where I can show some creativity. I've done websites, desktop
@@ -23,7 +23,7 @@ const About = () => {
         of code. If I really get invested in what I'm doing, I can be a bit of a
         perfectionist.
       </p>
-      <h2 className="general__section_divider">About my expertise</h2>
+      <h2 className="global__section_divider">About my expertise</h2>
       <p>
         Since highschool, i've always been interested in the process of creating
         software. I started programing in BASIC, and slowly moved to C++, Java,
@@ -31,7 +31,7 @@ const About = () => {
         standards in web development, those being HTML, CSS and Javascript, but
         I like to keep an open mind in terms of learning new things.
       </p>
-      <h2 className="general__section_divider">About my education</h2>
+      <h2 className="global__section_divider">About my education</h2>
       <p>
         These are some of my most important certificates. Click on each image to
         see a description of the course. You can also see all my certificates in

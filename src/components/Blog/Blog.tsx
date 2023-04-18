@@ -20,8 +20,8 @@ const articleTemplates = [
 const Blog = () => {
   return (
     <>
-      <h1 className="general__page_title">Blog</h1>
-      <h2 className="general__section_divider">Articles</h2>
+      <h1 className="global__page_title">Blog</h1>
+      <h2 className="global__section_divider">Articles</h2>
       {articleTemplates.map((article) => {
         return (
           <>
