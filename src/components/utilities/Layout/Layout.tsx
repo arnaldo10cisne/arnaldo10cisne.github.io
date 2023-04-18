@@ -17,9 +17,9 @@ const Layout = ({ pageToRender }: LayoutProps) => {
       <div className="pageContainer">
         {pathname !== '/' && <Breadcrumbs />}
         {pageToRender}
-        <div className="footerContainer">
-          <Footer />
-        </div>
+      </div>
+      <div className="footerContainer">
+        <Footer />
       </div>
     </div>
   );

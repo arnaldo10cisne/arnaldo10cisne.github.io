@@ -13,6 +13,18 @@
 .pageContainer {
   margin-top: 61px;
   padding-bottom: 20px;
+  animation-name: curtainEffect;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes curtainEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .footerContainer {
