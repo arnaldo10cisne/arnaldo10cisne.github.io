@@ -38,7 +38,7 @@ const Navbar = () => {
           <NavbarButton
             label={item.label}
             route={item.to}
-            selected={pathname === item.to}
+            selected={pathname.includes(item.to)}
           />
         ))}
       </div>

@@ -13,7 +13,9 @@ const Blog = () => {
           return (
             <div className="global__page_container articleContainer">
               <p className="articleDate">{article.date}</p>
-              <h3 className="articleTitle">{article.name}</h3>
+              <a href={`/blog/${article.id}`} className="articleTitle">
+                {article.name}
+              </a>
               <p className="articleSample">{article.sample}</p>
             </div>
           );

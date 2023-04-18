@@ -14,6 +14,8 @@
   margin-bottom: 40px !important;
   padding-bottom: 20px;
   border-bottom: 1px solid $main-yellow;
+  display: flex;
+  flex-direction: column;
 }
 
 .articleDate {
@@ -24,12 +26,13 @@
 }
 
 .articleTitle {
-  text-align: start;
+  align-self: flex-start;
   margin: 5px 0px 20px 0px;
   font-family: $main-font;
   font-size: 24px;
   color: $main-yellow;
   font-weight: bolder;
+  text-decoration: none;
 }
 
 .articleSample {
