@@ -12,15 +12,54 @@
   background-color: $blue-gray-transparent;
 }
 
-.presentation_banner {
+.titleContainer {
   font-family: $main-font;
   display: flex;
   flex-direction: column;
-  width: 80%;
   font-weight: bold;
 
-  h1 {
-    font-size: 14rem;
+  .preTitle {
+    text-align: start;
+    font-size: 30px;
+  }
+
+  .title {
+    text-align: start;
+    font-size: 7.8vw;
     color: $main-yellow;
+    margin: -10px 0px;
+  }
+
+  .postTitle {
+    text-align: start;
+    font-size: 30px;
+  }
+}
+
+.presentationTextContainer {
+  font-family: $content-font;
+  font-size: 25px;
+  margin-top: 35px;
+  padding-right: 500px;
+
+  .presentationText {
+    text-align: start;
+  }
+}
+
+.actionButtonContainer {
+  display: flex;
+  margin-top: 35px;
+
+  .actionButton {
+    align-self: flex-start;
+    text-decoration: none;
+    font-family: $main-font;
+    background-color: $main-yellow;
+    color: $blue-gray;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 }

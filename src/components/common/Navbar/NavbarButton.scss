@@ -7,7 +7,7 @@
 @mixin basic_button() {
   border-left: 1px solid $main-yellow;
   padding-left: 20px;
-  padding-right: 70px;
+  padding-right: 100px;
   height: $navbar-height;
   display: flex;
   align-items: center;
@@ -31,5 +31,5 @@
   @include basic_button();
   font-weight: bolder;
   border-left: $main-yellow solid 20px;
-  padding-right: 50px;
+  padding-right: 80px;
 }
