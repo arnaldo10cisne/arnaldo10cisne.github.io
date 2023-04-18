@@ -8,15 +8,17 @@ const Blog = () => {
     <>
       <PageTitle title="Blog" />
       <h2 className="global__section_divider">Articles</h2>
-      {articleTemplates.map((article) => {
-        return (
-          <>
-            <p>{article.date}</p>
-            <h3>{article.name}</h3>
-            <p>{article.sample}</p>
-          </>
-        );
-      })}
+      <div className="articleList">
+        {articleTemplates.map((article) => {
+          return (
+            <div className="global__page_container articleContainer">
+              <p className="articleDate">{article.date}</p>
+              <h3 className="articleTitle">{article.name}</h3>
+              <p className="articleSample">{article.sample}</p>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 };
