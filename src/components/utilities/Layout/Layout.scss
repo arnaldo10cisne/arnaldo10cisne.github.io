@@ -1,0 +1,20 @@
+// Global Styles
+@import '../../../utilities/globalStyles';
+
+// Utilities
+@import '../../../utilities/variables';
+
+.body {
+  background-color: $blue-gray;
+  min-height: 100vh;
+}
+
+.pageContainer {
+  margin-top: 61px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footerContainer {
+}

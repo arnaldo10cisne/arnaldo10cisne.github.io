@@ -1,0 +1,9 @@
+// Global Styles
+@import '../../../utilities/globalStyles';
+
+// Utilities
+@import '../../../utilities/variables';
+
+.breadcrumbsContainer {
+  background-color: $blue-gray-darker;
+}

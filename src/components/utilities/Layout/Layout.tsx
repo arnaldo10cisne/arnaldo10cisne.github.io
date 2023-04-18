@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react';
 import Navbar from '../../common/Navbar/Navbar';
 import Footer from '../../common/Footer/Footer';
-import NavigationBar from '../../common/NavigationBar/NavigationBar';
+import Breadcrumbs from '../../common/Breadcrumbs/Breadcrumbs';
+import './Layout.scss';
 
 interface LayoutProps {
   pageToRender: ReactElement;
@@ -11,18 +12,16 @@ const Layout = ({ pageToRender }: LayoutProps) => {
   const pathname = window.location.pathname;
 
   return (
-    <>
+    <div className="body">
       <Navbar />
-      <div
-        style={{
-          marginTop: '61px',
-        }}
-      >
-        {pathname !== '/' && <NavigationBar />}
+      <div className="pageContainer">
+        {pathname !== '/' && <Breadcrumbs />}
         {pageToRender}
+        <div className="footerContainer">
+          <Footer />
+        </div>
       </div>
-      <Footer />
-    </>
+    </div>
   );
 };
 

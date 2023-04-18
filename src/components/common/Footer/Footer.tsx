@@ -18,7 +18,7 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer>
+    <div className="footer">
       <div className="social_media">
         <p>
           {links.map((link) => (
@@ -31,7 +31,7 @@ const Footer = () => {
               >
                 {link.label}
               </a>
-              {' | '}
+              <span className="linkSeparator"> | </span>
             </>
           ))}
         </p>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <span className="copyright__line-2">&nbsp;ARNALDO CISNEROS&nbsp;</span>
       </div>
-    </footer>
+    </div>
   );
 };
 
