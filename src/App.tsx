@@ -1,12 +1,12 @@
 import React, { ReactElement } from 'react';
 import './App.scss';
-import Layout from './components/Layout/Layout';
-import SitePage from './components/SitePage/SitePage';
-import HomePage from './components/HomePage/HomePage';
-import Blog from './components/Blog/Blog';
-import Portfolio from './components/Portfolio/Portfolio';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+import Layout from './components/utilities/Layout/Layout';
+import SitePage from './components/utilities/SitePage/SitePage';
+import HomePage from './components/pages/HomePage/HomePage';
+import Blog from './components/pages/Blog/Blog';
+import Portfolio from './components/pages/Portfolio/Portfolio';
+import About from './components/pages/About/About';
+import Contact from './components/pages/Contact/Contact';
 
 const renderContent = (): ReactElement => {
   return (

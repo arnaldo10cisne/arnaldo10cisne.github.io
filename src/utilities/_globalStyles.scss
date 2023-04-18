@@ -8,12 +8,17 @@
 }
 
 .global__page_title {
-  font-size: 10vw;
-  width: 90%;
+  font-size: 100px;
+  text-align: start;
   align-self: center;
-  margin: 25px 0px 0px 0;
+  margin: 25px 0px 0px 0px;
   color: $main-yellow;
   font-family: $title-font;
+}
+
+.global__page_container {
+  width: 90%;
+  margin: 0px auto;
 }
 
 .global__section_divider {

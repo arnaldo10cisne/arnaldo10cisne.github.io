@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
-import NavigationBar from '../NavigationBar/NavigationBar';
+import Navbar from '../../common/Navbar/Navbar';
+import Footer from '../../common/Footer/Footer';
+import NavigationBar from '../../common/NavigationBar/NavigationBar';
 
 interface LayoutProps {
   pageToRender: ReactElement;
