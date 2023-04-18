@@ -1,10 +1,11 @@
 import React from 'react';
 import './About.scss';
+import PageTitle from '../../common/PageTitle/PageTitle';
 
 const About = () => {
   return (
     <>
-      <h1 className="global__page_title">About</h1>
+      <PageTitle title="About" />
       <h2 className="global__section_divider">About me</h2>
       <p>
         I was born in the city of Caracas, Venezuela. When i'm not working in my

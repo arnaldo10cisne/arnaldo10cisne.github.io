@@ -1,10 +1,11 @@
 import React from 'react';
 import './Contact.scss';
+import PageTitle from '../../common/PageTitle/PageTitle';
 
 const Contact = () => {
   return (
     <>
-      <h1 className="global__page_title">Contact</h1>
+      <PageTitle title="Contact" />
       <h2 className="global__section_divider">Get in touch with Arnaldo</h2>
       <p>Reach me with questions, work inquiries, or just to say hi!</p>
     </>
