@@ -3,6 +3,7 @@ import Navbar from '../../common/Navbar/Navbar';
 import Footer from '../../common/Footer/Footer';
 import Breadcrumbs from '../../common/Breadcrumbs/Breadcrumbs';
 import './Layout.scss';
+import { breadcrumbsTemplate } from '../../../utilities/placeholderData';
 
 interface LayoutProps {
   pageToRender: ReactElement;
@@ -15,7 +16,7 @@ const Layout = ({ pageToRender }: LayoutProps) => {
     <div className="body">
       <Navbar />
       <div className="pageContainer">
-        {pathname !== '/' && <Breadcrumbs />}
+        {pathname !== '/' && <Breadcrumbs pageList={breadcrumbsTemplate} />}
         {pageToRender}
       </div>
       <div className="footerContainer">

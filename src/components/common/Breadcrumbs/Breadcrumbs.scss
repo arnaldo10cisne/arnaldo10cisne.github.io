@@ -6,5 +6,54 @@
 
 .breadcrumbsContainer {
   background-color: $blue-gray-darker;
-  padding: 30px 0px;
+  padding: 30px 0;
+  display: flex;
+  position: relative;
+  margin-top: 0px;
+}
+
+.breadcrumbsLink_basic {
+  padding: 3px 15px;
+  font-family: $content-font;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition-property: border padding-left;
+  transition-duration: 0.1s;
+  border: $main-yellow solid 2px;
+  text-decoration: none;
+
+  &:hover {
+    border: white solid 2px;
+    padding-left: 20px;
+  }
+}
+
+.breadcrumbsLevel_0 {
+  background-color: $navigation-timeline-level-0;
+  padding-left: 10px;
+  z-index: 3;
+}
+
+.breadcrumbsLevel_1 {
+  background-color: $navigation-timeline-level-1;
+  margin-left: -13px;
+  z-index: 2;
+}
+
+.breadcrumbsLevel_2 {
+  background-color: $navigation-timeline-level-2;
+  margin-left: -13px;
+  z-index: 1;
+}
+
+.breadcrumbsLevel_3 {
+  background-color: $navigation-timeline-level-3;
+  margin-left: -13px;
+  z-index: 0;
+}
+
+.breadcrumbsLevel_current {
+  background-color: $blue-gray-darker;
+  border: $blue-gray-darker solid 2px;
+  pointer-events: none;
 }

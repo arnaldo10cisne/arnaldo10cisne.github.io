@@ -67,3 +67,21 @@ export const articleTemplates = [
       'This website is not a finished product. Not by any chance. But it is an exciting work in progress.',
   },
 ];
+
+export const breadcrumbsTemplate = [
+  {
+    label: 'Home',
+    to: '/',
+    level: 1,
+  },
+  {
+    label: 'Blog',
+    to: '/blog',
+    level: 2,
+  },
+  {
+    label: 'Article',
+    to: '/blog/1',
+    level: 3,
+  },
+];
