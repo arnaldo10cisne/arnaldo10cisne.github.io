@@ -31,7 +31,9 @@ const Footer = () => {
               >
                 {link.label}
               </a>
-              <span className="linkSeparator"> | </span>
+              {links.indexOf(link) !== links.length - 1 && (
+                <span className="linkSeparator"> | </span>
+              )}
             </>
           ))}
         </p>
