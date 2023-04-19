@@ -72,16 +72,21 @@ export const breadcrumbsTemplate = [
   {
     label: 'Home',
     to: '/',
+    level: 0,
+  },
+  {
+    label: 'About',
+    to: '/about',
     level: 1,
   },
   {
-    label: 'Blog',
-    to: '/blog',
+    label: 'Certificates',
+    to: '/about/certificates',
     level: 2,
   },
   {
-    label: 'Article',
-    to: '/blog/1',
+    label: 'Course',
+    to: '/about/certificates/1',
     level: 3,
   },
 ];
