@@ -3,3 +3,48 @@
 
 // Utilities
 @import '../../../utilities/variables';
+
+.aboutPageContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutPageText {
+  font-family: $content-font;
+  font-size: 20px;
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+  text-align: justify;
+  margin: 10px 0 10px 0;
+  padding: 0 10px 0 10px;
+  font-weight: bold;
+}
+
+.title_aboutMe {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.title_aboutWork {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.title_aboutExpertise {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+.title_aboutEducation {
+  grid-row: 3/4;
+  grid-column: 1/4;
+  margin-top: 40px !important;
+}
+
+.text_aboutEducation {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
