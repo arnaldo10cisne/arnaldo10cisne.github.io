@@ -5,9 +5,12 @@
 @import '../../../utilities/variables';
 
 .body {
-  background-color: $blue-gray;
   min-height: calc(100vh - (61px * 2));
   position: relative;
+}
+
+.nonHomepageBody {
+  background-color: $blue-gray;
 }
 
 .pageContainer {
@@ -26,6 +29,27 @@
     opacity: 1;
   }
 }
+
+// .homepageCurtain {
+//   position: absolute;
+//   height: 100vh;
+//   left: 0;
+//   right: 0;
+//   background-color: $blue-gray;
+//   animation-name: homepagecurtainEffect;
+//   animation-duration: 0.2s;
+//   animation-timing-function: ease-in-out;
+//   animation-fill-mode: forwards;
+// }
+
+// @keyframes homepagecurtainEffect {
+//   from {
+//     opacity: 1;
+//   }
+//   to {
+//     opacity: 0;
+//   }
+// }
 
 .footerContainer {
   position: absolute;

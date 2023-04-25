@@ -3,7 +3,7 @@ import './Hero.scss';
 
 const Hero = () => {
   return (
-    <div className="hero global__page_container">
+    <div className="hero">
       <div className="titleContainer">
         <p className="preTitle">Hello! My name is</p>
         <h1 className="title">Arnaldo Cisneros</h1>

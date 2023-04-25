@@ -11,12 +11,14 @@ interface LayoutProps {
 
 const Layout = ({ pageToRender }: LayoutProps) => {
   const pathname = window.location.pathname;
+  const isHomePage = pathname === '/';
 
   return (
-    <div className="body">
+    <div className={`body ${!isHomePage && 'nonHomepageBody'}`}>
       <Navbar />
       <div className="pageContainer">
-        {pathname !== '/' && <Breadcrumbs pageList={breadcrumbsTemplate} />}
+        {isHomePage && <div className="homepageCurtain" />}
+        {!isHomePage && <Breadcrumbs pageList={breadcrumbsTemplate} />}
         {pageToRender}
       </div>
       <div className="footerContainer">
