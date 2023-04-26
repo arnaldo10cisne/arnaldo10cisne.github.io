@@ -90,3 +90,42 @@ export const breadcrumbsTemplate = [
     level: 3,
   },
 ];
+
+export const certificateHighlights = [
+  {
+    id: 1,
+    name: 'Definitive HTML and CSS',
+    image:
+      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+  },
+  {
+    id: 2,
+    name: 'Javascript Foundations',
+    image:
+      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+  },
+  {
+    id: 3,
+    name: 'Introduction to React.js',
+    image:
+      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+  },
+  {
+    id: 4,
+    name: 'Node.js Foundations',
+    image:
+      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+  },
+  {
+    id: 5,
+    name: 'Professional Git and Github',
+    image:
+      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+  },
+  {
+    id: 6,
+    name: 'Terminal and command line introduction',
+    image:
+      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+  },
+];

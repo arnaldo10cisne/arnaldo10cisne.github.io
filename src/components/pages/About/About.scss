@@ -48,3 +48,60 @@
   grid-row: 4/5;
   grid-column: 2/3;
 }
+
+.certificateList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.certificateItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 25%;
+  max-width: 25%;
+  margin-bottom: 10px;
+}
+
+.courseLink {
+  text-decoration: none;
+}
+
+.courseImage {
+  border: 6px solid $blue-gray;
+  border-radius: 100px;
+  transition-property: border;
+  transition-duration: 0.2s;
+  &:hover {
+    border: 6px solid $main-yellow;
+  }
+}
+
+.courseName {
+  text-decoration: none;
+  font-family: $main-font;
+  color: $main-yellow;
+  padding: 0 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  width: 70%;
+  margin: auto;
+}
+
+.seeAllCertificates_container {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.seeAllCertificates_btn {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  padding: 3px 10px;
+  font-size: 16px;
+}

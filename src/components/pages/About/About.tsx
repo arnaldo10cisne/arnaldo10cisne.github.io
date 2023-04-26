@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.scss';
 import PageTitle from '../../common/PageTitle/PageTitle';
+import { certificateHighlights } from '../../../utilities/placeholderData';
 
 const About = () => {
   return (
@@ -46,6 +47,33 @@ const About = () => {
           to see a description of the course. You can also see all my
           certificates in the link below.
         </p>
+      </div>
+      <div className="certificateList">
+        {certificateHighlights.map((certificate) => {
+          return (
+            <div className="certificateItem">
+              <a
+                href={`/about/certificates/${certificate.id}`}
+                className="courseLink"
+              >
+                <img
+                  src={`${certificate.image}`}
+                  alt="COURSE BADGE"
+                  className="courseImage"
+                />
+                <p className="courseName">{certificate.name}</p>
+              </a>
+            </div>
+          );
+        })}
+      </div>
+      <div className="seeAllCertificates_container">
+        <a
+          href="/about/certificates"
+          className="seeAllCertificates_btn global__button"
+        >
+          See all certificates
+        </a>
       </div>
     </>
   );

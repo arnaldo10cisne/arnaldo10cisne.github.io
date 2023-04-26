@@ -33,3 +33,21 @@
   font-family: $main-font;
   font-weight: 400;
 }
+
+.global__button {
+  font-family: $main-font;
+  background-color: $main-yellow;
+  border-radius: 5px;
+  color: $blue-gray;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    background-color: $main-yellow-darker;
+  }
+}
+
+a {
+  text-decoration: none;
+}
