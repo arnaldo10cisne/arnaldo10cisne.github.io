@@ -57,7 +57,7 @@ const Layout = ({ pageToRender }: LayoutProps) => {
   };
 
   return (
-    <div className={`body ${!isHomePage && 'nonHomepageBody'}`}>
+    <div className={`body ${isHomePage && 'homePageBackgroundImage'}`}>
       <Navbar />
       <div className="pageContainer">
         {isHomePage && <div className="homepageCurtain" />}
