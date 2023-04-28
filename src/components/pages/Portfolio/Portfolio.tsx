@@ -14,7 +14,7 @@ const Portfolio = () => {
             <div className="projectCell">
               <img
                 className="projectImage"
-                src={`${project.image}`}
+                src={`${project.thumbnail}`}
                 alt={`${project.name} thumbnail`}
                 height={300}
               />
