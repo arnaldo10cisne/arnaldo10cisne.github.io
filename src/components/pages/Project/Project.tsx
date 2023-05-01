@@ -26,7 +26,13 @@ const Project = () => {
       <div>
         {/* To show the description as a React component, probably use react-jsx-parser
         https://github.com/TroyAlford/react-jsx-parser */}
-        <div>{projectToDisplay?.description_innerHTML}</div>
+        <div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: projectToDisplay?.description_innerHTML || '',
+            }}
+          ></div>
+        </div>
         <div>
           <ProjectInfoTable
             tech={projectToDisplay?.technologies}
