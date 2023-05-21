@@ -10,9 +10,26 @@ const PortfolioHighlights = () => {
   return (
     <div className="portfolioHighlightSection">
       <h2 className="global__section_divider">Portfolio Highlights</h2>
-      {projectsToHighlight.map((project) => {
-        return <>{project.name}</>;
-      })}
+      <div className="highlight_projectList">
+        {projectsToHighlight.map((project) => {
+          return (
+            <div className="highlight_projectCell">
+              <img
+                className="highlight_projectImage"
+                src={`${project.thumbnail}`}
+                alt={`${project.name} thumbnail`}
+              />
+              <a
+                className="highlight_projectName"
+                href={`/portfolio/${project.id}`}
+              >
+                {project.name}
+              </a>
+              <p className="highlight_projectDate">{project.date}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
