@@ -22,6 +22,7 @@ export const projectsTemplates = [
     ],
     website_link: null,
     github_link: 'https://github.com/arnaldo10cisne/UNO-in-python-terminal',
+    highlight: true,
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ export const projectsTemplates = [
     date: '2021',
     thumbnail:
       'https://archive.org/download/scus-94244-f-all/SCUS-94244-F-ALL.jpg',
+    highlight: true,
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ export const projectsTemplates = [
     date: '2021',
     thumbnail:
       'https://archive.org/download/scus-94244-f-all/SCUS-94244-F-ALL.jpg',
+    highlight: true,
   },
   {
     id: 4,
@@ -43,6 +46,7 @@ export const projectsTemplates = [
     date: '2021',
     thumbnail:
       'https://archive.org/download/scus-94244-f-all/SCUS-94244-F-ALL.jpg',
+    highlight: false,
   },
   {
     id: 5,
@@ -50,6 +54,7 @@ export const projectsTemplates = [
     date: '2021',
     thumbnail:
       'https://archive.org/download/scus-94244-f-all/SCUS-94244-F-ALL.jpg',
+    highlight: false,
   },
   {
     id: 6,
@@ -57,6 +62,7 @@ export const projectsTemplates = [
     date: '2021',
     thumbnail:
       'https://archive.org/download/scus-94244-f-all/SCUS-94244-F-ALL.jpg',
+    highlight: false,
   },
   {
     id: 7,
@@ -64,6 +70,7 @@ export const projectsTemplates = [
     date: '2021',
     thumbnail:
       'https://archive.org/download/scus-94244-f-all/SCUS-94244-F-ALL.jpg',
+    highlight: false,
   },
   {
     id: 8,
@@ -71,6 +78,7 @@ export const projectsTemplates = [
     date: '2021',
     thumbnail:
       'https://archive.org/download/scus-94244-f-all/SCUS-94244-F-ALL.jpg',
+    highlight: false,
   },
 ];
 
@@ -80,6 +88,7 @@ export const articleTemplates = [
     id: 1,
     name: 'Working from home, living from home',
     date: 'September. 2021',
+    highlight: true,
     sample:
       'The pandemic that started in the first quarter of 2020, due to the SARS-CoV-2 virus, has been and continues to be, an event that will mark a before and after in our lives, not only as individuals but also as a society.',
   },
@@ -87,6 +96,7 @@ export const articleTemplates = [
     id: 2,
     name: 'This website is a finished product',
     date: 'Jun 18, 2021',
+    highlight: true,
     sample:
       'This website is not a finished product. Not by any chance. But it is an exciting work in progress.',
     article: `

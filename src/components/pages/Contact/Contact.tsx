@@ -8,6 +8,7 @@ const Contact = () => {
       <PageTitle title="Contact" />
       <h2 className="global__section_divider">Get in touch with Arnaldo</h2>
       <p>Reach me with questions, work inquiries, or just to say hi!</p>
+      <input type="button" value="abc" />
     </>
   );
 };
