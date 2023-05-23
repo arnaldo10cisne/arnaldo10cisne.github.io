@@ -34,9 +34,10 @@ const Layout = ({ pageToRender }: LayoutProps) => {
           : 'Article',
         to: pathList.includes('certificates')
           ? `/about/certificates/${pathList.at(-1)}`
-          : pathList.includes('portfolio')
-          ? `/portfolio/${pathList.at(-1)}`
-          : `/blog/${pathList.at(-1)}`,
+          : `/portfolio/${pathList.at(-1)}`,
+        // : pathList.includes('portfolio')
+        // ? `/portfolio/${pathList.at(-1)}`
+        // : `/blog/${pathList.at(-1)}`,
         level: pathList.includes('certificates') ? 3 : 2,
       });
     }
