@@ -70,7 +70,7 @@ const About = () => {
       <div className="seeAllCertificates_container">
         <a
           href="/about/certificates"
-          className="seeAllCertificates_btn global__button"
+          className="seeAllCertificates_btn global__button global__smallButton"
         >
           See all certificates
         </a>

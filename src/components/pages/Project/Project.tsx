@@ -51,7 +51,7 @@ const Project = () => {
         {projectToDisplay?.website_link !== null && (
           <a
             href={`${projectToDisplay?.website_link}`}
-            className="visitWebsite_btn global__button"
+            className="visitWebsite_btn global__button global__smallButton"
           >
             Visit this website!
           </a>
@@ -59,7 +59,7 @@ const Project = () => {
         {projectToDisplay?.github_link !== null && (
           <a
             href={`${projectToDisplay?.github_link}`}
-            className="githubLink_btn global__button"
+            className="githubLink_btn global__button global__smallButton"
           >
             Check it on Github!
           </a>

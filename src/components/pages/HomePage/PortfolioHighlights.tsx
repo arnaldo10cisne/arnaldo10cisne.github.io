@@ -9,7 +9,9 @@ const PortfolioHighlights = () => {
 
   return (
     <div className="portfolioHighlightSection">
-      <h2 className="global__section_divider">Portfolio Highlights</h2>
+      <h2 className="global__section_divider" style={{ marginTop: '-10px' }}>
+        Portfolio Highlights
+      </h2>
       <div className="highlight_projectList">
         {projectsToHighlight.map((project) => {
           return (

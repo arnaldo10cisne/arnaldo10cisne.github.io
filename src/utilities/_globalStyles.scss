@@ -42,10 +42,17 @@
   transition-property: background-color;
   transition-duration: 0.2s;
   font-weight: 500;
+  border: none;
   cursor: pointer;
   &:hover {
     background-color: $main-yellow-darker;
   }
+}
+
+.global__smallButton {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 3px 10px;
 }
 
 a {

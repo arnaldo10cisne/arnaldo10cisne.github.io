@@ -3,3 +3,131 @@
 
 // Utilities
 @import '../../../utilities/variables';
+
+input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+}
+
+input[type='radio'] + *::before {
+  content: '';
+  display: inline-block;
+  vertical-align: center;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+}
+
+input[type='radio']:hover + *::before {
+  background: radial-gradient(
+    $main-yellow-darker 0%,
+    $main-yellow-darker 40%,
+    transparent 50%,
+    transparent
+  );
+  border-color: $main-yellow-darker;
+}
+
+input[type='radio']:checked + *::before {
+  background: radial-gradient(
+    $main-yellow 0%,
+    $main-yellow 40%,
+    transparent 50%,
+    transparent
+  );
+  border-color: $main-yellow;
+}
+input[type='radio']:checked + * {
+  color: $main-yellow;
+}
+
+#instructions {
+  /* DISPLAY AND POSITION */
+  align-self: center;
+
+  /* DIMENSIONS */
+  width: 90%;
+  margin: 10px 0 10px 0;
+
+  /* COLORS AND OTHER STYLES */
+  font-family: $main-font;
+}
+
+#form_container {
+  /* DISPLAY AND POSITION */
+  display: flex;
+  flex-direction: column;
+
+  /* DIMENSIONS */
+  width: 90%;
+}
+
+.form_container__input {
+  padding: 10px 0px;
+}
+
+.contact_title {
+  /* DISPLAY AND POSITION */
+  text-align: left;
+
+  /* DIMENSIONS */
+
+  /* COLORS AND OTHER STYLES */
+  font-size: 22px;
+  font-family: $main-font;
+  color: $main-yellow;
+}
+
+.input_text {
+  width: 100%;
+  margin-top: 5px;
+  font-family: $main-font;
+  color: black;
+
+  border: none;
+  font-size: 22px;
+  padding: 5px 15px;
+  outline: none;
+}
+
+.radio_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.radio_label {
+  user-select: none;
+}
+
+#message-input {
+  resize: none;
+  height: 85px;
+  font-family: $main-font;
+  color: black;
+
+  border: none;
+  font-size: 22px;
+  padding: 5px 15px;
+  outline: none;
+}
+
+#btnSendEmail {
+  margin-bottom: -10px;
+}
+
+.radio_container {
+  justify-content: flex-start;
+}
+
+.radio_button {
+  margin-right: 20px;
+}
+
+#message-input {
+  height: 150px;
+}
