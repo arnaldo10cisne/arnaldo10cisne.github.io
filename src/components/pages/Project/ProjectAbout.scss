@@ -1,0 +1,28 @@
+// Global Styles
+@import '../../../utilities/globalStyles';
+
+// Utilities
+@import '../../../utilities/variables';
+
+.about_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px;
+}
+
+.project_description {
+  width: 30vw;
+  text-align: justify;
+  font-family: $content-font;
+  font-size: 18px;
+  a {
+    text-decoration: underline;
+    color: rgb(96, 172, 202);
+    transition-property: color;
+    transition-duration: 0.1s;
+    &:hover {
+      color: $main-yellow;
+    }
+  }
+}
