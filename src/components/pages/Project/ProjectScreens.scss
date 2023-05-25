@@ -1,0 +1,38 @@
+// Global Styles
+@import '../../../utilities/globalStyles';
+
+// Utilities
+@import '../../../utilities/variables';
+
+.screen_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  width: 60%;
+}
+
+.project_screen {
+  display: flex;
+  margin: 10px 20px;
+  border: 5px solid $blue-gray;
+  border-radius: 4px;
+  padding: 5px;
+  transition-property: border;
+  transition-duration: 0.2s;
+
+  &:hover {
+    border: 5px solid $main-yellow;
+  }
+
+  a {
+    width: 200px;
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+    }
+  }
+}

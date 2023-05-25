@@ -22,3 +22,17 @@ export interface breadcrumbsLink {
   to: string;
   level: number;
 }
+
+export interface ProjectItem {
+  id: number;
+  name: string;
+  date: string;
+  thumbnail: string;
+  description_innerHTML?: string;
+  technologies?: string[];
+  languages?: string[];
+  screens?: string[];
+  website_link?: string;
+  github_link?: string;
+  highlight?: boolean;
+}

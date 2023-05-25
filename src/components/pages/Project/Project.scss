@@ -1,0 +1,23 @@
+// Global Styles
+@import '../../../utilities/globalStyles';
+
+// Utilities
+@import '../../../utilities/variables';
+
+.project_cover {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  h1 {
+    font-size: 4vw;
+    font-family: $main-font;
+    color: $main-yellow;
+    text-transform: uppercase;
+    max-width: 50vw;
+    text-align: center;
+  }
+  img {
+    max-width: 25vw;
+  }
+}

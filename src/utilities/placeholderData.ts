@@ -1,8 +1,8 @@
-import { techLabels } from './models';
+import { ProjectItem, techLabels } from './models';
 import { languages } from './models';
 
 // This should be replaced by a network call to a backend holding the projects
-export const projectsTemplates = [
+export const projectsTemplates: ProjectItem[] = [
   {
     id: 1,
     name: '"UNO!" card game in Python',
@@ -20,7 +20,7 @@ export const projectsTemplates = [
       'https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap4_pydwx0.png',
       'https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap5_pd7vw4.png',
     ],
-    website_link: null,
+    website_link: undefined,
     github_link: 'https://github.com/arnaldo10cisne/UNO-in-python-terminal',
     highlight: true,
   },
