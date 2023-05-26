@@ -57,7 +57,7 @@ const About = () => {
                 className="courseLink"
               >
                 <img
-                  src={`${certificate.image}`}
+                  src={`${certificate.icon}`}
                   alt="COURSE BADGE"
                   className="courseImage"
                 />

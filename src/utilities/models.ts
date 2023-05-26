@@ -1,4 +1,4 @@
-export const techLabels = {
+export const TECHNOLOGIES = {
   HTML5: 'html5',
   CSS3: 'css3',
   SASS: 'sass',
@@ -11,7 +11,7 @@ export const techLabels = {
   FIREBASE: 'firebase',
 };
 
-export const languages = {
+export const LANGUAGES = {
   SPANISH: 'spanish',
   ENGLISH: 'english',
   FRENCH: 'french',
@@ -34,5 +34,20 @@ export interface ProjectItem {
   screens?: string[];
   website_link?: string;
   github_link?: string;
+  highlight?: boolean;
+}
+
+export interface CertificateItem {
+  id: number;
+  name: string;
+  icon?: string;
+  certificate_link?: string;
+  course_link?: string;
+  company?: string;
+  instructor?: string;
+  instructor_link?: string;
+  technologies?: string[];
+  languages?: string[];
+  completion_date?: string;
   highlight?: boolean;
 }

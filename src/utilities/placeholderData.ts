@@ -1,5 +1,9 @@
-import { ProjectItem, techLabels } from './models';
-import { languages } from './models';
+import {
+  CertificateItem,
+  ProjectItem,
+  TECHNOLOGIES,
+  LANGUAGES,
+} from './models';
 
 // This should be replaced by a network call to a backend holding the projects
 export const projectsTemplates: ProjectItem[] = [
@@ -10,8 +14,8 @@ export const projectsTemplates: ProjectItem[] = [
     thumbnail:
       'https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701627/Uno-python-captures/uno-python-cover_hn4o6b.png',
     description_innerHTML: `<p class="portfolio__about_section__text">Why use cards made in cardboard, when you can play with your friends and family in the comfort of a black screen with high contrast colors?<br><br>When I start to learn a new language, I like to test my knowledge creating a small program like this one. It uses cycles, conditionals, object oriented programming, functions, and many other structures. At first it may sound simple, but as you start the testing process, you'll find out that there are many lttle things that you need to consider to avoid possible bugs. Feel free to check the code on Github. You can also clone the repository, o simply download it to play the game. Just remember that you will need to go to the <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" class="in-text-link">oficial site of python</a> to get everything you need to run the code.</p>`,
-    technologies: [techLabels.PYTHON],
-    languages: [languages.SPANISH],
+    technologies: [TECHNOLOGIES.PYTHON],
+    languages: [LANGUAGES.SPANISH],
     screens: [
       'https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701627/Uno-python-captures/uno-python-cover_hn4o6b.png',
       'https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap1_ylmvkm.png',
@@ -110,41 +114,44 @@ export const articleTemplates = [
   },
 ];
 
-export const certificateHighlights = [
+export const certificateHighlights: CertificateItem[] = [
   {
     id: 1,
     name: 'Definitive HTML and CSS',
-    image:
-      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    instructor: 'Diego De Granda',
+    technologies: [TECHNOLOGIES.HTML5, TECHNOLOGIES.CSS3],
+    completion_date: '2021',
+    languages: [LANGUAGES.SPANISH],
+    course_link: 'https://platzi.com/cursos/html-css/',
+    certificate_link:
+      'https://drive.google.com/file/d/1WjqyMnDFDCoKVkL1bkJ48VTO6It7WuhI/view',
+    instructor_link: 'https://www.instagram.com/degranda/',
+    highlight: true,
   },
   {
     id: 2,
     name: 'Javascript Foundations',
-    image:
-      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
   },
   {
     id: 3,
     name: 'Introduction to React.js',
-    image:
-      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
   },
   {
     id: 4,
     name: 'Node.js Foundations',
-    image:
-      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
   },
   {
     id: 5,
     name: 'Professional Git and Github',
-    image:
-      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
   },
   {
     id: 6,
     name: 'Terminal and command line introduction',
-    image:
-      'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
   },
 ];
