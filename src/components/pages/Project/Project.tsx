@@ -26,7 +26,7 @@ const Project = () => {
         <img src={`${projectToDisplay?.thumbnail}`} alt="Project Thumbnail" />
       </div>
       <ProjectAbout project={projectToDisplay} />
-      <ProjectScreens screenList={projectToDisplay?.screens} />
+      <ProjectScreens project={projectToDisplay} />
       <ProjectLinks project={projectToDisplay} />
     </div>
   );

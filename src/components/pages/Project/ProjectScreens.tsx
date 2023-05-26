@@ -1,12 +1,13 @@
 import React from 'react';
 import './ProjectScreens.scss';
+import { ProjectItem } from '../../../utilities/models';
 
 interface ProjectScreensProps {
-  screenList?: string[];
+  project?: ProjectItem | undefined;
 }
 
-const ProjectScreens = ({ screenList }: ProjectScreensProps) => {
-  if (!screenList) {
+const ProjectScreens = ({ project }: ProjectScreensProps) => {
+  if (!project) {
     return null;
   }
 
@@ -14,7 +15,7 @@ const ProjectScreens = ({ screenList }: ProjectScreensProps) => {
     <>
       <h2 className="global__section_divider">Screens</h2>
       <div className="screen_list">
-        {screenList.map((screen) => {
+        {project.screens?.map((screen) => {
           return (
             <>
               <div className="project_screen">
