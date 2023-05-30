@@ -25,12 +25,13 @@ const CertificateTableSection = ({
       <div className="courses_list">
         {certificateHighlights.map(() => {
           return (
-            <CertificateCell
-              link={''}
-              academyIcon={''}
-              courseIcon={''}
-              courseName={''}
-            />
+            // <CertificateCell
+            //   link={''}
+            //   academyIcon={''}
+            //   courseIcon={''}
+            //   courseName={''}
+            // />
+            <></>
           );
         })}
       </div>

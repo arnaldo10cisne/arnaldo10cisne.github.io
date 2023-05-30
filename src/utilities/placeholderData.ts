@@ -3,6 +3,8 @@ import {
   ProjectItem,
   TECHNOLOGIES,
   LANGUAGES,
+  COMPANY_ICONS,
+  COMPANIES,
 } from './models';
 
 // This should be replaced by a network call to a backend holding the projects
@@ -128,30 +130,38 @@ export const certificateHighlights: CertificateItem[] = [
       'https://drive.google.com/file/d/1WjqyMnDFDCoKVkL1bkJ48VTO6It7WuhI/view',
     instructor_link: 'https://www.instagram.com/degranda/',
     highlight: true,
+    company: COMPANIES.PLATZI,
   },
   {
     id: 2,
     name: 'Javascript Foundations',
     icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    company: COMPANIES.PLATZI,
+    technologies: [TECHNOLOGIES.JAVASCRIPT],
   },
   {
     id: 3,
     name: 'Introduction to React.js',
     icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    company: COMPANIES.PLATZI,
+    technologies: [TECHNOLOGIES.JAVASCRIPT, TECHNOLOGIES.REACTJS],
   },
   {
     id: 4,
     name: 'Node.js Foundations',
     icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    company: COMPANIES.PLATZI,
   },
   {
     id: 5,
     name: 'Professional Git and Github',
     icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    company: COMPANIES.PLATZI,
   },
   {
     id: 6,
     name: 'Terminal and command line introduction',
     icon: 'https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png',
+    company: COMPANIES.PLATZI,
   },
 ];

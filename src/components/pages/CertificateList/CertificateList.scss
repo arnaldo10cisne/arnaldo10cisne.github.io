@@ -3,3 +3,57 @@
 
 // Utilities
 @import '../../../utilities/variables';
+
+.certificate_cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;
+  padding: 2px 10px;
+  width: 60%;
+  background-color: rgba(128, 128, 128, 0.397);
+  border: 3px solid rgba(128, 128, 128, 0);
+  border-radius: 10px;
+  transition-property: border;
+  transition-duration: 0.2s;
+  &:hover {
+    border: 3px solid $main-yellow;
+  }
+}
+
+.certificate_section_name {
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+.certificate_section_tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate_section_company {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.course_icon {
+  width: 50px;
+  margin: 0px 30px;
+}
+
+.course_tech_icon {
+  width: 50px;
+}
+
+.academy_icon {
+  width: 50px;
+}
+
+.course_name {
+  margin-left: 10px;
+  //   width: 400px;
+  text-align: start;
+}
