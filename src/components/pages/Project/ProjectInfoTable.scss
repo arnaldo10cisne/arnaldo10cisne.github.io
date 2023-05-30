@@ -5,24 +5,25 @@
 @import '../../../utilities/variables';
 
 .table_row {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid $main-yellow;
+  width: 400px;
 }
 
 .type-column {
   padding: 7px 0px;
-  width: 100px;
+  width: 40%;
   text-align: left;
   font-weight: 700;
   color: $main-yellow;
-  border-bottom: 1px solid $main-yellow;
   font-family: $main-font;
 }
 
 .content-column {
   padding: 7px 0px;
-  width: 300px;
-  border-bottom: 1px solid $main-yellow;
+  width: 60%;
   font-family: $content-font;
   font-weight: 500;
 }

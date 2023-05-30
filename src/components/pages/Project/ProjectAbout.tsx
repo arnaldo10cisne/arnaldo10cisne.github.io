@@ -18,11 +18,7 @@ const ProjectAbout = ({ project }: ProjectAboutProps) => {
             __html: project?.description_innerHTML || '',
           }}
         ></div>
-        <ProjectInfoTable
-          tech={project?.technologies}
-          date={project?.date}
-          languages={project?.languages}
-        />
+        <ProjectInfoTable project={project} />
       </div>
     </>
   );
