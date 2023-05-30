@@ -10,7 +10,14 @@ const CourseInfoTable = ({ course }: CourseInfoTableProps) => {
     <>
       <h2 className="global__section_divider">About this course</h2>
       <div className="course_generalInfoGrid">
-        <p className="course_typeColumn">Instructor</p>
+        <div style={{ position: 'relative' }}>
+          <p
+            className="course_typeColumn"
+            style={{ position: 'absolute', bottom: '0' }}
+          >
+            Instructor
+          </p>
+        </div>
         <a
           href={`${course?.instructor_link}`}
           target="_blank"

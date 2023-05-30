@@ -73,7 +73,7 @@ const Contact = () => {
       <button
         id="btnSendEmail"
         className="global__button global__smallButton"
-        style={{ marginTop: '10px' }}
+        style={{ marginTop: '10px', marginBottom: '30px' }}
       >
         Send message
       </button>

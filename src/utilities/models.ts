@@ -12,9 +12,9 @@ export const TECHNOLOGIES = {
 };
 
 export const LANGUAGES = {
-  SPANISH: 'spanish',
-  ENGLISH: 'english',
-  FRENCH: 'french',
+  SPANISH: 'Spanish',
+  ENGLISH: 'English',
+  FRENCH: 'French',
 };
 
 export interface breadcrumbsLink {
