@@ -9,16 +9,16 @@ import sass_icon from '../assets/icons/sass.png';
 import firebase_icon from '../assets/icons/firebase.png';
 
 export const TECHNOLOGIES = {
-  HTML5: 'html5',
-  CSS3: 'css3',
-  SASS: 'sass',
-  JAVASCRIPT: 'javascript',
-  TYPESCRIPT: 'typescript',
-  REACTJS: 'reactjs',
-  REACT_ROUTER_DOM: 'react-router-dom',
-  PYTHON: 'python',
-  DJANGO: 'django',
-  FIREBASE: 'firebase',
+  HTML5: 'HTML 5',
+  CSS3: 'CSS 3',
+  SASS: 'SASS',
+  JAVASCRIPT: 'Javascript',
+  TYPESCRIPT: 'Typescript',
+  REACTJS: 'React JS',
+  REACT_ROUTER_DOM: 'React Router',
+  PYTHON: 'Python',
+  DJANGO: 'Django',
+  FIREBASE: 'Firebase',
 };
 
 export const LANGUAGES = {
@@ -28,12 +28,12 @@ export const LANGUAGES = {
 };
 
 export const COMPANIES = {
-  PLATZI: 'platzi',
+  PLATZI: 'Platzi',
 };
 
 export const COMPANY_ICONS = [
   {
-    name: 'platzi',
+    name: COMPANIES.PLATZI,
     icon_link:
       'https://res.cloudinary.com/arnaldo10cisne/image/upload/v1633061210/platzi-logo-symbol_gklcux.png',
   },
@@ -41,39 +41,39 @@ export const COMPANY_ICONS = [
 
 export const TECHNOLOGIES_ICONS = [
   {
-    name: 'html5',
+    name: TECHNOLOGIES.HTML5,
     icon: html5_icon,
   },
   {
-    name: 'css3',
+    name: TECHNOLOGIES.CSS3,
     icon: css3_icon,
   },
   {
-    name: 'python',
+    name: TECHNOLOGIES.PYTHON,
     icon: python_icon,
   },
   {
-    name: 'javascript',
+    name: TECHNOLOGIES.JAVASCRIPT,
     icon: javascript_icon,
   },
   {
-    name: 'typescript',
+    name: TECHNOLOGIES.TYPESCRIPT,
     icon: typescript_icon,
   },
   {
-    name: 'django',
+    name: TECHNOLOGIES.DJANGO,
     icon: django_icon,
   },
   {
-    name: 'firebase',
+    name: TECHNOLOGIES.FIREBASE,
     icon: firebase_icon,
   },
   {
-    name: 'sass',
+    name: TECHNOLOGIES.SASS,
     icon: sass_icon,
   },
   {
-    name: 'reactjs',
+    name: TECHNOLOGIES.REACTJS,
     icon: react_icon,
   },
 ];
