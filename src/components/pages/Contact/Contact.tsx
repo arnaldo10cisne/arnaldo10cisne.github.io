@@ -29,13 +29,7 @@ const Contact = () => {
           </h3>
           <div className="radio_container">
             <div className="radio_button">
-              <input
-                type="radio"
-                id="radioOpt1"
-                name="reason"
-                value="Opt1"
-                checked
-              />
+              <input type="radio" id="radioOpt1" name="reason" value="Opt1" />
               <label className="radio_label" htmlFor="radioOpt1">
                 Say hi!
               </label>
