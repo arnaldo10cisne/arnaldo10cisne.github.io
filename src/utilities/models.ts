@@ -7,6 +7,8 @@ import django_icon from '../assets/icons/django.png';
 import react_icon from '../assets/icons/react.png';
 import sass_icon from '../assets/icons/sass.png';
 import firebase_icon from '../assets/icons/firebase.png';
+import git_icon from '../assets/icons/git.png';
+import github_icon from '../assets/icons/github.png';
 
 export const FIREBASE_RTDB_URL =
   'https://personal-website-de56c-default-rtdb.firebaseio.com/';
@@ -22,6 +24,8 @@ export const TECHNOLOGIES = {
   PYTHON: 'Python',
   DJANGO: 'Django',
   FIREBASE: 'Firebase',
+  GIT: 'Git',
+  GITHUB: 'Github',
 };
 
 export const LANGUAGES = {
@@ -78,6 +82,14 @@ export const TECHNOLOGIES_ICONS = [
   {
     name: TECHNOLOGIES.REACTJS,
     icon: react_icon,
+  },
+  {
+    name: TECHNOLOGIES.GIT,
+    icon: git_icon,
+  },
+  {
+    name: TECHNOLOGIES.GITHUB,
+    icon: github_icon,
   },
 ];
 
