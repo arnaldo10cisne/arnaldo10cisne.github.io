@@ -8,15 +8,14 @@ interface ProjectLinksProps {
 const ProjectLinks = ({ project }: ProjectLinksProps) => {
   return (
     <>
-      <div
-        style={{
-          marginBottom: '20px',
-        }}
-      >
+      <div className="ProjectLinks_linkContainer">
         {project?.website_link && (
           <a
             href={project.website_link}
             className="visitWebsite_btn global__button global__smallButton"
+            style={{
+              marginBottom: '20px',
+            }}
           >
             Visit this website!
           </a>
@@ -25,6 +24,9 @@ const ProjectLinks = ({ project }: ProjectLinksProps) => {
           <a
             href={project.github_link}
             className="githubLink_btn global__button global__smallButton"
+            style={{
+              marginBottom: '20px',
+            }}
           >
             Check it on Github!
           </a>

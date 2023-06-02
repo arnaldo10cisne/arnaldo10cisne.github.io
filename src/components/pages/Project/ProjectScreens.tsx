@@ -7,7 +7,7 @@ interface ProjectScreensProps {
 }
 
 const ProjectScreens = ({ project }: ProjectScreensProps) => {
-  if (!project) {
+  if (!project?.screens) {
     return null;
   }
 
