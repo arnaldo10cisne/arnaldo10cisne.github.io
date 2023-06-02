@@ -1,9 +1,9 @@
 import React from 'react';
 import './Portfolio.scss';
 import PageTitle from '../../common/PageTitle/PageTitle';
-import { projectsTemplates } from '../../../utilities/placeholderData';
 import { useQuery } from 'react-query';
 import { FIREBASE_RTDB_URL, ProjectItem } from '../../../utilities/models';
+import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 
 const Portfolio = () => {
   const getProjects = async () =>
@@ -35,7 +35,7 @@ const Portfolio = () => {
                 </div>
               );
             })
-          : null}
+          : <LoadingSpinner />}
       </div>
     </>
   );

@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { projectsTemplates } from '../../../utilities/placeholderData';
 import ProjectScreens from './ProjectScreens';
 import ProjectLinks from './ProjectLinks';
 import ProjectAbout from './ProjectAbout';
 import './Project.scss';
 import { FIREBASE_RTDB_URL } from '../../../utilities/models';
 import { useQuery } from 'react-query';
+import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 
 const Project = () => {
   const { id } = useParams();
@@ -19,7 +19,7 @@ const Project = () => {
   const { data: projectToDisplay } = useQuery(['project_list'], getProject);
 
   if (!projectToDisplay) {
-    return null;
+    return <LoadingSpinner />;
   }
 
   return (
