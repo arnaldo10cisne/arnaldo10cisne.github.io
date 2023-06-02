@@ -1,10 +1,26 @@
 import React from 'react';
-import { projectsTemplates } from '../../../utilities/placeholderData';
 import './PortfolioHighlights.scss';
+import { FIREBASE_RTDB_URL, ProjectItem } from '../../../utilities/models';
+import { useQuery } from 'react-query';
+import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 
 const PortfolioHighlights = () => {
-  const projectsToHighlight = projectsTemplates.filter(
-    (project) => project.highlight
+  const getProjects = async () =>
+    await fetch(FIREBASE_RTDB_URL + 'projects.json')
+      .then((response) => response.json())
+      .then((data) => data);
+
+  const { data: projects } = useQuery(
+    ['PortfolioHighlights', 'project_list'],
+    getProjects
+  );
+
+  if (!projects) {
+    return <LoadingSpinner />;
+  }
+
+  const projectsToHighlight = projects.filter(
+    (project: ProjectItem) => project.highlight
   );
 
   return (
@@ -13,7 +29,7 @@ const PortfolioHighlights = () => {
         Portfolio Highlights
       </h2>
       <div className="highlight_projectList">
-        {projectsToHighlight.map((project) => {
+        {projectsToHighlight.map((project: ProjectItem) => {
           return (
             <div className="highlight_projectCell">
               <img
