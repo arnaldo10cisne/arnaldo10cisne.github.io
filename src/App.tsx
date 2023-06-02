@@ -11,6 +11,10 @@ import About from './components/pages/About/About';
 import CertificateList from './components/pages/CertificateList/CertificateList';
 import Course from './components/pages/Course/Course';
 import Contact from './components/pages/Contact/Contact';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+// Create a client
+const queryClient = new QueryClient();
 
 const renderContent = (): ReactElement => {
   return (
@@ -30,9 +34,11 @@ const renderContent = (): ReactElement => {
 
 function App() {
   return (
-    <div className="App">
-      <Layout pageToRender={renderContent()} />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <div className="App">
+        <Layout pageToRender={renderContent()} />
+      </div>
+    </QueryClientProvider>
   );
 }
 

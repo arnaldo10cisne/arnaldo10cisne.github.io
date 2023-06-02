@@ -5,19 +5,22 @@ import ProjectScreens from './ProjectScreens';
 import ProjectLinks from './ProjectLinks';
 import ProjectAbout from './ProjectAbout';
 import './Project.scss';
+import { FIREBASE_RTDB_URL } from '../../../utilities/models';
+import { useQuery } from 'react-query';
 
 const Project = () => {
   const { id } = useParams();
 
-  const projectToDisplay = projectsTemplates.find((project) => {
-    // FINAL LOGIC
-    // return project.id === id
+  const getProject = async () =>
+    await fetch(FIREBASE_RTDB_URL + `projects/${Number(id) - 1}.json`)
+      .then((response) => response.json())
+      .then((data) => data);
 
-    // TESTING PURPOSES
-    return project.id === 1;
-  });
+  const { data: projectToDisplay } = useQuery(['project_list'], getProject);
 
-  // return <>{`project with id = ${id}`}</>;
+  if (!projectToDisplay) {
+    return null;
+  }
 
   return (
     <div>

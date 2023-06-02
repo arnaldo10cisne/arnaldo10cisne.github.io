@@ -8,6 +8,9 @@ import react_icon from '../assets/icons/react.png';
 import sass_icon from '../assets/icons/sass.png';
 import firebase_icon from '../assets/icons/firebase.png';
 
+export const FIREBASE_RTDB_URL =
+  'https://personal-website-de56c-default-rtdb.firebaseio.com/';
+
 export const TECHNOLOGIES = {
   HTML5: 'HTML 5',
   CSS3: 'CSS 3',
