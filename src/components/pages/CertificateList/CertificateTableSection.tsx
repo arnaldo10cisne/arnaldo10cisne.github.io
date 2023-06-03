@@ -1,6 +1,6 @@
 import React from 'react';
 import CertificateCell from './CertificateCell';
-import { certificateHighlights } from '../../../utilities/placeholderData';
+// import { certificateHighlights } from '../../../utilities/placeholderData';
 
 interface CertificateTableSectionProps {
   sectionTitle: string;
@@ -23,7 +23,7 @@ const CertificateTableSection = ({
         </span>
       </p>
       <div className="courses_list">
-        {certificateHighlights.map(() => {
+        {/* {certificateHighlights.map(() => {
           return (
             // <CertificateCell
             //   link={''}
@@ -33,7 +33,7 @@ const CertificateTableSection = ({
             // />
             <></>
           );
-        })}
+        })} */}
       </div>
     </>
   );

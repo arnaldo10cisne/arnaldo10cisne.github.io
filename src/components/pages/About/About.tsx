@@ -1,9 +1,26 @@
 import React from 'react';
 import './About.scss';
 import PageTitle from '../../common/PageTitle/PageTitle';
-import { certificateHighlights } from '../../../utilities/placeholderData';
+import { CertificateItem, FIREBASE_RTDB_URL } from '../../../utilities/models';
+import { useQuery } from 'react-query';
+import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 
 const About = () => {
+  const getCourses = async () =>
+    await fetch(FIREBASE_RTDB_URL + 'courses.json')
+      .then((response) => response.json())
+      .then((data) => data);
+
+  const { data: courses } = useQuery(['About', 'courses_list'], getCourses);
+
+  if (!courses) {
+    return <LoadingSpinner />;
+  }
+
+  const coursesToHighlight = courses.filter(
+    (project: CertificateItem) => project.highlight
+  );
+
   return (
     <>
       <PageTitle title="About" />
@@ -49,7 +66,7 @@ const About = () => {
         </p>
       </div>
       <div className="certificateList">
-        {certificateHighlights.map((certificate) => {
+        {coursesToHighlight.map((certificate: CertificateItem) => {
           return (
             <div className="certificateItem">
               <a

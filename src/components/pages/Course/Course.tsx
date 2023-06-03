@@ -2,20 +2,26 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import CourseInfoTable from './CourseInfoTable';
 import './Course.scss';
-import { certificateHighlights } from '../../../utilities/placeholderData';
+import { FIREBASE_RTDB_URL } from '../../../utilities/models';
+import { useQuery } from 'react-query';
+import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 
 const Course = () => {
   const { id } = useParams();
 
-  const courseToDisplay = certificateHighlights.find((course) => {
-    // FINAL LOGIC
-    // return course.id === id
+  const getCourse = async () =>
+    await fetch(FIREBASE_RTDB_URL + `courses/${Number(id) - 1}.json`)
+      .then((response) => response.json())
+      .then((data) => data);
 
-    // TESTING PURPOSES
-    return course.id === 1;
-  });
+  const { data: courseToDisplay } = useQuery(
+    ['Course', 'project_list'],
+    getCourse
+  );
 
-  // return <>{`course with id = ${id}`}</>;
+  if (!courseToDisplay) {
+    return <LoadingSpinner />;
+  }
 
   return (
     <>
