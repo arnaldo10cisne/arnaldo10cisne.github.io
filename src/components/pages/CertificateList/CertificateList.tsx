@@ -13,12 +13,16 @@ const CertificateList = () => {
       .then((data) => data);
 
   const { data } = useQuery(['CertificateList', 'courses_list'], getCourses);
+
+  const certificatesToShow = data.filter((certificate: CertificateItem) => {
+    return certificate.show;
+  });
   return (
     <>
       <PageTitle title="Certificates" />
       <h2 className="global__section_divider">Courses</h2>
       {data ? (
-        data.map((certificate: CertificateItem) => {
+        certificatesToShow.map((certificate: CertificateItem) => {
           return <CertificateCell certificate={certificate} />;
         })
       ) : (

@@ -9,6 +9,9 @@ import sass_icon from '../assets/icons/sass.png';
 import firebase_icon from '../assets/icons/firebase.png';
 import git_icon from '../assets/icons/git.png';
 import github_icon from '../assets/icons/github.png';
+import npm_icon from '../assets/icons/npm.png';
+import nodejs_icon from '../assets/icons/nodejs.png';
+import linux_icon from '../assets/icons/linux.png';
 
 export const FIREBASE_RTDB_URL =
   'https://personal-website-de56c-default-rtdb.firebaseio.com/';
@@ -16,7 +19,7 @@ export const FIREBASE_RTDB_URL =
 export const TECHNOLOGIES = {
   HTML5: 'HTML 5',
   CSS3: 'CSS 3',
-  SASS: 'SASS',
+  SASS: 'Sass',
   JAVASCRIPT: 'Javascript',
   TYPESCRIPT: 'Typescript',
   REACTJS: 'React JS',
@@ -26,6 +29,9 @@ export const TECHNOLOGIES = {
   FIREBASE: 'Firebase',
   GIT: 'Git',
   GITHUB: 'Github',
+  NPM: 'NPM',
+  NODEJS: 'NodeJS',
+  LINUX: 'Linux',
 };
 
 export const LANGUAGES = {
@@ -91,6 +97,18 @@ export const TECHNOLOGIES_ICONS = [
     name: TECHNOLOGIES.GITHUB,
     icon: github_icon,
   },
+  {
+    name: TECHNOLOGIES.NPM,
+    icon: npm_icon,
+  },
+  {
+    name: TECHNOLOGIES.NODEJS,
+    icon: nodejs_icon,
+  },
+  {
+    name: TECHNOLOGIES.LINUX,
+    icon: linux_icon,
+  },
 ];
 
 export interface breadcrumbsLink {
@@ -111,6 +129,7 @@ export interface ProjectItem {
   website_link?: string;
   github_link?: string;
   highlight?: boolean;
+  show?: boolean;
 }
 
 export interface CertificateItem {
@@ -126,4 +145,5 @@ export interface CertificateItem {
   languages?: string[];
   completion_date?: string;
   highlight?: boolean;
+  show?: boolean;
 }
