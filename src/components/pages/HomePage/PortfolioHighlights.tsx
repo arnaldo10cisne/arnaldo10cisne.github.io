@@ -10,7 +10,7 @@ const PortfolioHighlights = () => {
       .then((response) => response.json())
       .then((data) => data);
 
-  const { data: projects } = useQuery(
+  const { data: projects } = useQuery<ProjectItem[]>(
     ['PortfolioHighlights', 'project_list'],
     getProjects
   );

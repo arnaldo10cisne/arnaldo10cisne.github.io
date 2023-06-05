@@ -11,15 +11,22 @@ const Portfolio = () => {
       .then((response) => response.json())
       .then((data) => data);
 
-  const { data } = useQuery(['Portfolio', 'project_list'], getProjects);
+  const { data: projects } = useQuery<ProjectItem[]>(
+    ['Portfolio', 'project_list'],
+    getProjects
+  );
+
+  const projectsToShow = projects?.filter(
+    (project: ProjectItem) => project.show
+  );
 
   return (
     <>
       <PageTitle title="Portfolio" />
       <h2 className="global__section_divider">Projects</h2>
       <div className="projectList global__page_container">
-        {data ? (
-          data.map((project: ProjectItem) => {
+        {projects ? (
+          projectsToShow?.map((project: ProjectItem) => {
             return (
               <div className="projectCell">
                 <img

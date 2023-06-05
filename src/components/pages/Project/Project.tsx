@@ -4,7 +4,7 @@ import ProjectScreens from './ProjectScreens';
 import ProjectLinks from './ProjectLinks';
 import ProjectAbout from './ProjectAbout';
 import './Project.scss';
-import { FIREBASE_RTDB_URL } from '../../../utilities/models';
+import { FIREBASE_RTDB_URL, ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 
@@ -16,7 +16,10 @@ const Project = () => {
       .then((response) => response.json())
       .then((data) => data);
 
-  const { data: projectToDisplay } = useQuery(['project_list'], getProject);
+  const { data: projectToDisplay } = useQuery<ProjectItem>(
+    ['Project', 'project_list'],
+    getProject
+  );
 
   if (!projectToDisplay) {
     return <LoadingSpinner />;

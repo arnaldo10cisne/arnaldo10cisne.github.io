@@ -11,7 +11,10 @@ const About = () => {
       .then((response) => response.json())
       .then((data) => data);
 
-  const { data: courses } = useQuery(['About', 'courses_list'], getCourses);
+  const { data: courses } = useQuery<CertificateItem[]>(
+    ['About', 'courses_list'],
+    getCourses
+  );
 
   if (!courses) {
     return <LoadingSpinner />;

@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import CourseInfoTable from './CourseInfoTable';
 import './Course.scss';
-import { FIREBASE_RTDB_URL } from '../../../utilities/models';
+import { CertificateItem, FIREBASE_RTDB_URL } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 
@@ -14,7 +14,7 @@ const Course = () => {
       .then((response) => response.json())
       .then((data) => data);
 
-  const { data: courseToDisplay } = useQuery(
+  const { data: courseToDisplay } = useQuery<CertificateItem>(
     ['Course', 'project_list'],
     getCourse
   );

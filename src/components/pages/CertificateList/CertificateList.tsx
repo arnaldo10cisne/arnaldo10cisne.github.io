@@ -12,17 +12,21 @@ const CertificateList = () => {
       .then((response) => response.json())
       .then((data) => data);
 
-  const { data } = useQuery(['CertificateList', 'courses_list'], getCourses);
+  const { data: courses } = useQuery<CertificateItem[]>(
+    ['CertificateList', 'courses_list'],
+    getCourses
+  );
 
-  const certificatesToShow = data.filter((certificate: CertificateItem) => {
-    return certificate.show;
-  });
+  const certificatesToShow = courses?.filter(
+    (certificate: CertificateItem) => certificate.show
+  );
+
   return (
     <>
       <PageTitle title="Certificates" />
       <h2 className="global__section_divider">Courses</h2>
-      {data ? (
-        certificatesToShow.map((certificate: CertificateItem) => {
+      {courses ? (
+        certificatesToShow?.map((certificate: CertificateItem) => {
           return <CertificateCell certificate={certificate} />;
         })
       ) : (
