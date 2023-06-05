@@ -1,5 +1,6 @@
 import React from 'react';
-import { CertificateItem } from '../../../utilities/models';
+import { CertificateItem, TECHNOLOGIES_ICONS } from '../../../utilities/models';
+import TechIcon from '../../common/TechIcon/TechIcon';
 
 interface CourseInfoTableProps {
   course: CertificateItem | undefined;
@@ -27,7 +28,15 @@ const CourseInfoTable = ({ course }: CourseInfoTableProps) => {
           <p className="course_tableLink">{course?.instructor}</p>
         </a>
         <p className="course_typeColumn">Tech</p>
-        <p className="course_contentColumn">{course?.technologies}</p>
+        <p className="course_contentColumn">
+          {course?.technologies?.map((course_tech) => (
+            <TechIcon
+              tech={TECHNOLOGIES_ICONS.find(
+                (technology) => technology.name === course_tech
+              )}
+            />
+          ))}
+        </p>
         <p className="course_typeColumn">Year</p>
         <p className="course_contentColumn">{course?.completion_date}</p>
         <p className="course_typeColumn">Language</p>

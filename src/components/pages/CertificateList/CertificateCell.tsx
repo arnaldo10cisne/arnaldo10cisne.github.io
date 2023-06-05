@@ -1,6 +1,7 @@
 import React from 'react';
 import { CertificateItem } from '../../../utilities/models';
 import { COMPANY_ICONS, TECHNOLOGIES_ICONS } from '../../../utilities/models';
+import TechIcon from '../../common/TechIcon/TechIcon';
 
 interface CertificateCellProps {
   certificate: CertificateItem;
@@ -26,18 +27,13 @@ const CertificateCell = ({ certificate }: CertificateCellProps) => {
       </div>
 
       <div className="certificate_section_tech">
-        {certificate.technologies?.map((course_tech) => {
-          const icon = TECHNOLOGIES_ICONS.find((technology) => {
-            return technology.name === course_tech;
-          });
-          return (
-            <img
-              className="course_tech_icon"
-              src={icon?.icon}
-              alt="Course badge"
-            />
-          );
-        })}
+        {certificate.technologies?.map((course_tech) => (
+          <TechIcon
+            tech={TECHNOLOGIES_ICONS.find(
+              (technology) => technology.name === course_tech
+            )}
+          />
+        ))}
       </div>
 
       <div className="certificate_section_company">

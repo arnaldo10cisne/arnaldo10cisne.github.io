@@ -1,0 +1,23 @@
+// Global Styles
+@import '../../../utilities/globalStyles';
+
+// Utilities
+@import '../../../utilities/variables';
+
+.techIconContainer {
+  position: relative;
+  width: 50px;
+  margin: 0px 5px;
+}
+
+.tectTooltip {
+  position: absolute;
+  background-color: $blue-gray-darker;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: solid white 1px;
+  width: 100px;
+  z-index: 1000;
+  bottom: -30px;
+  left: -25px;
+}
