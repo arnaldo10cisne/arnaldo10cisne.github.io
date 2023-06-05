@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ProjectScreens from './ProjectScreens';
 import ProjectLinks from './ProjectLinks';
 import ProjectAbout from './ProjectAbout';
 import './Project.scss';
-import { FIREBASE_RTDB_URL, ProjectItem } from '../../../utilities/models';
+import {
+  DEFAULT_TITLE,
+  FIREBASE_RTDB_URL,
+  ProjectItem,
+} from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 
@@ -20,6 +24,10 @@ const Project = () => {
     ['Project', 'project_list'],
     getProject
   );
+
+  useEffect(() => {
+    document.title = projectToDisplay?.name || DEFAULT_TITLE;
+  }, [projectToDisplay]);
 
   if (!projectToDisplay) {
     return <LoadingSpinner />;

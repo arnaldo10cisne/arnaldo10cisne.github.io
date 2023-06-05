@@ -16,6 +16,8 @@ import linux_icon from '../assets/icons/linux.png';
 export const FIREBASE_RTDB_URL =
   'https://personal-website-de56c-default-rtdb.firebaseio.com/';
 
+export const DEFAULT_TITLE = 'Arnaldo Cisneros';
+
 export const TECHNOLOGIES = {
   HTML5: 'HTML 5',
   CSS3: 'CSS 3',
