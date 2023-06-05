@@ -33,6 +33,10 @@ const Project = () => {
     return <LoadingSpinner />;
   }
 
+  if (!projectToDisplay.show) {
+    return <p>Not found</p>;
+  }
+
   return (
     <div>
       <div className="project_cover">

@@ -31,6 +31,10 @@ const Course = () => {
     return <LoadingSpinner />;
   }
 
+  if (!courseToDisplay.show) {
+    return <p>Not found</p>;
+  }
+
   return (
     <>
       <div className="course_cover">
