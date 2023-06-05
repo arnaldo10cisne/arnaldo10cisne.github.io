@@ -16,11 +16,7 @@ const About = () => {
     getCourses
   );
 
-  if (!courses) {
-    return <LoadingSpinner />;
-  }
-
-  const coursesToHighlight = courses.filter(
+  const coursesToHighlight = courses?.filter(
     (project: CertificateItem) => project.highlight
   );
 
@@ -69,23 +65,27 @@ const About = () => {
         </p>
       </div>
       <div className="certificateList">
-        {coursesToHighlight.map((certificate: CertificateItem) => {
-          return (
-            <div className="certificateItem">
-              <a
-                href={`/about/certificates/${certificate.id}`}
-                className="courseLink"
-              >
-                <img
-                  src={`${certificate.icon}`}
-                  alt="COURSE BADGE"
-                  className="courseImage"
-                />
-                <p className="courseName">{certificate.name}</p>
-              </a>
-            </div>
-          );
-        })}
+        {coursesToHighlight ? (
+          coursesToHighlight.map((certificate: CertificateItem) => {
+            return (
+              <div className="certificateItem">
+                <a
+                  href={`/about/certificates/${certificate.id}`}
+                  className="courseLink"
+                >
+                  <img
+                    src={`${certificate.icon}`}
+                    alt="COURSE BADGE"
+                    className="courseImage"
+                  />
+                  <p className="courseName">{certificate.name}</p>
+                </a>
+              </div>
+            );
+          })
+        ) : (
+          <LoadingSpinner />
+        )}
       </div>
       <div className="seeAllCertificates_container">
         <a

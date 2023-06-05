@@ -15,11 +15,7 @@ const PortfolioHighlights = () => {
     getProjects
   );
 
-  if (!projects) {
-    return <LoadingSpinner />;
-  }
-
-  const projectsToHighlight = projects.filter(
+  const projectsToHighlight = projects?.filter(
     (project: ProjectItem) => project.highlight
   );
 
@@ -29,24 +25,28 @@ const PortfolioHighlights = () => {
         Portfolio Highlights
       </h2>
       <div className="highlight_projectList">
-        {projectsToHighlight.map((project: ProjectItem) => {
-          return (
-            <div className="highlight_projectCell">
-              <img
-                className="highlight_projectImage"
-                src={`${project.thumbnail}`}
-                alt={`${project.name} thumbnail`}
-              />
-              <a
-                className="highlight_projectName"
-                href={`/portfolio/${project.id}`}
-              >
-                {project.name}
-              </a>
-              <p className="highlight_projectDate">{project.date}</p>
-            </div>
-          );
-        })}
+        {projectsToHighlight ? (
+          projectsToHighlight.map((project: ProjectItem) => {
+            return (
+              <div className="highlight_projectCell">
+                <img
+                  className="highlight_projectImage"
+                  src={`${project.thumbnail}`}
+                  alt={`${project.name} thumbnail`}
+                />
+                <a
+                  className="highlight_projectName"
+                  href={`/portfolio/${project.id}`}
+                >
+                  {project.name}
+                </a>
+                <p className="highlight_projectDate">{project.date}</p>
+              </div>
+            );
+          })
+        ) : (
+          <LoadingSpinner />
+        )}
       </div>
     </div>
   );
