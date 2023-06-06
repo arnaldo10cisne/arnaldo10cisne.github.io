@@ -14,32 +14,3 @@
   justify-content: space-evenly;
   padding-bottom: 40px;
 }
-
-.highlight_projectCell {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 15px 0px 15px;
-  min-width: 20%;
-  max-width: 33vw;
-}
-
-.highlight_projectImage {
-  max-width: 90%;
-  max-height: 400px;
-}
-
-.highlight_projectName {
-  font-family: $main-font;
-  color: $main-yellow;
-  text-decoration: none;
-  margin: 10px 0px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.highlight_projectDate {
-  font-family: $main-font;
-  font-style: italic;
-}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ProjectItem } from '../../../utilities/models';
+import './ProjectCard.scss';
 
 interface ProjectCardProps {
   project: ProjectItem;

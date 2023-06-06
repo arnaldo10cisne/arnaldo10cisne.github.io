@@ -24,6 +24,11 @@
   margin: 10px 0px;
   font-size: 20px;
   font-weight: bold;
+  transition-duration: 0.2s;
+  transition-property: color;
+  &:hover {
+    color: $main-yellow-darker;
+  }
 }
 
 .projectDate {
