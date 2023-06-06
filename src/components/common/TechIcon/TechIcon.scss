@@ -10,7 +10,7 @@
   margin: 0px 5px;
 }
 
-.tectTooltip {
+.techTooltip {
   position: absolute;
   background-color: $blue-gray-darker;
   padding: 5px 10px;
@@ -20,4 +20,15 @@
   z-index: 1000;
   bottom: -30px;
   left: -25px;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.tooltipVisible_true {
+  opacity: 100%;
+}
+
+.tooltipVisible_false {
+  opacity: 0%;
 }

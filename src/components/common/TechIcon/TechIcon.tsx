@@ -11,7 +11,7 @@ interface TechIconProps {
 }
 
 const TechIcon = ({ tech }: TechIconProps) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [TooltipIsVisible, setTooltipIsVisible] = useState(false);
 
   return (
     <span className="techIconContainer">
@@ -20,14 +20,20 @@ const TechIcon = ({ tech }: TechIconProps) => {
         src={tech?.icon}
         alt="Course badge"
         onMouseEnter={() => {
-          setIsVisible(true);
+          setTooltipIsVisible(true);
         }}
         onMouseLeave={() => {
-          setIsVisible(false);
+          setTooltipIsVisible(false);
         }}
       />
 
-      {isVisible && <span className="tectTooltip">{tech?.name}</span>}
+      <span
+        className={`techTooltip ${
+          TooltipIsVisible ? 'tooltipVisible_true' : 'tooltipVisible_false'
+        }`}
+      >
+        {tech?.name}
+      </span>
     </span>
   );
 };

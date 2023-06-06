@@ -27,7 +27,9 @@ const CourseInfoTable = ({ course }: CourseInfoTableProps) => {
         >
           <p className="course_tableLink">{course?.instructor}</p>
         </a>
-        <p className="course_typeColumn">Tech</p>
+        <p className="course_typeColumn" style={{ alignSelf: 'end' }}>
+          Tech
+        </p>
         <p className="course_contentColumn">
           {course?.technologies?.map((course_tech) => (
             <TechIcon
