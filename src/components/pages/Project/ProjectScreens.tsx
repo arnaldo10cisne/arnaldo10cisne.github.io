@@ -19,7 +19,7 @@ const ProjectScreens = ({ project }: ProjectScreensProps) => {
           return (
             <>
               <div className="project_screen">
-                <a href={screen}>
+                <a href={screen} target="_blank" rel="noopener noreferrer">
                   <img src={screen} alt="Project screen" />
                 </a>
               </div>

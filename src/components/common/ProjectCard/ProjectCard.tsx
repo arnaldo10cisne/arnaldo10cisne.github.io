@@ -13,7 +13,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         className="projectImage"
         src={`${project.thumbnail}`}
         alt={`${project.name} thumbnail`}
-        height={300}
       />
       <a className="projectName" href={`/portfolio/${project.id}`}>
         {project.name}

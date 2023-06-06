@@ -16,6 +16,8 @@ const ProjectLinks = ({ project }: ProjectLinksProps) => {
             style={{
               marginBottom: '20px',
             }}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Visit this website!
           </a>
@@ -27,6 +29,8 @@ const ProjectLinks = ({ project }: ProjectLinksProps) => {
             style={{
               marginBottom: '20px',
             }}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Check it on Github!
           </a>
