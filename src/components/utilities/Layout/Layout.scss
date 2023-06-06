@@ -10,7 +10,7 @@
 }
 
 .homePageBackgroundImage {
-  background-image: url('https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/medellin-large.jpg') !important;
+  // background-image: url('https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/medellin-large.jpg') !important;
   background-position: 60% 70%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -33,27 +33,6 @@
     opacity: 1;
   }
 }
-
-// .homepageCurtain {
-//   position: absolute;
-//   height: 100vh;
-//   left: 0;
-//   right: 0;
-//   background-color: $blue-gray;
-//   animation-name: homepagecurtainEffect;
-//   animation-duration: 0.2s;
-//   animation-timing-function: ease-in-out;
-//   animation-fill-mode: forwards;
-// }
-
-// @keyframes homepagecurtainEffect {
-//   from {
-//     opacity: 1;
-//   }
-//   to {
-//     opacity: 0;
-//   }
-// }
 
 .footerContainer {
   position: absolute;
