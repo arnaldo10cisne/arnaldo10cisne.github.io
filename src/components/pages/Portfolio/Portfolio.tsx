@@ -4,6 +4,7 @@ import PageTitle from '../../common/PageTitle/PageTitle';
 import { useQuery } from 'react-query';
 import { FIREBASE_RTDB_URL, ProjectItem } from '../../../utilities/models';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import ProjectCard from '../../common/ProjectCard/ProjectCard';
 
 const Portfolio = () => {
   const getProjects = async () =>
@@ -26,22 +27,9 @@ const Portfolio = () => {
       <h2 className="global__section_divider">Projects</h2>
       <div className="projectList global__page_container">
         {projects ? (
-          projectsToShow?.map((project: ProjectItem) => {
-            return (
-              <div className="projectCell">
-                <img
-                  className="projectImage"
-                  src={`${project.thumbnail}`}
-                  alt={`${project.name} thumbnail`}
-                  height={300}
-                />
-                <a className="projectName" href={`/portfolio/${project.id}`}>
-                  {project.name}
-                </a>
-                <p className="projectDate">{project.date}</p>
-              </div>
-            );
-          })
+          projectsToShow?.map((project: ProjectItem) => (
+            <ProjectCard project={project} />
+          ))
         ) : (
           <LoadingSpinner />
         )}

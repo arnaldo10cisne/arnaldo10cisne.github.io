@@ -3,6 +3,7 @@ import './PortfolioHighlights.scss';
 import { FIREBASE_RTDB_URL, ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import ProjectCard from '../../common/ProjectCard/ProjectCard';
 
 const PortfolioHighlights = () => {
   const getProjects = async () =>
@@ -26,24 +27,9 @@ const PortfolioHighlights = () => {
       </h2>
       <div className="highlight_projectList">
         {projectsToHighlight ? (
-          projectsToHighlight.map((project: ProjectItem) => {
-            return (
-              <div className="highlight_projectCell">
-                <img
-                  className="highlight_projectImage"
-                  src={`${project.thumbnail}`}
-                  alt={`${project.name} thumbnail`}
-                />
-                <a
-                  className="highlight_projectName"
-                  href={`/portfolio/${project.id}`}
-                >
-                  {project.name}
-                </a>
-                <p className="highlight_projectDate">{project.date}</p>
-              </div>
-            );
-          })
+          projectsToHighlight.map((project: ProjectItem) => (
+            <ProjectCard project={project} />
+          ))
         ) : (
           <LoadingSpinner />
         )}
