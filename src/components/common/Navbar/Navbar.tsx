@@ -7,10 +7,6 @@ const navbarItems = [
     label: 'Home',
     to: '/',
   },
-  // {
-  //   label: 'Blog',
-  //   to: '/blog',
-  // },
   {
     label: 'Portfolio',
     to: '/portfolio',

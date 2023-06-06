@@ -18,19 +18,3 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-export const postBlogpost = (
-  blogpostId: string,
-  name: string,
-  content: string,
-  coverImage: string
-) => {
-  const db = getDatabase(app);
-  const reference = ref(db, 'blogposts/' + blogpostId);
-
-  set(reference, {
-    name: name,
-    cover_image: coverImage,
-    content: content,
-  });
-};
