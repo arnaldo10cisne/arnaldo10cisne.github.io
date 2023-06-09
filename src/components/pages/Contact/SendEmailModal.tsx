@@ -13,16 +13,12 @@ interface SendEmailModalProps extends ContactFormData {
   closeModalFunction: Function;
 }
 
-const NoReasonModal = () => {
-  return <p>Please enter a reason for contact, a name and a message</p>;
+const InformationModal = ({ info }: { info: string }) => {
+  return <p>{info}</p>;
 };
 
 const ConfirmationModal = () => {
   return <p>Are you sure you don't want to include an email?</p>;
-};
-
-const InvalidEmailModal = () => {
-  return <p>Please type a valid email</p>;
 };
 
 const SendingMessageModal = ({
@@ -65,9 +61,15 @@ const SendEmailModal = ({
   return (
     <div className="modalBackdrop">
       <div className="modalWindow">
-        {showNoReasonModal && <NoReasonModal />}
+        {showNoReasonModal && (
+          <InformationModal
+            info={'Please enter a reason for contact, a name and a message'}
+          />
+        )}
         {showConfirmationModal && <ConfirmationModal />}
-        {showInvalidEmailModal && <InvalidEmailModal />}
+        {showInvalidEmailModal && (
+          <InformationModal info={'Please type a valid email'} />
+        )}
         {showSendingMessageModal && (
           <SendingMessageModal
             name={name}
