@@ -4,6 +4,38 @@ import PageTitle from '../../common/PageTitle/PageTitle';
 import SendEmailModal from './SendEmailModal';
 import { CONTACT_REASONS } from '../../../utilities/models';
 
+interface RadioButtonProps {
+  id: string;
+  value: string;
+  isDisabled: boolean;
+  changeStateFunction: Function;
+}
+
+const RadioButton = ({
+  id,
+  value,
+  isDisabled,
+  changeStateFunction,
+}: RadioButtonProps) => {
+  return (
+    <div className="radio_button">
+      <input
+        type="radio"
+        id={id}
+        name="reason"
+        value={value}
+        disabled={isDisabled}
+        onChange={(e) => {
+          changeStateFunction(e.target.value);
+        }}
+      />
+      <label className="radio_label" htmlFor={id}>
+        {value}
+      </label>
+    </div>
+  );
+};
+
 const Contact = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const [name, setName] = useState<string | null>(null);
@@ -44,51 +76,24 @@ const Contact = () => {
         <div className="form_container__input">
           <h3 className="contact_title">Reason for contact:</h3>
           <div className="radio_container">
-            <div className="radio_button">
-              <input
-                type="radio"
-                id="radioOpt1"
-                name="reason"
-                value={CONTACT_REASONS.SALUTE}
-                disabled={inputsDisabled}
-                onChange={(e) => {
-                  setReason(e.target.value);
-                }}
-              />
-              <label className="radio_label" htmlFor="radioOpt1">
-                Say hi!
-              </label>
-            </div>
-            <div className="radio_button">
-              <input
-                type="radio"
-                id="radioOpt2"
-                name="reason"
-                value={CONTACT_REASONS.QUESTION}
-                disabled={inputsDisabled}
-                onChange={(e) => {
-                  setReason(e.target.value);
-                }}
-              />
-              <label className="radio_label" htmlFor="radioOpt2">
-                Ask question
-              </label>
-            </div>
-            <div className="radio_button">
-              <input
-                type="radio"
-                id="radioOpt3"
-                name="reason"
-                value={CONTACT_REASONS.WORK}
-                disabled={inputsDisabled}
-                onChange={(e) => {
-                  setReason(e.target.value);
-                }}
-              />
-              <label className="radio_label" htmlFor="radioOpt3">
-                Work together
-              </label>
-            </div>
+            <RadioButton
+              id="radioOpt1"
+              value={CONTACT_REASONS.SALUTE}
+              isDisabled={inputsDisabled}
+              changeStateFunction={setReason}
+            />
+            <RadioButton
+              id="radioOpt2"
+              value={CONTACT_REASONS.QUESTION}
+              isDisabled={inputsDisabled}
+              changeStateFunction={setReason}
+            />
+            <RadioButton
+              id="radioOpt3"
+              value={CONTACT_REASONS.WORK}
+              isDisabled={inputsDisabled}
+              changeStateFunction={setReason}
+            />
           </div>
         </div>
 

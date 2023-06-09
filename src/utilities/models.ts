@@ -117,9 +117,9 @@ export const TECHNOLOGIES_ICONS = [
 ];
 
 export const CONTACT_REASONS = {
-  SALUTE: 'salute',
-  QUESTION: 'question',
-  WORK: 'work',
+  SALUTE: 'Say hi!',
+  QUESTION: 'Ask question',
+  WORK: 'Work together',
 };
 
 export interface breadcrumbsLink {
