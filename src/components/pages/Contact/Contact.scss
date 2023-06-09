@@ -45,24 +45,16 @@ input[type='radio']:checked + * {
   color: $main-yellow;
 }
 
-#instructions {
-  /* DISPLAY AND POSITION */
+.instructions {
   align-self: center;
-
-  /* DIMENSIONS */
   width: 90%;
   margin: 10px 0 10px 0;
-
-  /* COLORS AND OTHER STYLES */
   font-family: $main-font;
 }
 
-#form_container {
-  /* DISPLAY AND POSITION */
+.form_container {
   display: flex;
   flex-direction: column;
-
-  /* DIMENSIONS */
   width: 90%;
 }
 
@@ -71,12 +63,7 @@ input[type='radio']:checked + * {
 }
 
 .contact_title {
-  /* DISPLAY AND POSITION */
   text-align: left;
-
-  /* DIMENSIONS */
-
-  /* COLORS AND OTHER STYLES */
   font-size: 22px;
   font-family: $main-font;
   color: $main-yellow;
@@ -104,20 +91,15 @@ input[type='radio']:checked + * {
   user-select: none;
 }
 
-#message-input {
+.message-input {
   resize: none;
-  height: 85px;
+  height: 150px;
   font-family: $main-font;
   color: black;
-
   border: none;
   font-size: 22px;
   padding: 5px 15px;
   outline: none;
-}
-
-#btnSendEmail {
-  margin-bottom: -10px;
 }
 
 .radio_container {
@@ -126,8 +108,4 @@ input[type='radio']:checked + * {
 
 .radio_button {
   margin-right: 20px;
-}
-
-#message-input {
-  height: 150px;
 }

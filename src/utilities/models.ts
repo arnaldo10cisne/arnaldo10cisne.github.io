@@ -16,6 +16,9 @@ import linux_icon from '../assets/icons/linux.png';
 export const FIREBASE_RTDB_URL =
   'https://personal-website-de56c-default-rtdb.firebaseio.com/';
 
+export const EMAIL_REGEX =
+  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
 export const DEFAULT_TITLE = 'Arnaldo Cisneros';
 
 export const TECHNOLOGIES = {
@@ -32,7 +35,7 @@ export const TECHNOLOGIES = {
   GIT: 'Git',
   GITHUB: 'Github',
   NPM: 'NPM',
-  NODEJS: 'NodeJS',
+  NODEJS: 'Node JS',
   LINUX: 'Linux',
 };
 
@@ -112,6 +115,12 @@ export const TECHNOLOGIES_ICONS = [
     icon: linux_icon,
   },
 ];
+
+export const CONTACT_REASONS = {
+  SALUTE: 'salute',
+  QUESTION: 'question',
+  WORK: 'work',
+};
 
 export interface breadcrumbsLink {
   label: string;
