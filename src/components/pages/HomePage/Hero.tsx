@@ -24,11 +24,11 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="actionButtonContainer">
+      {/* <div className="actionButtonContainer">
         <a className="actionButton global__button" href="./contact">
           Lets Work Together!
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -15,10 +15,10 @@ const navbarItems = [
     label: 'About',
     to: '/about',
   },
-  {
-    label: 'Contact',
-    to: '/contact',
-  },
+  // {
+  //   label: 'Contact',
+  //   to: '/contact',
+  // },
 ];
 
 const Navbar = () => {

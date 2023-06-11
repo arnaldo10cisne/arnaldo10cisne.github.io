@@ -23,7 +23,7 @@ const renderContent = (): ReactElement => {
       <SitePage path="/about" component={<About />} />
       <SitePage path="/about/certificates" component={<CertificateList />} />
       <SitePage path="/about/certificates/:id" component={<Course />} />
-      <SitePage path="/contact" component={<Contact />} />
+      {/* <SitePage path="/contact" component={<Contact />} /> */}
     </>
   );
 };
