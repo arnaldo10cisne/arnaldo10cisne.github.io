@@ -1,7 +1,7 @@
 import React from 'react';
 import { CertificateItem } from '../../../utilities/models';
 import { COMPANY_ICONS, TECHNOLOGIES_ICONS } from '../../../utilities/models';
-import TechIcon from '../../common/TechIcon/TechIcon';
+import LabeledIcon from '../../common/LabeledIcon/LabeledIcon';
 
 interface CertificateCellProps {
   certificate: CertificateItem;
@@ -23,26 +23,27 @@ const CertificateCell = ({ certificate }: CertificateCellProps) => {
           alt="Course badge"
         />
         <p className="course_name">{certificate.name}</p>
-        {/* <p className="course_completion_date">{certificate.completion_date}</p> */}
       </div>
 
       <div className="certificate_section_tech">
         {certificate.technologies?.map((course_tech) => (
-          <TechIcon
-            tech={TECHNOLOGIES_ICONS.find(
-              (technology) => technology.name === course_tech
-            )}
+          <LabeledIcon
+            name={
+              TECHNOLOGIES_ICONS.find(
+                (technology) => technology.name === course_tech
+              )?.name
+            }
+            icon={
+              TECHNOLOGIES_ICONS.find(
+                (technology) => technology.name === course_tech
+              )?.icon
+            }
           />
         ))}
       </div>
 
       <div className="certificate_section_company">
-        <img
-          className="academy_icon"
-          src={academyIcon?.icon_link}
-          alt="academy icon"
-        />
-        <p className="course_company">{certificate.company}</p>
+        <LabeledIcon name={certificate.company} icon={academyIcon?.icon_link} />
       </div>
     </a>
   );

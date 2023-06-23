@@ -1,23 +1,19 @@
 import React, { useState } from 'react';
-import './TechIcon.scss';
+import './LabeledIcon.scss';
 
-interface TechIconProps {
-  tech:
-    | {
-        name: string;
-        icon: string;
-      }
-    | undefined;
+interface LabeledIconProps {
+  name: string | undefined;
+  icon: string | undefined;
 }
 
-const TechIcon = ({ tech }: TechIconProps) => {
+const LabeledIcon = ({ name, icon }: LabeledIconProps) => {
   const [TooltipIsVisible, setTooltipIsVisible] = useState(false);
 
   return (
     <span className="techIconContainer">
       <img
         className="course_tech_icon"
-        src={tech?.icon}
+        src={icon}
         alt="Course badge"
         onMouseEnter={() => {
           setTooltipIsVisible(true);
@@ -32,10 +28,10 @@ const TechIcon = ({ tech }: TechIconProps) => {
           TooltipIsVisible ? 'tooltipVisible_true' : 'tooltipVisible_false'
         }`}
       >
-        {tech?.name}
+        {name}
       </span>
     </span>
   );
 };
 
-export default TechIcon;
+export default LabeledIcon;

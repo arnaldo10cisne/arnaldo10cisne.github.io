@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectInfoTable.scss';
 import { ProjectItem } from '../../../utilities/models';
 import { TECHNOLOGIES_ICONS } from '../../../utilities/models';
-import TechIcon from '../../common/TechIcon/TechIcon';
+import LabeledIcon from '../../common/LabeledIcon/LabeledIcon';
 
 interface ProjectInfoTableProps {
   project: ProjectItem | undefined;
@@ -24,10 +24,17 @@ const ProjectInfoTable = ({ project }: ProjectInfoTableProps) => {
             style={{ position: 'absolute', bottom: '0', right: '0' }}
           >
             {project?.technologies?.map((project_tech) => (
-              <TechIcon
-                tech={TECHNOLOGIES_ICONS.find(
-                  (technology) => technology.name === project_tech
-                )}
+              <LabeledIcon
+                name={
+                  TECHNOLOGIES_ICONS.find(
+                    (technology) => technology.name === project_tech
+                  )?.name
+                }
+                icon={
+                  TECHNOLOGIES_ICONS.find(
+                    (technology) => technology.name === project_tech
+                  )?.icon
+                }
               />
             ))}
           </div>
