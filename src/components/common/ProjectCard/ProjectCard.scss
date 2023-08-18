@@ -37,3 +37,10 @@
   font-family: $main-font;
   font-style: italic;
 }
+
+@media (max-width: $mobile-styles-applied) {
+  .projectCell {
+    min-width: 100vw;
+    margin: 30px 0px 0px 0px;
+  }
+}

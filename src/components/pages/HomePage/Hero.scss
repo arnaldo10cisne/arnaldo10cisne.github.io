@@ -22,6 +22,7 @@
   .preTitle {
     text-align: start;
     font-size: 30px;
+    font-size: 2vw;
   }
 
   .title {
@@ -34,14 +35,15 @@
   .postTitle {
     text-align: start;
     font-size: 30px;
+    font-size: 2vw;
   }
 }
 
 .presentationTextContainer {
   font-family: $content-font;
-  font-size: 25px;
+  font-size: 2vw;
   margin-top: 35px;
-  padding-right: 500px;
+  padding-right: 40%;
 
   .presentationText {
     text-align: start;
@@ -58,5 +60,28 @@
     font-size: 30px;
     font-weight: 600;
     padding: 5px 10px;
+  }
+}
+
+@media (max-width: $mobile-styles-applied) {
+  .hero {
+    padding-left: 20px;
+  }
+  .titleContainer {
+    .preTitle {
+      font-size: 4vw;
+    }
+    .title {
+      text-align: start;
+      font-size: 9.5vw;
+      margin: -10px 0px;
+    }
+    .postTitle {
+      font-size: 4vw;
+    }
+  }
+  .presentationTextContainer {
+    font-size: 3.5vw;
+    padding-right: 20%;
   }
 }
