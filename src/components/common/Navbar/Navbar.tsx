@@ -1,41 +1,15 @@
 import React from 'react';
 import './Navbar.scss';
 import NavbarButton from './NavbarButton';
-
-const navbarItems = [
-  {
-    label: 'Home',
-    to: '/',
-  },
-  {
-    label: 'Portfolio',
-    to: '/portfolio',
-  },
-  {
-    label: 'About',
-    to: '/about',
-  },
-  // {
-  //   label: 'Contact',
-  //   to: '/contact',
-  // },
-];
+import { navbarItems } from './NavbarItems';
+import NavbarLogo from './NavbarLogo';
 
 const Navbar = () => {
   const pathname = window.location.pathname;
 
   return (
     <div className="navbar_container">
-      <div className="logo">
-        <a href="/">
-          <img
-            className="navbar_logo"
-            src="https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/logo_small(3).png"
-            alt="logo"
-            width={'120px'}
-          />
-        </a>
-      </div>
+      <NavbarLogo />
       <div className="menu">
         {navbarItems.map((item) => (
           <NavbarButton

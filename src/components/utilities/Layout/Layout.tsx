@@ -3,6 +3,7 @@ import Navbar from '../../common/Navbar/Navbar';
 import Footer from '../../common/Footer/Footer';
 import Breadcrumbs from '../../common/Breadcrumbs/Breadcrumbs';
 import './Layout.scss';
+import NavbarMobile from '../../common/Navbar/NavbarMobile';
 
 interface LayoutProps {
   pageToRender: ReactElement;
@@ -56,7 +57,12 @@ const Layout = ({ pageToRender }: LayoutProps) => {
 
   return (
     <div className={`body ${isHomePage && 'homePageBackgroundImage'}`}>
-      <Navbar />
+      <div className="navbarContainer">
+        <Navbar />
+      </div>
+      <div className="navbarMobileContainer">
+        <NavbarMobile />
+      </div>
       <div className="pageContainer">
         {isHomePage && <div className="homepageCurtain" />}
         {!isHomePage && <Breadcrumbs pageList={breadcrumbsGenerator()} />}

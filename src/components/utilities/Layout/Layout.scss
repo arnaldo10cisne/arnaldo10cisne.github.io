@@ -9,6 +9,14 @@
   position: relative;
 }
 
+.navbarContainer {
+  display: block;
+}
+
+.navbarMobileContainer {
+  display: none;
+}
+
 .homePageBackgroundImage {
   // background-image: url('https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/medellin-large.jpg') !important;
   background-position: 60% 70%;
@@ -38,4 +46,14 @@
   position: absolute;
   width: 100vw;
   bottom: -61px;
+}
+
+@media (max-width: $mobile-styles-applied) {
+  .navbarContainer {
+    display: none;
+  }
+
+  .navbarMobileContainer {
+    display: block;
+  }
 }

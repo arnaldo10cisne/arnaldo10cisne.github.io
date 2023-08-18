@@ -1,0 +1,57 @@
+// Global Styles
+@import '../../../utilities/globalStyles';
+
+// Utilities
+@import '../../../utilities/variables';
+
+.navbar_container {
+  position: fixed;
+  margin-top: -61px;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  background-color: $blue-gray;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.triagleIcon {
+  filter: invert(1);
+  width: 25px;
+  height: 15px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.triagleIconReversed {
+  transform: rotate(180deg);
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.menuButtonContainer {
+  display: flex;
+  align-items: center;
+}
+
+.menuButton {
+  outline: none;
+  border: none;
+  border-left: 5px solid $main-yellow;
+  padding-left: 20px;
+  padding-right: 10px;
+  height: $navbar-height;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $white;
+  font-family: $main-font;
+  font-size: 16px;
+  background-color: transparent;
+}
