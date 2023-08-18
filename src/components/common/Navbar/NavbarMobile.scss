@@ -4,7 +4,7 @@
 // Utilities
 @import '../../../utilities/variables';
 
-.navbar_container {
+.mobile_navbar_container {
   position: fixed;
   margin-top: -61px;
   width: 100vw;
@@ -16,7 +16,7 @@
   background-color: $blue-gray;
 }
 
-.menu {
+.mobileMenu {
   display: flex;
   flex-direction: column;
 }

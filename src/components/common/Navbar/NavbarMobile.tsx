@@ -16,7 +16,7 @@ const NavbarMobile = () => {
 
   return (
     <div
-      className="navbar_container"
+      className="mobile_navbar_container"
       style={{
         height: `${
           menuDeployed
@@ -26,7 +26,7 @@ const NavbarMobile = () => {
       }}
     >
       <NavbarLogo />
-      <div className="menu">
+      <div className="mobileMenu">
         <div className="menuButtonContainer">
           <button
             className="menuButton"
