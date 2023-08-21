@@ -57,3 +57,9 @@
   border: $blue-gray-darker solid 2px;
   pointer-events: none;
 }
+
+@media (max-width: $mobile-styles-applied) {
+  .breadcrumbsContainer {
+    padding: 20px 0;
+  }
+}
