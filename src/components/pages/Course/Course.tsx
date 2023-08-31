@@ -49,7 +49,7 @@ const Course = () => {
             <img src={`${courseToDisplay?.icon}`} alt="Course badge" />
           </a>
           <p className="course_clickPicture">
-            Click on the picture to see the certificate
+            Click on the badge to open the certificate
           </p>
         </div>
       </div>
