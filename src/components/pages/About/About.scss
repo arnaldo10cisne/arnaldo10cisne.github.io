@@ -106,3 +106,40 @@
   font-size: 30px !important;
   font-weight: 600 !important;
 }
+
+@media (max-width: $mobile-styles-applied) {
+  .aboutPageContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutPageText {
+    font-size: 16px;
+    width: 80%;
+    text-align: justify;
+  }
+
+  .title_aboutEducation {
+    margin-top: 10px !important;
+  }
+
+  .seeAllCertificates_btn {
+    font-size: 16px !important;
+  }
+
+  .certificateList {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .certificateItem {
+    min-width: 100vw;
+    max-width: 100vw;
+  }
+
+  .courseName {
+    font-size: 16px;
+    width: 80%;
+  }
+}

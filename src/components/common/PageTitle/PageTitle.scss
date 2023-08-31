@@ -3,3 +3,10 @@
 
 // Utilities
 @import '../../../utilities/variables';
+
+@media (max-width: $mobile-styles-applied) {
+  .global__page_title {
+    font-size: 16vw !important;
+    text-align: center !important;
+  }
+}

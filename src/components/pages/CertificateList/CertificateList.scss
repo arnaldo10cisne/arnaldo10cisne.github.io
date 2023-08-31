@@ -56,3 +56,25 @@
   margin-left: 10px;
   text-align: start;
 }
+
+@media (max-width: $mobile-styles-applied) {
+  .certificate_cell {
+    width: 90%;
+  }
+  .certificate_section_tech {
+    display: none;
+  }
+
+  .certificate_section_company {
+    display: none;
+  }
+  .course_icon {
+    margin: 0px 10px;
+  }
+  .academy_icon {
+    display: none;
+  }
+  .course_tech_icon {
+    display: none;
+  }
+}

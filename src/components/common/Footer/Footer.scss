@@ -55,3 +55,21 @@
 .social_media__link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: $mobile-styles-applied) {
+  .linkSeparator {
+    font-size: 10px;
+  }
+
+  .copyright span {
+    font-size: 12px;
+  }
+
+  .copyright span:first-child {
+    font-size: 15px;
+  }
+
+  .social_media__link {
+    font-size: 12px;
+  }
+}
