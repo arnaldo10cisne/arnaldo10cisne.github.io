@@ -27,3 +27,12 @@
   font-family: $content-font;
   font-weight: 500;
 }
+
+@media (max-width: $mobile-styles-applied) {
+  .general_info_grid {
+    margin-top: 80px;
+  }
+  .table_row {
+    width: 90vw;
+  }
+}

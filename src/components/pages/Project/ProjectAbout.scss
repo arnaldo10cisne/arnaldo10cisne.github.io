@@ -26,3 +26,14 @@
     }
   }
 }
+
+@media (max-width: $mobile-styles-applied) {
+  .about_container {
+    flex-direction: column;
+    margin: 40px;
+  }
+  .project_description {
+    width: 90vw;
+    font-size: 16px;
+  }
+}

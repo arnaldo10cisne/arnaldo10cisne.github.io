@@ -24,6 +24,11 @@ const NavbarMobile = () => {
             : `${NAVBAR_HEIGHT}px`
         }`,
       }}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget) && menuDeployed) {
+          setMenuDeployed(false);
+        }
+      }}
     >
       <NavbarLogo />
       <div className="mobileMenu">
