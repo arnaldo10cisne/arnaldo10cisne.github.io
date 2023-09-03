@@ -57,6 +57,10 @@
 }
 
 @media (max-width: $mobile-styles-applied) {
+  .footer {
+    flex-direction: column;
+  }
+
   .linkSeparator {
     font-size: 10px;
   }

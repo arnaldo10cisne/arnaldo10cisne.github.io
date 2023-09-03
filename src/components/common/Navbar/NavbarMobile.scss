@@ -13,7 +13,8 @@
   justify-content: start;
   align-items: center;
 
-  background-color: $blue-gray;
+  background-color: $blue-gray-darker;
+  border-bottom: 2px solid $blue-gray;
 }
 
 .mobileMenu {

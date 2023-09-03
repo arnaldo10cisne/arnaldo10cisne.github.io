@@ -36,3 +36,12 @@
     }
   }
 }
+
+@media (max-width: $mobile-styles-applied) {
+  .screen_list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    width: 100% !important;
+  }
+}
