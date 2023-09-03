@@ -68,20 +68,28 @@
     padding-left: 20px;
   }
   .titleContainer {
+    margin-top: -100px;
     .preTitle {
-      font-size: 4vw;
+      font-size: 5vw;
     }
     .title {
       text-align: start;
-      font-size: 9.5vw;
-      margin: -10px 0px;
+      font-size: 14vw;
+      margin: 10px 0px;
+      margin-left: 20px;
+      line-height: 13vw;
     }
     .postTitle {
       font-size: 4vw;
+      margin-left: 20px;
     }
   }
   .presentationTextContainer {
-    font-size: 3.5vw;
-    padding-right: 20%;
+    font-size: 4.5vw;
+    padding-right: 40px;
+    margin-left: 20px;
+    .presentationText {
+      text-align: justify;
+    }
   }
 }
