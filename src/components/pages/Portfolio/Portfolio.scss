@@ -10,3 +10,12 @@
   justify-content: space-evenly;
   padding-bottom: 40px;
 }
+
+@media (max-width: $mobile-styles-applied) {
+  .projectList {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    width: 100% !important;
+  }
+}
