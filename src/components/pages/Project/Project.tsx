@@ -16,9 +16,16 @@ const Project = () => {
   const { id } = useParams();
 
   const getProject = async () =>
-    await fetch(FIREBASE_RTDB_URL + `projects/${Number(id) - 1}.json`)
+    await fetch(
+      FIREBASE_RTDB_URL +
+        'projects.json?' +
+        new URLSearchParams({
+          orderBy: '"id"',
+          equalTo: `${id}`,
+        })
+    )
       .then((response) => response.json())
-      .then((data) => data);
+      .then((data) => Object.values(data)[0] as ProjectItem);
 
   const { data: projectToDisplay } = useQuery<ProjectItem>(
     ['Project', 'project_list'],

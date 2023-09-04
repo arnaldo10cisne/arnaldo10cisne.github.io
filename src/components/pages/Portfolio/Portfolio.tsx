@@ -8,17 +8,20 @@ import ProjectCard from '../../common/ProjectCard/ProjectCard';
 
 const Portfolio = () => {
   const getProjects = async () =>
-    await fetch(FIREBASE_RTDB_URL + 'projects.json')
+    await fetch(
+      FIREBASE_RTDB_URL +
+        'projects.json?' +
+        new URLSearchParams({
+          orderBy: '"show"',
+          equalTo: 'true',
+        })
+    )
       .then((response) => response.json())
-      .then((data) => data);
+      .then((data) => Object.values(data) as ProjectItem[]);
 
   const { data: projects } = useQuery<ProjectItem[]>(
     ['Portfolio', 'project_list'],
     getProjects
-  );
-
-  const projectsToShow = projects?.filter(
-    (project: ProjectItem) => project.show
   );
 
   return (
@@ -27,7 +30,7 @@ const Portfolio = () => {
       <h2 className="global__section_divider">Projects</h2>
       <div className="projectList global__page_container">
         {projects ? (
-          projectsToShow?.map((project: ProjectItem) => (
+          projects.map((project: ProjectItem) => (
             <ProjectCard project={project} />
           ))
         ) : (

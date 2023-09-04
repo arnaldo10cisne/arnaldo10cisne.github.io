@@ -7,9 +7,16 @@ import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 
 const About = () => {
   const getCourses = async () =>
-    await fetch(FIREBASE_RTDB_URL + 'courses.json')
+    await fetch(
+      FIREBASE_RTDB_URL +
+        'courses.json?' +
+        new URLSearchParams({
+          orderBy: '"show"',
+          equalTo: 'true',
+        })
+    )
       .then((response) => response.json())
-      .then((data) => data);
+      .then((data) => Object.values(data) as CertificateItem[]);
 
   const { data: courses } = useQuery<CertificateItem[]>(
     ['About', 'courses_list'],

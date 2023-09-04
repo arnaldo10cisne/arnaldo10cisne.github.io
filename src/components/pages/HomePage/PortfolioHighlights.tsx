@@ -7,9 +7,16 @@ import ProjectCard from '../../common/ProjectCard/ProjectCard';
 
 const PortfolioHighlights = () => {
   const getProjects = async () =>
-    await fetch(FIREBASE_RTDB_URL + 'projects.json')
+    await fetch(
+      FIREBASE_RTDB_URL +
+        'projects.json?' +
+        new URLSearchParams({
+          orderBy: '"show"',
+          equalTo: 'true',
+        })
+    )
       .then((response) => response.json())
-      .then((data) => data);
+      .then((data) => Object.values(data) as ProjectItem[]);
 
   const { data: projects } = useQuery<ProjectItem[]>(
     ['PortfolioHighlights', 'project_list'],
