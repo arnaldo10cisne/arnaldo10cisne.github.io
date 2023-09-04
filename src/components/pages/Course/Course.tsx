@@ -14,16 +14,9 @@ const Course = () => {
   const { id } = useParams();
 
   const getCourse = async () =>
-    await fetch(
-      FIREBASE_RTDB_URL +
-        'courses.json?' +
-        new URLSearchParams({
-          orderBy: '"id"',
-          equalTo: `${id}`,
-        })
-    )
+    await fetch(FIREBASE_RTDB_URL + `courses/${Number(id) - 1}.json`)
       .then((response) => response.json())
-      .then((data) => Object.values(data)[0] as CertificateItem);
+      .then((data) => data);
 
   const { data: courseToDisplay } = useQuery<CertificateItem>(
     ['Course', 'project_list'],
