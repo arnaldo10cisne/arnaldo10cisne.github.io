@@ -28,7 +28,7 @@ const Portfolio = () => {
   let codeProjects: ProjectItem[] = [];
   let cloudProjects: ProjectItem[] = [];
 
-  const { data: projects } = useQuery<ProjectItem[]>(
+  const { data: projects, isLoading } = useQuery<ProjectItem[]>(
     ['Portfolio', 'project_list'],
     getProjects
   );
@@ -45,38 +45,30 @@ const Portfolio = () => {
     );
   }
 
+  if (isLoading) {
+    return <LoadingSpinner />;
+  }
+
   return (
     <>
       <PageTitle title="Portfolio" />
       <h2 className="global__section_divider">Cloud Projects</h2>
       <div className="projectList global__page_container">
-        {cloudProjects ? (
-          cloudProjects.map((project: ProjectItem) => (
-            <ProjectCard project={project} />
-          ))
-        ) : (
-          <LoadingSpinner />
-        )}
+        {cloudProjects.map((project: ProjectItem) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
       <h2 className="global__section_divider">Web Development Projects</h2>
       <div className="projectList global__page_container">
-        {webProjects ? (
-          webProjects.map((project: ProjectItem) => (
-            <ProjectCard project={project} />
-          ))
-        ) : (
-          <LoadingSpinner />
-        )}
+        {webProjects.map((project: ProjectItem) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
       <h2 className="global__section_divider">Coding Projects</h2>
       <div className="projectList global__page_container">
-        {codeProjects ? (
-          codeProjects.map((project: ProjectItem) => (
-            <ProjectCard project={project} />
-          ))
-        ) : (
-          <LoadingSpinner />
-        )}
+        {codeProjects.map((project: ProjectItem) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
     </>
   );
