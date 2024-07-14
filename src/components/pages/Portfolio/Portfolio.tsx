@@ -54,7 +54,7 @@ const Portfolio = () => {
             <ProjectCard key={project.id} project={project} />
           ))
         ) : (
-          <p>No hay proyectos disponibles en esta categoría.</p>
+          <p>There are no projects available in this category.</p>
         )}
       </div>
     </>
