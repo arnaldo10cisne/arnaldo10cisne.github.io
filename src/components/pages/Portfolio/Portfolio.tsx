@@ -24,26 +24,41 @@ const getProjects = async () => {
 };
 
 const Portfolio = () => {
-  let webProjects: ProjectItem[] = [];
-  let codeProjects: ProjectItem[] = [];
-  let cloudProjects: ProjectItem[] = [];
-
   const { data: projects, isLoading } = useQuery<ProjectItem[]>(
     ['Portfolio', 'project_list'],
     getProjects
   );
 
+  const categorizedProjects = {
+    [PROJECT_TYPES.WEB]: [] as ProjectItem[],
+    [PROJECT_TYPES.CODE]: [] as ProjectItem[],
+    [PROJECT_TYPES.CLOUD]: [] as ProjectItem[],
+  };
+
   if (projects) {
-    webProjects = projects?.filter(
-      (project) => project.project_type === PROJECT_TYPES.WEB
-    );
-    codeProjects = projects?.filter(
-      (project) => project.project_type === PROJECT_TYPES.CODE
-    );
-    cloudProjects = projects?.filter(
-      (project) => project.project_type === PROJECT_TYPES.CLOUD
-    );
+    projects.forEach((project) => {
+      if (project.project_type) {
+        categorizedProjects[
+          project.project_type as keyof typeof categorizedProjects
+        ].push(project);
+      }
+    });
   }
+
+  const renderProjects = (projects: ProjectItem[], title: string) => (
+    <>
+      <h2 className="global__section_divider">{title}</h2>
+      <div className="projectList global__page_container">
+        {projects.length > 0 ? (
+          projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))
+        ) : (
+          <p>No hay proyectos disponibles en esta categoría.</p>
+        )}
+      </div>
+    </>
+  );
 
   if (isLoading) {
     return <LoadingSpinner />;
@@ -52,24 +67,18 @@ const Portfolio = () => {
   return (
     <>
       <PageTitle title="Portfolio" />
-      <h2 className="global__section_divider">Cloud Projects</h2>
-      <div className="projectList global__page_container">
-        {cloudProjects.map((project: ProjectItem) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
-      <h2 className="global__section_divider">Web Development Projects</h2>
-      <div className="projectList global__page_container">
-        {webProjects.map((project: ProjectItem) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
-      <h2 className="global__section_divider">Coding Projects</h2>
-      <div className="projectList global__page_container">
-        {codeProjects.map((project: ProjectItem) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+      {renderProjects(
+        categorizedProjects[PROJECT_TYPES.CLOUD],
+        'Cloud Projects'
+      )}
+      {renderProjects(
+        categorizedProjects[PROJECT_TYPES.WEB],
+        'Web Development Projects'
+      )}
+      {renderProjects(
+        categorizedProjects[PROJECT_TYPES.CODE],
+        'Coding Projects'
+      )}
     </>
   );
 };
