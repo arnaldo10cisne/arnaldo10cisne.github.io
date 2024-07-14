@@ -49,6 +49,12 @@ export const COMPANIES = {
   PLATZI: 'Platzi',
 };
 
+export const PROJECT_TYPES = {
+  WEB: 'web',
+  CODE: 'code',
+  CLOUD: 'cloud',
+};
+
 export const COMPANY_ICONS = [
   {
     name: COMPANIES.PLATZI,
@@ -141,6 +147,7 @@ export interface ProjectItem {
   github_link?: string;
   highlight?: boolean;
   show?: boolean;
+  project_type?: string;
 }
 
 export interface CertificateItem {
