@@ -37,6 +37,9 @@ export const TECHNOLOGIES = {
   NPM: 'NPM',
   NODEJS: 'Node JS',
   LINUX: 'Linux',
+  AWS: 'AWS',
+  AWS_EC2: 'Amazon EC2',
+  AWS_S3: 'Amazon S3',
 };
 
 export const LANGUAGES = {
