@@ -10,6 +10,7 @@ import CertificateList from './components/pages/CertificateList/CertificateList'
 import Course from './components/pages/Course/Course';
 import Contact from './components/pages/Contact/Contact';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { dynamoDB } from './awsConfig';
 
 // Create a client
 const queryClient = new QueryClient();
@@ -27,6 +28,8 @@ const renderContent = (): ReactElement => {
     </>
   );
 };
+
+console.log(dynamoDB);
 
 function App() {
   return (

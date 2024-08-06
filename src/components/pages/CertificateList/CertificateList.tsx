@@ -5,19 +5,11 @@ import CertificateCell from './CertificateCell';
 import { CertificateItem, FIREBASE_RTDB_URL } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { getAllCertificatesFromDynamoDB } from '../../../utilities/awsUtils';
 
 const CertificateList = () => {
   const getCourses = async () =>
-    await fetch(
-      FIREBASE_RTDB_URL +
-        'courses.json?' +
-        new URLSearchParams({
-          orderBy: '"show"',
-          equalTo: 'true',
-        })
-    )
-      .then((response) => response.json())
-      .then((data) => Object.values(data) as CertificateItem[]);
+    await getAllCertificatesFromDynamoDB().then((data) => data);
 
   const { data: courses } = useQuery<CertificateItem[]>(
     ['CertificateList', 'courses_list'],

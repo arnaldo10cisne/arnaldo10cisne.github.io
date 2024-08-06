@@ -12,6 +12,13 @@ import github_icon from '../assets/icons/github.png';
 import npm_icon from '../assets/icons/npm.png';
 import nodejs_icon from '../assets/icons/nodejs.png';
 import linux_icon from '../assets/icons/linux.png';
+import aws_icon from '../assets/icons/aws.png';
+
+export const CERTIFICATES_DYNAMODB_TABLE_NAME =
+  process.env.REACT_APP_DYNAMODB_CERTIFICATES_TABLE;
+
+export const PORTFOLIO_DYNAMODB_TABLE_NAME =
+  process.env.REACT_APP_DYNAMODB_PORTFOLIO_TABLE;
 
 export const FIREBASE_RTDB_URL =
   'https://personal-website-de56c-default-rtdb.firebaseio.com/';
@@ -49,6 +56,7 @@ export const LANGUAGES = {
 };
 
 export const COMPANIES = {
+  AWS: 'Amazon Web Services',
   PLATZI: 'Platzi',
 };
 
@@ -62,7 +70,12 @@ export const COMPANY_ICONS = [
   {
     name: COMPANIES.PLATZI,
     icon_link:
-      'https://res.cloudinary.com/arnaldo10cisne/image/upload/v1633061210/platzi-logo-symbol_gklcux.png',
+      'https://s3.amazonaws.com/arnaldocisneros.com/images/platzi-logo-symbol_gklcux.png',
+  },
+  {
+    name: COMPANIES.AWS,
+    icon_link:
+      'https://s3.amazonaws.com/arnaldocisneros.com/images/Amazon-Web-Services-AWS-Logo.png',
   },
 ];
 
@@ -122,6 +135,10 @@ export const TECHNOLOGIES_ICONS = [
   {
     name: TECHNOLOGIES.LINUX,
     icon: linux_icon,
+  },
+  {
+    name: TECHNOLOGIES.AWS,
+    icon: aws_icon,
   },
 ];
 

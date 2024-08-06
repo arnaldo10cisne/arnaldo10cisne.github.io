@@ -4,19 +4,11 @@ import { FIREBASE_RTDB_URL, ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 import ProjectCard from '../../common/ProjectCard/ProjectCard';
+import { getAllProjectsFromDynamoDB } from '../../../utilities/awsUtils';
 
 const PortfolioHighlights = () => {
   const getProjects = async () =>
-    await fetch(
-      FIREBASE_RTDB_URL +
-        'projects.json?' +
-        new URLSearchParams({
-          orderBy: '"show"',
-          equalTo: 'true',
-        })
-    )
-      .then((response) => response.json())
-      .then((data) => Object.values(data) as ProjectItem[]);
+    await getAllProjectsFromDynamoDB().then((data) => data);
 
   const { data: projects } = useQuery<ProjectItem[]>(
     ['PortfolioHighlights', 'project_list'],

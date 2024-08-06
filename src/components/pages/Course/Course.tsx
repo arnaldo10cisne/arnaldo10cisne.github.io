@@ -9,16 +9,15 @@ import {
 } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { getCertificateItemFromDynamoDB } from '../../../utilities/awsUtils';
 
 const Course = () => {
   const { id } = useParams();
 
   const getCourse = async () =>
-    await fetch(FIREBASE_RTDB_URL + `courses/${Number(id) - 1}.json`)
-      .then((response) => response.json())
-      .then((data) => data);
+    await getCertificateItemFromDynamoDB(Number(id)).then((item) => item);
 
-  const { data: courseToDisplay } = useQuery<CertificateItem>(
+  const { data: courseToDisplay } = useQuery<CertificateItem | null>(
     ['Course', 'project_list'],
     getCourse
   );
