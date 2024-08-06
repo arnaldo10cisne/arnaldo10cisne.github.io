@@ -20,9 +20,6 @@ export const CERTIFICATES_DYNAMODB_TABLE_NAME =
 export const PORTFOLIO_DYNAMODB_TABLE_NAME =
   process.env.REACT_APP_DYNAMODB_PORTFOLIO_TABLE;
 
-export const FIREBASE_RTDB_URL =
-  'https://personal-website-de56c-default-rtdb.firebaseio.com/';
-
 export const EMAIL_REGEX =
   /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 

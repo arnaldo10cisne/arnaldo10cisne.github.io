@@ -1,6 +1,6 @@
 import React from 'react';
 import './PortfolioHighlights.scss';
-import { FIREBASE_RTDB_URL, ProjectItem } from '../../../utilities/models';
+import { ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 import ProjectCard from '../../common/ProjectCard/ProjectCard';

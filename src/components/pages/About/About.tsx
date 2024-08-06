@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.scss';
 import PageTitle from '../../common/PageTitle/PageTitle';
-import { CertificateItem, FIREBASE_RTDB_URL } from '../../../utilities/models';
+import { CertificateItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 import { getAllCertificatesFromDynamoDB } from '../../../utilities/awsUtils';

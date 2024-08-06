@@ -2,11 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import CourseInfoTable from './CourseInfoTable';
 import './Course.scss';
-import {
-  CertificateItem,
-  DEFAULT_TITLE,
-  FIREBASE_RTDB_URL,
-} from '../../../utilities/models';
+import { CertificateItem, DEFAULT_TITLE } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 import { getCertificateItemFromDynamoDB } from '../../../utilities/awsUtils';

@@ -2,11 +2,7 @@ import React from 'react';
 import './Portfolio.scss';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import { useQuery } from 'react-query';
-import {
-  FIREBASE_RTDB_URL,
-  ProjectItem,
-  PROJECT_TYPES,
-} from '../../../utilities/models';
+import { ProjectItem, PROJECT_TYPES } from '../../../utilities/models';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 import ProjectCard from '../../common/ProjectCard/ProjectCard';
 import { getAllProjectsFromDynamoDB } from '../../../utilities/awsUtils';
