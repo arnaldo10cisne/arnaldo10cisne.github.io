@@ -1,22 +1,14 @@
 import React from 'react';
 import './About.scss';
 import PageTitle from '../../common/PageTitle/PageTitle';
-import { CertificateItem, FIREBASE_RTDB_URL } from '../../../utilities/models';
+import { CertificateItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { getAllCertificatesFromDynamoDB } from '../../../utilities/awsUtils';
 
 const About = () => {
   const getCourses = async () =>
-    await fetch(
-      FIREBASE_RTDB_URL +
-        'courses.json?' +
-        new URLSearchParams({
-          orderBy: '"show"',
-          equalTo: 'true',
-        })
-    )
-      .then((response) => response.json())
-      .then((data) => Object.values(data) as CertificateItem[]);
+    await getAllCertificatesFromDynamoDB().then((data) => data);
 
   const { data: courses } = useQuery<CertificateItem[]>(
     ['About', 'courses_list'],

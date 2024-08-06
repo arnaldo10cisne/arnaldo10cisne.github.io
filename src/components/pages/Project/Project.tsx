@@ -4,23 +4,18 @@ import ProjectScreens from './ProjectScreens';
 import ProjectLinks from './ProjectLinks';
 import ProjectAbout from './ProjectAbout';
 import './Project.scss';
-import {
-  DEFAULT_TITLE,
-  FIREBASE_RTDB_URL,
-  ProjectItem,
-} from '../../../utilities/models';
+import { DEFAULT_TITLE, ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { getPortfolioItemFromDynamoDB } from '../../../utilities/awsUtils';
 
 const Project = () => {
   const { id } = useParams();
 
   const getProject = async () =>
-    await fetch(FIREBASE_RTDB_URL + `projects/${Number(id) - 1}.json`)
-      .then((response) => response.json())
-      .then((data) => data);
+    await getPortfolioItemFromDynamoDB(Number(id)).then((item) => item);
 
-  const { data: projectToDisplay } = useQuery<ProjectItem>(
+  const { data: projectToDisplay } = useQuery<ProjectItem | null>(
     ['Project', 'project_list'],
     getProject
   );

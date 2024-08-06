@@ -2,23 +2,18 @@ import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import CourseInfoTable from './CourseInfoTable';
 import './Course.scss';
-import {
-  CertificateItem,
-  DEFAULT_TITLE,
-  FIREBASE_RTDB_URL,
-} from '../../../utilities/models';
+import { CertificateItem, DEFAULT_TITLE } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { getCertificateItemFromDynamoDB } from '../../../utilities/awsUtils';
 
 const Course = () => {
   const { id } = useParams();
 
   const getCourse = async () =>
-    await fetch(FIREBASE_RTDB_URL + `courses/${Number(id) - 1}.json`)
-      .then((response) => response.json())
-      .then((data) => data);
+    await getCertificateItemFromDynamoDB(Number(id)).then((item) => item);
 
-  const { data: courseToDisplay } = useQuery<CertificateItem>(
+  const { data: courseToDisplay } = useQuery<CertificateItem | null>(
     ['Course', 'project_list'],
     getCourse
   );
