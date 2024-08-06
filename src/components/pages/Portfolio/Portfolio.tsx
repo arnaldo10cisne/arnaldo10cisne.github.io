@@ -7,13 +7,10 @@ import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 import ProjectCard from '../../common/ProjectCard/ProjectCard';
 import { getAllProjectsFromDynamoDB } from '../../../utilities/awsUtils';
 
-const getProjects = async () =>
-  await getAllProjectsFromDynamoDB().then((data) => data);
-
 const Portfolio = () => {
   const { data: projects, isLoading } = useQuery<ProjectItem[]>(
     ['Portfolio', 'project_list'],
-    getProjects
+    getAllProjectsFromDynamoDB
   );
 
   const categorizedProjects = {

@@ -8,12 +8,9 @@ import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 import { getAllCertificatesFromDynamoDB } from '../../../utilities/awsUtils';
 
 const CertificateList = () => {
-  const getCourses = async () =>
-    await getAllCertificatesFromDynamoDB().then((data) => data);
-
   const { data: courses } = useQuery<CertificateItem[]>(
     ['CertificateList', 'courses_list'],
-    getCourses
+    getAllCertificatesFromDynamoDB
   );
 
   return (

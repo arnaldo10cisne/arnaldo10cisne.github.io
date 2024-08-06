@@ -12,12 +12,9 @@ import { getPortfolioItemFromDynamoDB } from '../../../utilities/awsUtils';
 const Project = () => {
   const { id } = useParams();
 
-  const getProject = async () =>
-    await getPortfolioItemFromDynamoDB(Number(id)).then((item) => item);
-
   const { data: projectToDisplay } = useQuery<ProjectItem | null>(
     ['Project', 'project_list'],
-    getProject
+    () => getPortfolioItemFromDynamoDB(Number(id))
   );
 
   useEffect(() => {

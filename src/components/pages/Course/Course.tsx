@@ -10,12 +10,9 @@ import { getCertificateItemFromDynamoDB } from '../../../utilities/awsUtils';
 const Course = () => {
   const { id } = useParams();
 
-  const getCourse = async () =>
-    await getCertificateItemFromDynamoDB(Number(id)).then((item) => item);
-
   const { data: courseToDisplay } = useQuery<CertificateItem | null>(
     ['Course', 'project_list'],
-    getCourse
+    () => getCertificateItemFromDynamoDB(Number(id))
   );
 
   useEffect(() => {
