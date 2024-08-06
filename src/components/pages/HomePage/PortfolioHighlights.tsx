@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import './PortfolioHighlights.scss';
 import { ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
@@ -7,17 +7,14 @@ import ProjectCard from '../../common/ProjectCard/ProjectCard';
 import { getAllProjectsFromDynamoDB } from '../../../utilities/awsUtils';
 
 const PortfolioHighlights = () => {
-  const getProjects = async () =>
-    await getAllProjectsFromDynamoDB().then((data) => data);
-
   const { data: projects } = useQuery<ProjectItem[]>(
     ['PortfolioHighlights', 'project_list'],
-    getProjects
+    getAllProjectsFromDynamoDB
   );
 
-  const projectsToHighlight = projects?.filter(
-    (project: ProjectItem) => project.highlight
-  );
+  const projectsToHighlight = useMemo(() => {
+    return projects?.filter((project: ProjectItem) => project.highlight);
+  }, [projects]);
 
   return (
     <div className="portfolioHighlightSection">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import './About.scss';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import { CertificateItem } from '../../../utilities/models';
@@ -7,17 +7,14 @@ import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 import { getAllCertificatesFromDynamoDB } from '../../../utilities/awsUtils';
 
 const About = () => {
-  const getCourses = async () =>
-    await getAllCertificatesFromDynamoDB().then((data) => data);
-
   const { data: courses } = useQuery<CertificateItem[]>(
     ['About', 'courses_list'],
-    getCourses
+    getAllCertificatesFromDynamoDB
   );
 
-  const coursesToHighlight = courses?.filter(
-    (project: CertificateItem) => project.highlight
-  );
+  const coursesToHighlight = useMemo(() => {
+    return courses?.filter((course: CertificateItem) => course.highlight);
+  }, [courses]);
 
   return (
     <>
