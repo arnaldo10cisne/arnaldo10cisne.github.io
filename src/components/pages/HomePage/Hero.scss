@@ -93,3 +93,34 @@
     }
   }
 }
+
+@media (min-width: $screen-4k-styles-applied) {
+  .hero {
+    // padding-left: 20px;
+  }
+  .titleContainer {
+    // margin-top: -100px;
+    .preTitle {
+      font-size: 1.5vw;
+    }
+    .title {
+      // text-align: start;
+      font-size: 5vw;
+      // margin: 10px 0px;
+      // margin-left: 20px;
+      // line-height: 13vw;
+    }
+    .postTitle {
+      font-size: 1.5vw;
+      // margin-left: 20px;
+    }
+  }
+  .presentationTextContainer {
+    font-size: 1vw;
+    // padding-right: 40px;
+    // margin-left: 20px;
+    .presentationText {
+      // text-align: justify;
+    }
+  }
+}
