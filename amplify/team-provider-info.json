@@ -23,6 +23,24 @@
       "StackName": "amplify-personalwebsite-staging-6e604",
       "StackId": "arn:aws:cloudformation:us-east-1:706169966278:stack/amplify-personalwebsite-staging-6e604/bbe1db00-6ae9-11ef-9760-0affcdc00cc7",
       "AmplifyAppId": "d33f0fenmfo3dk"
+    },
+    "categories": {
+      "storage": {
+        "arnaldocisneroscomcertificationstable": {
+          "tableName": "arnaldocisneros.com_certifications_table",
+          "region": "us-east-1",
+          "arn": "arn:aws:dynamodb:us-east-1:706169966278:table/arnaldocisneros.com_certifications_table",
+          "partitionKeyName": "id",
+          "partitionKeyType": "N"
+        },
+        "arnaldocisneroscomportfoliotable": {
+          "tableName": "arnaldocisneros.com_portfolio_table",
+          "region": "us-east-1",
+          "arn": "arn:aws:dynamodb:us-east-1:706169966278:table/arnaldocisneros.com_portfolio_table",
+          "partitionKeyName": "id",
+          "partitionKeyType": "N"
+        }
+      }
     }
   },
   "dev": {
