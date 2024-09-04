@@ -40,6 +40,13 @@
           "partitionKeyName": "id",
           "partitionKeyType": "N"
         }
+      },
+      "function": {
+        "certificateslambda": {},
+        "portfoliolambda": {}
+      },
+      "auth": {
+        "personalwebsite": {}
       }
     }
   },
