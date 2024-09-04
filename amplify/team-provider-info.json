@@ -22,7 +22,8 @@
       "UnauthRoleName": "amplify-personalwebsite-staging-6e604-unauthRole",
       "StackName": "amplify-personalwebsite-staging-6e604",
       "StackId": "arn:aws:cloudformation:us-east-1:706169966278:stack/amplify-personalwebsite-staging-6e604/bbe1db00-6ae9-11ef-9760-0affcdc00cc7",
-      "AmplifyAppId": "d33f0fenmfo3dk"
+      "AmplifyAppId": "d33f0fenmfo3dk",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-personalwebsite-staging-6e604-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "storage": {
@@ -40,13 +41,6 @@
           "partitionKeyName": "id",
           "partitionKeyType": "N"
         }
-      },
-      "function": {
-        "certificateslambda": {},
-        "portfoliolambda": {}
-      },
-      "auth": {
-        "personalwebsite": {}
       }
     }
   },

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.scss';
+import TestComponent from '../../utilities/TestComponent/TestComponent';
 
 const Hero = () => {
   return (
@@ -29,6 +30,8 @@ const Hero = () => {
           Lets Work Together!
         </a>
       </div> */}
+
+      <TestComponent/>
     </div>
   );
 };

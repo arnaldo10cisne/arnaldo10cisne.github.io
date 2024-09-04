@@ -10,6 +10,10 @@ import CertificateList from './components/pages/CertificateList/CertificateList'
 import Course from './components/pages/Course/Course';
 import Contact from './components/pages/Contact/Contact';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { Amplify } from 'aws-amplify';
+import amplifyconfig from './amplifyconfiguration.json';
+
+Amplify.configure(amplifyconfig);
 
 // Create a client
 const queryClient = new QueryClient();
