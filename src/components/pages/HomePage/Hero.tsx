@@ -31,7 +31,7 @@ const Hero = () => {
         </a>
       </div> */}
 
-      <TestComponent/>
+      {/* <TestComponent /> */}
     </div>
   );
 };
