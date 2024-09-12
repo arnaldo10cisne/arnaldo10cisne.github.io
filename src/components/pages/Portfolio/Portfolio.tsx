@@ -8,9 +8,12 @@ import ProjectCard from '../../common/ProjectCard/ProjectCard';
 import { getAllProjectsFromDynamoDB } from '../../../utilities/awsUtils';
 
 const Portfolio = () => {
-  const { data: projects, isLoading } = useQuery<ProjectItem[]>(
-    ['Portfolio', 'project_list'],
-    getAllProjectsFromDynamoDB
+  const {
+    data: projects,
+    isLoading,
+    error,
+  } = useQuery<ProjectItem[]>(['Portfolio', 'project_list'], () =>
+    getAllProjectsFromDynamoDB()
   );
 
   const categorizedProjects = {
@@ -46,6 +49,12 @@ const Portfolio = () => {
 
   if (isLoading) {
     return <LoadingSpinner />;
+  }
+
+  if (error) {
+    return (
+      <p>There was an error loading the projects. Please try again later.</p>
+    );
   }
 
   return (

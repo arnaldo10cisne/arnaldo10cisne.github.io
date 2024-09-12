@@ -1,77 +1,40 @@
-import { dynamoDB } from '../awsConfig';
-import {
-  CertificateItem,
-  CERTIFICATES_DYNAMODB_TABLE_NAME,
-  PORTFOLIO_DYNAMODB_TABLE_NAME,
-  ProjectItem,
-} from './models';
+import { CERTIFICATES_API, PORTFOLIO_API } from './models';
 
-// Helper function to get a single item by ID
-const getItemById = async <T>(
-  tableName: string,
-  id: number
-): Promise<T | null> => {
-  const params = {
-    TableName: tableName,
-    Key: { id },
-  };
+// Reusable fetch handler
+const fetchData = async (url: string) => {
+  const response = await fetch(url);
 
-  try {
-    const result = await dynamoDB.get(params).promise();
-    return result.Item ? (result.Item as T) : null;
-  } catch (error) {
-    console.error(`Error getting item with ID ${id} from ${tableName}:`, error);
-    return null;
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
   }
-};
 
-// Helper function to get all items from a table
-const getAllItems = async <T>(tableName: string): Promise<T[]> => {
-  const params = { TableName: tableName };
-
-  try {
-    const result = await dynamoDB.scan(params).promise();
-    return result.Items ? (result.Items as T[]) : [];
-  } catch (error) {
-    console.error(`Error getting items from ${tableName}:`, error);
-    return [];
-  }
-};
-
-// Fetch a single certificate item by ID
-export const getCertificateItemFromDynamoDB = async (
-  id: number
-): Promise<CertificateItem | null> => {
-  return await getItemById<CertificateItem>(
-    CERTIFICATES_DYNAMODB_TABLE_NAME ?? '',
-    id
-  );
-};
-
-// Fetch a single portfolio item by ID
-export const getPortfolioItemFromDynamoDB = async (
-  id: number
-): Promise<ProjectItem | null> => {
-  return await getItemById<ProjectItem>(
-    PORTFOLIO_DYNAMODB_TABLE_NAME ?? '',
-    id
-  );
-};
-
-// Fetch all certificates
-export const getAllCertificatesFromDynamoDB = async (): Promise<
-  CertificateItem[]
-> => {
-  const items = await getAllItems<CertificateItem>(
-    CERTIFICATES_DYNAMODB_TABLE_NAME ?? ''
-  );
-  return items.filter((course) => course.show).sort((a, b) => a.id - b.id);
+  return await response.json();
 };
 
 // Fetch all projects
-export const getAllProjectsFromDynamoDB = async (): Promise<ProjectItem[]> => {
-  const items = await getAllItems<ProjectItem>(
-    PORTFOLIO_DYNAMODB_TABLE_NAME ?? ''
+export const getAllProjectsFromDynamoDB = async (
+  highlight: boolean = false
+) => {
+  return await fetchData(
+    `${PORTFOLIO_API}${highlight ? '?highlight=true' : ''}`
   );
-  return items.filter((project) => project.show).sort((a, b) => a.id - b.id);
+};
+
+// Fetch single portfolio item
+export const getPortfolioItemFromDynamoDB = async (id: number) => {
+  return await fetchData(`${PORTFOLIO_API}?id=${id}`);
+};
+
+// Fetch all certificates
+export const getAllCertificatesFromDynamoDB = async (
+  highlight: boolean = false
+) => {
+  return await fetchData(
+    `${CERTIFICATES_API}${highlight ? '?highlight=true' : ''}`
+  );
+};
+
+// Fetch single certificate item
+export const getCertificateItemFromDynamoDB = async (id: number) => {
+  return await fetchData(`${CERTIFICATES_API}?id=${id}`);
 };

@@ -10,7 +10,7 @@ import { getAllCertificatesFromDynamoDB } from '../../../utilities/awsUtils';
 const CertificateList = () => {
   const { data: courses } = useQuery<CertificateItem[]>(
     ['CertificateList', 'courses_list'],
-    getAllCertificatesFromDynamoDB
+    () => getAllCertificatesFromDynamoDB()
   );
 
   return (

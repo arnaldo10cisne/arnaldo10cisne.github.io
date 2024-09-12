@@ -14,16 +14,16 @@ import nodejs_icon from '../assets/icons/nodejs.png';
 import linux_icon from '../assets/icons/linux.png';
 import aws_icon from '../assets/icons/aws.png';
 
-export const CERTIFICATES_DYNAMODB_TABLE_NAME =
-  process.env.REACT_APP_DYNAMODB_CERTIFICATES_TABLE;
-
-export const PORTFOLIO_DYNAMODB_TABLE_NAME =
-  process.env.REACT_APP_DYNAMODB_PORTFOLIO_TABLE;
-
 export const EMAIL_REGEX =
   /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
 export const DEFAULT_TITLE = 'Arnaldo Cisneros';
+
+export const PORTFOLIO_API =
+  'https://zo2gg16kdc.execute-api.us-east-1.amazonaws.com/staging/portfolio';
+
+export const CERTIFICATES_API =
+  'https://zo2gg16kdc.execute-api.us-east-1.amazonaws.com/staging/certificates';
 
 export const TECHNOLOGIES = {
   HTML5: 'HTML 5',

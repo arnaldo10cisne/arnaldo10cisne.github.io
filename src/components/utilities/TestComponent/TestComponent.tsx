@@ -1,5 +1,4 @@
 import React from 'react';
-import { get } from 'aws-amplify/api';
 
 const TestComponent = () => {
   return (

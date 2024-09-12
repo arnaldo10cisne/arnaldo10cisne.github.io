@@ -9,12 +9,8 @@ import { getAllProjectsFromDynamoDB } from '../../../utilities/awsUtils';
 const PortfolioHighlights = () => {
   const { data: projects } = useQuery<ProjectItem[]>(
     ['PortfolioHighlights', 'project_list'],
-    getAllProjectsFromDynamoDB
+    () => getAllProjectsFromDynamoDB(true)
   );
-
-  const projectsToHighlight = useMemo(() => {
-    return projects?.filter((project: ProjectItem) => project.highlight);
-  }, [projects]);
 
   return (
     <div className="portfolioHighlightSection">
@@ -22,8 +18,8 @@ const PortfolioHighlights = () => {
         Portfolio Highlights
       </h2>
       <div className="highlight_projectList">
-        {projectsToHighlight ? (
-          projectsToHighlight.map((project: ProjectItem) => (
+        {projects ? (
+          projects.map((project: ProjectItem) => (
             <ProjectCard project={project} />
           ))
         ) : (

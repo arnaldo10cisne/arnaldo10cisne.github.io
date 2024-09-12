@@ -9,12 +9,8 @@ import { getAllCertificatesFromDynamoDB } from '../../../utilities/awsUtils';
 const About = () => {
   const { data: courses } = useQuery<CertificateItem[]>(
     ['About', 'courses_list'],
-    getAllCertificatesFromDynamoDB
+    () => getAllCertificatesFromDynamoDB(true)
   );
-
-  const coursesToHighlight = useMemo(() => {
-    return courses?.filter((course: CertificateItem) => course.highlight);
-  }, [courses]);
 
   return (
     <>
@@ -61,8 +57,8 @@ const About = () => {
         </p>
       </div>
       <div className="certificateList">
-        {coursesToHighlight ? (
-          coursesToHighlight.map((certificate: CertificateItem) => {
+        {courses ? (
+          courses.map((certificate: CertificateItem) => {
             return (
               <div className="certificateItem">
                 <a

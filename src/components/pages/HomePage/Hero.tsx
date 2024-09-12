@@ -30,8 +30,6 @@ const Hero = () => {
           Lets Work Together!
         </a>
       </div> */}
-
-      {/* <TestComponent /> */}
     </div>
   );
 };
