@@ -12,6 +12,7 @@ import npm_icon from '../assets/icons/npm.png';
 import nodejs_icon from '../assets/icons/nodejs.png';
 import linux_icon from '../assets/icons/linux.png';
 import aws_icon from '../assets/icons/aws.png';
+import cdk_icon from '../assets/icons/cdk_icon.png';
 import firebase_icon from '../assets/icons/firebase.png';
 import ec2_icon from '../assets/icons/ec2_icon.svg';
 import s3_icon from '../assets/icons/s3_icon.svg';
@@ -51,6 +52,7 @@ export const TECHNOLOGIES = {
   NODEJS: 'Node JS',
   LINUX: 'Linux',
   AWS: 'AWS',
+  AWS_CDK: 'AWS CDK',
 };
 
 export const CLOUD_SERVICES = {
@@ -205,6 +207,10 @@ export const TECHNOLOGIES_ICONS = [
   {
     name: TECHNOLOGIES.AWS,
     icon: aws_icon,
+  },
+  {
+    name: TECHNOLOGIES.AWS_CDK,
+    icon: cdk_icon,
   },
 ];
 
