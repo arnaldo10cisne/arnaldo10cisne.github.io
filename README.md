@@ -5,10 +5,10 @@ Welcome to the repository for my personal website, [www.arnaldocisneros.com](htt
 ## Features
 
 - **Built with React & TypeScript**  
-  The website leverages React for building reusable UI components and TypeScript for adding static types, enhancing code quality and maintainability. 
+  The website leverages React for building reusable UI components and TypeScript for adding static types, enhancing code quality and maintainability.
 
 - **AWS Amplify Hosting**  
-  The application is deployed on **AWS Amplify**, which provides seamless CI/CD integration, making the deployment process smooth and efficient. 
+  The application is deployed on **AWS Amplify**, which provides seamless CI/CD integration, making the deployment process smooth and efficient.
 
 - **Custom Domain Managed via Route 53**  
   The domain **www.arnaldocisneros.com** is registered and managed using **AWS Route 53**, providing reliable and scalable DNS service to ensure high availability of the website.

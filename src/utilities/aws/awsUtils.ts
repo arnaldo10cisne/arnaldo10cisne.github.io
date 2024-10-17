@@ -1,4 +1,4 @@
-import { CERTIFICATES_API, PORTFOLIO_API } from './models';
+import { CERTIFICATES_ENDPOINT, PORTFOLIO_ENDPOINT } from '../models';
 
 // Reusable fetch handler
 const fetchData = async (url: string) => {
@@ -16,13 +16,13 @@ export const getAllProjectsFromDynamoDB = async (
   highlight: boolean = false
 ) => {
   return await fetchData(
-    `${PORTFOLIO_API}${highlight ? '?highlight=true' : ''}`
+    `${PORTFOLIO_ENDPOINT}${highlight ? '?highlight=true' : ''}`
   );
 };
 
 // Fetch single portfolio item
 export const getPortfolioItemFromDynamoDB = async (id: number) => {
-  return await fetchData(`${PORTFOLIO_API}?id=${id}`);
+  return await fetchData(`${PORTFOLIO_ENDPOINT}?id=${id}`);
 };
 
 // Fetch all certificates
@@ -30,11 +30,11 @@ export const getAllCertificatesFromDynamoDB = async (
   highlight: boolean = false
 ) => {
   return await fetchData(
-    `${CERTIFICATES_API}${highlight ? '?highlight=true' : ''}`
+    `${CERTIFICATES_ENDPOINT}${highlight ? '?highlight=true' : ''}`
   );
 };
 
 // Fetch single certificate item
 export const getCertificateItemFromDynamoDB = async (id: number) => {
-  return await fetchData(`${CERTIFICATES_API}?id=${id}`);
+  return await fetchData(`${CERTIFICATES_ENDPOINT}?id=${id}`);
 };
