@@ -5,7 +5,7 @@ import { useQuery } from 'react-query';
 import { ProjectItem, PROJECT_TYPES } from '../../../utilities/models';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
 import ProjectCard from '../../common/ProjectCard/ProjectCard';
-import { getAllProjectsFromDynamoDB } from '../../../utilities/awsUtils';
+import { getAllProjectsFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
 const Portfolio = () => {
   const {

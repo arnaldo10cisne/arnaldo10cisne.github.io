@@ -5,7 +5,7 @@ import './Course.scss';
 import { CertificateItem, DEFAULT_TITLE } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
-import { getCertificateItemFromDynamoDB } from '../../../utilities/awsUtils';
+import { getCertificateItemFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
 const Course = () => {
   const { id } = useParams();

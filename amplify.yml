@@ -13,6 +13,9 @@ frontend:
     build:
       commands:
         - npm run build
+    postBuild:
+      commands:
+        - node ./scripts/get_config/generateCloudConfig.js
   artifacts:
     baseDirectory: build
     files:

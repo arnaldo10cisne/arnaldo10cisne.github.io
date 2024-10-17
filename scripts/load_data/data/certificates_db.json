@@ -1,0 +1,1450 @@
+{
+  "certificates": [
+    {
+      "Item": {
+        "id": {
+          "N": "7"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-javascript-engine-v8-navegador-de67cba4-0548-4361-9c6a-1a25aa96fa2a.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/javascript-navegador/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1tWjk-_ZvSqomP2to-N2V-VWnXsDNtWZ-/view?usp=sharing"
+        },
+        "name": {
+          "S": "The Javascript engine (V8) and the browser"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/degranda/"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Diego De Granda"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "8"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-basicojs-e2ead888-428e-4f55-962c-8894aeaeacda.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/basico-javascript/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/11PXelbzo0v3f8zz8OahpvIyex-qylBkY/view?usp=sharing"
+        },
+        "name": {
+          "S": "Basic JavaScript"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/degranda/"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Diego De Granda"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "10"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-_closures-scope-javascript-3848a8e7-cf6f-47c5-a824-df5fc0c14d41.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/scope/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1lUyEYNMYuoJ9NHFGafH3NxFA4J-V4KaZ/view?usp=sharing"
+        },
+        "name": {
+          "S": "Closures and scope in Javascript"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/gndx/?hl=es-la"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Oscar Barajas Tavares"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "3"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-responsive-design-ce53c4fc-a4c3-41e1-a5c8-3931932343a6.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/mobile-first/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1--jVKfPoQvF8zDh5YU9PBMYlFWbepMww/view?usp=sharing"
+        },
+        "name": {
+          "S": "Responsive design: Mobile first layout"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/degranda/"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Diego De Granda"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "2"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-practico-html-css-1-106665ee-bf4f-4301-8991-1fab9e54a73e.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/html-practico/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1nsgmlesi4ct4gCPhiNJBJ2vlWVpBmhp7/view?usp=sharing"
+        },
+        "name": {
+          "S": "Practical HTML and CSS"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/degranda/"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Diego De Granda"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "21"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-terminal-5c5518b5-43d0-4387-b39e-3d85db446c5f.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/terminal/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1VjMtPGLr9hVHRg33MQi8NawNDGk_bsoP/view?usp=sharing"
+        },
+        "name": {
+          "S": "Introduction to the terminal and command line"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/codevars?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Enrique Devars"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Linux"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "14"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-ecmascript-6-d48e7bb7-a7a4-416d-a3b4-e11f0b13a229.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/ecmascript-6/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1HljvWHW36UMgyJLjI61_bDP3v30lfDCg/view?usp=sharing"
+        },
+        "name": {
+          "S": "ECMAScript 6+"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/gndx/?hl=es-la"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Oscar Barajas Tavares"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "18"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-basico-python-bdcc67b3-031d-4dce-8e78-5699fb243149.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/python/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/19P-Aarmb-lhHhOEhinG7Ed_e44u3SMVI/view?usp=sharing"
+        },
+        "name": {
+          "S": "Basic Python"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/facmartoni/"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Facundo García Martoni"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Python"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "25"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-prework-configuracion-entorno-windows-8b168efb-2001-4f5e-938f-a333861ab31d.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/prework-windows/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1RI_Q4FHpStHBeAmxbZVip36fZMrn8eIG/view?usp=sharing"
+        },
+        "name": {
+          "S": "Setting up developer enviroment for Windows"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/celismx?lang=es"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Ricardo Celis"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Git"
+            },
+            {
+              "S": "Github"
+            },
+            {
+              "S": "VS CODE"
+            },
+            {
+              "S": "Linux"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": false
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "12"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-fundamentos-javascript-61c15bdf-0a83-4aed-8537-b4753e4071e1.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/fundamentos-javascript-2018/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1rstIGfDMyr5jqyTlP94FTjkC-CYNBAbp/view?usp=sharing"
+        },
+        "name": {
+          "S": "JavaScript foundations"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/sachalifs/?hl=es"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Sasha Lifszyc"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "9"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badges-curso-js-poo-51952eaf-1573-43d6-9b8a-4a19967aa5e9.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/javascript-poo/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1dVR4GPIZ4Y0ROYWSZ-mGhucjcmcs2hd5/view?usp=sharing"
+        },
+        "name": {
+          "S": "Basic OOP in Javascript"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/fjuandc"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Juan David Castro"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "27"
+        },
+        "company": {
+          "S": "Amazon Web Services"
+        },
+        "icon": {
+          "S": "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "AWS"
+            }
+          ]
+        },
+        "course_link": {
+          "S": "https://aws.amazon.com/es/certification/certified-solutions-architect-associate/?ch=sec&sec=rmg&d=1"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1gdITzVAJwcDqdrGC9ZjeI5PYlOE7mtLL/view?usp=drive_link"
+        },
+        "highlight": {
+          "BOOL": true
+        },
+        "name": {
+          "S": "AWS Certified Solutions Architect - Associate"
+        },
+        "completion_date": {
+          "S": "2024"
+        },
+        "show": {
+          "BOOL": true
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "4"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-preprocesadores-8c2ed161-d4f1-4d08-bb9e-9e741cdd539d.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/preprocesadores/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1RChOcNA66Ia0HEcNLVGjj1tIIVivJ_yP/view?usp=sharing"
+        },
+        "name": {
+          "S": "CSS Preprocessors"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/DaywalkerHN"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Wilson Sánchez"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            },
+            {
+              "S": "Sass"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "26"
+        },
+        "company": {
+          "S": "Amazon Web Services"
+        },
+        "icon": {
+          "S": "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "AWS"
+            }
+          ]
+        },
+        "course_link": {
+          "S": "https://aws.amazon.com/certification/certified-cloud-practitioner/?nc1=h_ls"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/128eHQW6TYRlXuYqquHOAZIjG75M-4YuU/view?usp=sharing"
+        },
+        "highlight": {
+          "BOOL": true
+        },
+        "name": {
+          "S": "AWS Certified Cloud Practitioner"
+        },
+        "show": {
+          "BOOL": true
+        },
+        "completion_date": {
+          "S": "2024"
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "13"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-asincronismo-javascript-3f44d51e-209e-4e47-a228-4142d049525c.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/asincronismo-js/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1rkLJJUZBS4G3IZrtk5ZMjy37QpzGRDY_/view?usp=sharing"
+        },
+        "name": {
+          "S": "Asynchronous Javascript"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/gndx/?hl=es-la"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Oscar Barajas Tavares"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "16"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-react-2018-0a41bdc5-e874-45c9-ac67-98294c898da4.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/fundamentos-javascript-2018/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1rXSH8l4hJsWZbtaiqOik59i5Z5b096vO/view?usp=sharing"
+        },
+        "name": {
+          "S": "Introduction to React.js"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/fjuandc"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Juan David Castro"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "React JS"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "17"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badges-python-7649ea5b-11c5-4b9b-ab45-5b16f1ac778f.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/python-cs/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1UBC5EVW5xM7lu6H6JdDpRo14LJ51P3dl/view?usp=sharing"
+        },
+        "name": {
+          "S": "Introduction to computational thinking with Python"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/jdaroesti"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "David Aroesti"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Python"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "6"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badges-animacion-css-02-740b1ebd-dbcf-4cfc-befb-5988cc6b03d0.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/animaciones-css/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1LnP2ESk7pGhizsKEpDduyv3_J8MOaxp-/view?usp=sharing"
+        },
+        "name": {
+          "S": "Animations in CSS"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/teffcode"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Estefany Aguilar"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "20"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/git-github/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/12KPx0xptuzyPcCWqM0pBYsRgnjw36iLU/view?usp=sharing"
+        },
+        "name": {
+          "S": "Professional Git and GitHub course"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/freddiervega/?hl=es-la"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Freddy Vega"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Git"
+            },
+            {
+              "S": "Github"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "19"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-poo-algoritmos-python-8960967b-d29a-47a6-85f6-db9b7b4dc8a9.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/poo-python/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1aGtdJVFkaHWxvk9C5dVYY557QN4NjtHS/view?usp=sharing"
+        },
+        "name": {
+          "S": "OOP and algorithms course with Python"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/jdaroesti"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "David Aroesti"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Python"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "1"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badges-html-css-afa64acb-64a4-486d-96a5-f930fbb7ee32.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/html-css/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1WjqyMnDFDCoKVkL1bkJ48VTO6It7WuhI/view?usp=sharing"
+        },
+        "name": {
+          "S": "Definitive HTML and CSS"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/degranda/"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Diego De Granda"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "5"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badges-animacion-css-03-4f2cd60d-e10b-4ea3-b5fe-1c3bc38e6970.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/transformaciones-transiciones-css/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1cLdrWGautZ2DamEziFRuCVNsQpDaFYnK/view?usp=sharing"
+        },
+        "name": {
+          "S": "Transformations and transitions in CSS"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/teffcode"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Estefany Aguilar"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "22"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-gestion-dependencias-paquetes-npm-f02e4608-c688-4d99-aa6d-293ea6c0be8d.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/npm/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1n0-naAspCChXAuu2EVvDRpU75mbRCOMm/view?usp=sharing"
+        },
+        "name": {
+          "S": "Dependency and package management with NPM"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/gndx/?hl=es-la"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Oscar Barajas Tavares"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Javascript"
+            },
+            {
+              "S": "NPM"
+            },
+            {
+              "S": "Node JS"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "24"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-introduccion-web-historia-internet-4c18b86e-86f0-4ea0-aa16-5ed1cf53be25.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/introweb/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1l0cju5Bg-ZrCL834wrj48pyd9gcGa2ZD/view?usp=sharing"
+        },
+        "name": {
+          "S": "Introduction to the web: History and functioning of the Internet"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://www.instagram.com/degranda/"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Diego De Granda"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Computer Science"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": false
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "23"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-flujo-desarrollo-codestream-5a0492d0-ab21-4e33-925f-b74bd7ce4c20.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/desarrollo-moderno-codestream/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1XK-8fNpmrZrzBpnnrZ_-wKo5iS8D_yA7/view?usp=sharing"
+        },
+        "name": {
+          "S": "Modern development flow with Codestream"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/claudio_pinkus"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Claudio Pinkus"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "CodeStream"
+            },
+            {
+              "S": "Github"
+            },
+            {
+              "S": "Jira"
+            },
+            {
+              "S": "Slack"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": false
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "15"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge-fundamentos-nodejs-8fd9c0f4-562a-48e9-a85a-3a7db0fa384b.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/fundamentos-node/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1b9YkmRUqtWgZSwePOYlFrstSrRB95XLu/view?usp=sharing"
+        },
+        "name": {
+          "S": "Node.js foundations"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/codingcarlos"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Carlos Hernández"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Javascript"
+            },
+            {
+              "S": "NPM"
+            },
+            {
+              "S": "Node JS"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "28"
+        },
+        "company": {
+          "S": "Amazon Web Services"
+        },
+        "icon": {
+          "S": ""
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "AWS"
+            }
+          ]
+        },
+        "course_link": {
+          "S": ""
+        },
+        "certificate_link": {
+          "S": ""
+        },
+        "highlight": {
+          "BOOL": true
+        },
+        "name": {
+          "S": "AWS Certified Developer - Associate"
+        },
+        "completion_date": {
+          "S": "2024"
+        },
+        "show": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "11"
+        },
+        "icon": {
+          "S": "https://static.platzi.com/media/achievements/badge3-practico-javascript-d081180f-b158-446b-a34e-e658111a3680.png"
+        },
+        "course_link": {
+          "S": "https://platzi.com/clases/javascript-practico/"
+        },
+        "certificate_link": {
+          "S": "https://drive.google.com/file/d/1CQbGQKwBYIbHIAAw13dlNCbdlcRTXMRV/view?usp=sharing"
+        },
+        "name": {
+          "S": "Practical JavaScript"
+        },
+        "completion_date": {
+          "S": "2021"
+        },
+        "instructor_link": {
+          "S": "https://twitter.com/fjuandc"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "instructor": {
+          "S": "Juan David Castro"
+        },
+        "company": {
+          "S": "Platzi"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": false
+        }
+      }
+    }
+  ]
+}
