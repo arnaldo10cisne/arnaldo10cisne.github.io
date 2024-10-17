@@ -4,7 +4,7 @@ import PageTitle from '../../common/PageTitle/PageTitle';
 import { CertificateItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
-import { getAllCertificatesFromDynamoDB } from '../../../utilities/awsUtils';
+import { getAllCertificatesFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
 const About = () => {
   const { data: courses } = useQuery<CertificateItem[]>(

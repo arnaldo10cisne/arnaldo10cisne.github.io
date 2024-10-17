@@ -7,7 +7,7 @@ import './Project.scss';
 import { DEFAULT_TITLE, ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
 import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
-import { getPortfolioItemFromDynamoDB } from '../../../utilities/awsUtils';
+import { getPortfolioItemFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
 const Project = () => {
   const { id } = useParams();

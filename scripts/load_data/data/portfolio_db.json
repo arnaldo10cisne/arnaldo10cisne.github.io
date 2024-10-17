@@ -1,0 +1,623 @@
+{
+  "portfolio": [
+    {
+      "Item": {
+        "id": {
+          "N": "7"
+        },
+        "date": {
+          "S": "2021"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "English"
+            }
+          ]
+        },
+        "project_type": {
+          "S": "web"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            },
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/nba_app__javascript"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">This program was intended as the resolution of a technical test provided by Macheight. The program extracts general information about several NBA players from an URL and is capable of creating pairs of players whose heights add up to a number previously given by the user.</p>"
+        },
+        "thumbnail": {
+          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1637809635/nba_app_javascript/Captura_wxrkad.png"
+        },
+        "highlight": {
+          "BOOL": false
+        },
+        "name": {
+          "S": "NBA App (Web Edition)"
+        },
+        "show": {
+          "BOOL": true
+        },
+        "website_link": {
+          "S": "https://arnaldo10cisne.github.io/nba_app__javascript/"
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "8"
+        },
+        "date": {
+          "S": "2021"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "English"
+            }
+          ]
+        },
+        "project_type": {
+          "S": "code"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Python"
+            }
+          ]
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/CRYPTOGRAPHY__python_app"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">I got inspired to develop this program because it was a test that was given to me in a technical interview. I wasn't sure how to do it back then, so I decided to give it a try. It can encrypt and decrypt arrays of English words. The word API used to validate words and obtain random ones is <a class=\"in-text-link\" target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://random-word-api.herokuapp.com\">https://random-word-api.herokuapp.com</a></p>"
+        },
+        "thumbnail": {
+          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1637513577/cryptography_app/crypto1_vo8wqt.png"
+        },
+        "highlight": {
+          "BOOL": true
+        },
+        "name": {
+          "S": "Cryptography App"
+        },
+        "show": {
+          "BOOL": true
+        },
+        "website_link": {
+          "S": ""
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "10"
+        },
+        "date": {
+          "S": "2024"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "English"
+            }
+          ]
+        },
+        "cloud_services": {
+          "L": [
+            {
+              "S": "AWS EC2"
+            },
+            {
+              "S": "AWS S3"
+            },
+            {
+              "S": "AWS Amplify"
+            },
+            {
+              "S": "AWS Athena"
+            },
+            {
+              "S": "AWS Route 53"
+            },
+            {
+              "S": "AWS API Gateway"
+            },
+            {
+              "S": "AWS Lambda"
+            },
+            {
+              "S": "AWS Cognito"
+            },
+            {
+              "S": "AWS RDS"
+            },
+            {
+              "S": "AWS QuickSight"
+            }
+          ]
+        },
+        "project_type": {
+          "S": "cloud"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "React JS"
+            },
+            {
+              "S": "Typescript"
+            },
+            {
+              "S": "AWS CDK"
+            },
+            {
+              "S": "Node JS"
+            }
+          ]
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/datamindcanvas"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">DataMind Canvas is a data analysis personal project that heavily uses de AWS Cloud</p>"
+        },
+        "thumbnail": {
+          "S": "https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/website-cover.PNG"
+        },
+        "name": {
+          "S": "DataMind Canvas"
+        },
+        "highlight": {
+          "BOOL": true
+        },
+        "website_link": {
+          "S": ""
+        },
+        "show": {
+          "BOOL": false
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "3"
+        },
+        "date": {
+          "S": "2021"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "English"
+            }
+          ]
+        },
+        "project_type": {
+          "S": "web"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            },
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/arnaldo10cisne.github.io"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">This website was made with lots of love, and tons of dedication and passion. There is not a lot more that I can say about it, but I still invite you to check the code on Github, so you can actually see all the work it took.</p>"
+        },
+        "thumbnail": {
+          "S": "https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/website-cover.PNG"
+        },
+        "highlight": {
+          "BOOL": false
+        },
+        "name": {
+          "S": "Personal website (legacy version)"
+        },
+        "show": {
+          "BOOL": false
+        },
+        "website_link": {
+          "S": ""
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "2"
+        },
+        "date": {
+          "S": "2021"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "project_type": {
+          "S": "web"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            }
+          ]
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/CursoResponsiveDesign"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">This simple website was made to test the idea of Responsive Design, and, to be more specific, the idea of a \"Mobile First\" Layout, that is, designing a website with the idea that it is going to look great on mobile devices first, and the end product will be escalated to fit a full desktop screen. \"Metroidvanias\" are just a genre of videogames focused on exploration.</p>"
+        },
+        "thumbnail": {
+          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1624234202/metroidvania-responsive/metroidvania-cover_a5civl.png"
+        },
+        "highlight": {
+          "BOOL": false
+        },
+        "name": {
+          "S": "Metroidvania website"
+        },
+        "website_link": {
+          "S": "https://arnaldo10cisne.github.io/CursoResponsiveDesign/"
+        },
+        "show": {
+          "BOOL": true
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "9"
+        },
+        "date": {
+          "S": "2024"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "English"
+            }
+          ]
+        },
+        "cloud_services": {
+          "L": [
+            {
+              "S": "AWS Amplify"
+            },
+            {
+              "S": "AWS Route 53"
+            },
+            {
+              "S": "AWS API Gateway"
+            },
+            {
+              "S": "AWS Lambda"
+            },
+            {
+              "S": "AWS DynamoDB"
+            },
+            {
+              "S": "AWS S3"
+            }
+          ]
+        },
+        "project_type": {
+          "S": "cloud"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "React JS"
+            },
+            {
+              "S": "Typescript"
+            }
+          ]
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/arnaldo10cisne.github.io"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">This website was built with lots of love, dedication, and passion. It’s crafted using React JS and TypeScript, and powered by several AWS services. The site is deployed on Amplify, with the domain managed via Route 53. It features an API created with API Gateway, serverless functions running on Lambda to retrieve data from a DynamoDB database, and uses S3 to store assets. Feel free to check out the code on GitHub to explore the effort and care that went into its development.</p>"
+        },
+        "thumbnail": {
+          "S": "https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/website-cover.PNG"
+        },
+        "name": {
+          "S": "Personal website"
+        },
+        "show": {
+          "BOOL": true
+        },
+        "website_link": {
+          "S": ""
+        },
+        "highlight": {
+          "BOOL": true
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "4"
+        },
+        "date": {
+          "S": "2021"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "English"
+            }
+          ]
+        },
+        "project_type": {
+          "S": "web"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            },
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/SHOPPING_LIST"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">This is a complete app that allows you to dinamically create a list of items, intended for when you go shopping. You can add items with their names, their prices, and the number of units. Added items can be modified and deleted. You can also choose multiple currencies to display and print the list when it is finished. In short, it is a simple but functional app, and totally responsive. <br><br>This was created with the idea of practicing real-time manipulation of the nodes in the DOM, and adding events listeners to those nodes. When you check the code on github, place make sure that you check also the last date when this app was updated, because there might be changes.</p>"
+        },
+        "thumbnail": {
+          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1628130021/shopping_list/Captura_enwqtw.png"
+        },
+        "highlight": {
+          "BOOL": false
+        },
+        "name": {
+          "S": "Shopping list app"
+        },
+        "show": {
+          "BOOL": false
+        },
+        "website_link": {
+          "S": "https://arnaldo10cisne.github.io/SHOPPING_LIST"
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "6"
+        },
+        "date": {
+          "S": "2021"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "English"
+            }
+          ]
+        },
+        "project_type": {
+          "S": "code"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Python"
+            }
+          ]
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/nba_app__python"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">This program was intended as the resolution of a technical test provided by Macheight. The program extracts general information about several NBA players from an URL and is capable of creating pairs of players whose heights add up to a number previously given by the user.</p>"
+        },
+        "thumbnail": {
+          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1636860311/nba_app_python/nba_python1_bzdclz.png"
+        },
+        "highlight": {
+          "BOOL": false
+        },
+        "name": {
+          "S": "NBA App (Python Edition)"
+        },
+        "show": {
+          "BOOL": true
+        },
+        "website_link": {
+          "S": ""
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "1"
+        },
+        "project_type": {
+          "S": "code"
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/UNO-in-python-terminal"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">Why use cards made in cardboard, when you can play with your friends and family in the comfort of a black screen with high contrast colors?<br><br>When I start to learn a new language, I like to test my knowledge creating a small program like this one. It uses cycles, conditionals, object oriented programming, functions, and many other structures. At first it may sound simple, but as you start the testing process, you'll find out that there are many lttle things that you need to consider to avoid possible bugs. Feel free to check the code on Github. You can also clone the repository, o simply download it to play the game. Just remember that you will need to go to the <a href=\"https://www.python.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"in-text-link\">oficial site of python</a> to get everything you need to run the code.</p>"
+        },
+        "name": {
+          "S": "UNO! card game in Python"
+        },
+        "date": {
+          "S": "2020 - 2021"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "Spanish"
+            }
+          ]
+        },
+        "screens": {
+          "L": [
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701627/Uno-python-captures/uno-python-cover_hn4o6b.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap1_ylmvkm.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap2_m5ggba.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap3_gcjsuf.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap4_pydwx0.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap5_pd7vw4.png"
+            }
+          ]
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "Python"
+            }
+          ]
+        },
+        "thumbnail": {
+          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701627/Uno-python-captures/uno-python-cover_hn4o6b.png"
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": true
+        },
+        "website_link": {
+          "S": ""
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "5"
+        },
+        "project_type": {
+          "S": "web"
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/MARVEL_API_PROJECT"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">This website was created to offer easy access to the <a href=\"https://developer.marvel.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"in-text-link\">MARVEL API</a>, and test fetching data in the \".json\" format. I also wanted to do something different regarding the styles. So the approach was a colorful and informal presentation, reminiscent of my idea of a comic book.<br><br>Finally, why choosing the MARVEL API over the other <a href=\"https://github.com/public-apis/public-apis\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"in-text-link\">hundreds</a> of free APIs available for testing? The short answer is... I like the Marvel Universe, and I grew up with these characters. I believe everyone can run the extra mile, and deliver a better product if there is a little bit of passion involved.</p>"
+        },
+        "name": {
+          "S": "The Marvel Guidebook"
+        },
+        "date": {
+          "S": "2021"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "English"
+            }
+          ]
+        },
+        "screens": {
+          "L": [
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474079/Marvel-guidebook/marvel2_wkptkq.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474081/Marvel-guidebook/marvel3_wmg8sa.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474082/Marvel-guidebook/marvel4_zaui87.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474086/Marvel-guidebook/marvel5_bh12xf.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474078/Marvel-guidebook/marvel6_j9qcbc.png"
+            },
+            {
+              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474079/Marvel-guidebook/marvel7_i1mgbj.png"
+            }
+          ]
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "HTML 5"
+            },
+            {
+              "S": "CSS 3"
+            },
+            {
+              "S": "Javascript"
+            }
+          ]
+        },
+        "thumbnail": {
+          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474079/Marvel-guidebook/marvel1_sjfctd.png"
+        },
+        "show": {
+          "BOOL": true
+        },
+        "highlight": {
+          "BOOL": true
+        },
+        "website_link": {
+          "S": "https://arnaldo10cisne.github.io/MARVEL_API_PROJECT/"
+        }
+      }
+    }
+  ]
+}

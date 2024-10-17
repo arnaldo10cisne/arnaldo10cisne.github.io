@@ -25,17 +25,16 @@ import cognito_icon from '../assets/icons/cognito_icon.svg';
 import api_gateway_icon from '../assets/icons/api_gateway_icon.svg';
 import lambda_icon from '../assets/icons/lambda_icon.svg';
 import quicksight_icon from '../assets/icons/quicksight_icon.svg';
+import aws_config from './aws/config.json';
 
 export const EMAIL_REGEX =
   /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
 export const DEFAULT_TITLE = 'Arnaldo Cisneros';
 
-export const PORTFOLIO_API =
-  'https://zo2gg16kdc.execute-api.us-east-1.amazonaws.com/staging/portfolio';
+export const PORTFOLIO_ENDPOINT = `${aws_config.apiEndpointUrl}portfolio`;
 
-export const CERTIFICATES_API =
-  'https://zo2gg16kdc.execute-api.us-east-1.amazonaws.com/staging/certificates';
+export const CERTIFICATES_ENDPOINT = `${aws_config.apiEndpointUrl}certificates`;
 
 export const TECHNOLOGIES = {
   HTML5: 'HTML 5',
