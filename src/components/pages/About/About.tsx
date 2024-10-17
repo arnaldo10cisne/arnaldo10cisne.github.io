@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import './About.scss';
 import PageTitle from '../../common/PageTitle/PageTitle';
 import { CertificateItem } from '../../../utilities/models';

@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import './PortfolioHighlights.scss';
 import { ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
