@@ -24,4 +24,6 @@ const serverlessStack = new PersonalWebsite_Serverless_Stack(
 
 new PersonalWebsite_CICD_Stack(app, 'PersonalWebsite-CICDStack', {
   serverlessStackName: serverlessStack.serverlessStackName,
+  portfolioTableARN: serverlessStack.portfolioTableARN,
+  certificatesTableARN: serverlessStack.certificatesTableARN,
 });

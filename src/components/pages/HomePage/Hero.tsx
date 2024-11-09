@@ -23,7 +23,6 @@ const Hero = () => {
           everyone through the internet.
         </p>
       </div>
-
     </div>
   );
 };

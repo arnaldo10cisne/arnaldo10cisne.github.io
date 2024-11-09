@@ -7,6 +7,8 @@ import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 
 export class PersonalWebsite_Serverless_Stack extends cdk.Stack {
   public readonly serverlessStackName: string;
+  public readonly portfolioTableARN: string;
+  public readonly certificatesTableARN: string;
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
@@ -39,6 +41,9 @@ export class PersonalWebsite_Serverless_Stack extends cdk.Stack {
         removalPolicy: cdk.RemovalPolicy.DESTROY,
       }
     );
+
+    this.portfolioTableARN = portfolio_table.tableArn;
+    this.certificatesTableARN = certificates_table.tableArn;
 
     const lambda_dynamoDbProxy = new lambda.Function(
       this,

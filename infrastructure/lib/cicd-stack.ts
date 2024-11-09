@@ -8,6 +8,8 @@ import * as iam from 'aws-cdk-lib/aws-iam';
 
 interface PersonalWebsiteCICDStackProps extends cdk.StackProps {
   serverlessStackName: string;
+  portfolioTableARN: string;
+  certificatesTableARN: string;
 }
 
 export class PersonalWebsite_CICD_Stack extends cdk.Stack {
@@ -65,7 +67,7 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
                 'pip install -r requirements.txt',
                 'python load_data.py',
               ],
-            }
+            },
           },
           artifacts: {
             'base-directory': 'build',
@@ -87,6 +89,15 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
         resources: [serverlessStackName],
       })
     );
+
+    if (props) {
+      buildProject.addToRolePolicy(
+        new iam.PolicyStatement({
+          actions: ['dynamodb:PutItem'],
+          resources: [props.portfolioTableARN, props.certificatesTableARN],
+        })
+      );
+    }
 
     deploymentBucket.grantReadWrite(buildProject);
 
@@ -131,6 +142,16 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
 
     new cdk.CfnOutput(this, 'DeploymentBucketName', {
       value: deploymentBucket.bucketName,
+    });
+
+    new cdk.CfnOutput(this, 'PortfolioTableARN', {
+      value: `${props?.portfolioTableARN}`,
+      description: 'Validation of ARN of the Portfolio DynamoDB Table',
+    });
+
+    new cdk.CfnOutput(this, 'CertificatesTableARN', {
+      value: `${props?.certificatesTableARN}`,
+      description: 'Validation of ARN of the Certificates DynamoDB Table',
     });
   }
 }
