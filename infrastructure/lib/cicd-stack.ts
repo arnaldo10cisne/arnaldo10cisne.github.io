@@ -57,7 +57,7 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
           },
         },
         artifacts: {
-          'base-directory': 'dist',
+          'base-directory': 'build',
           files: ['**/*'],
         },
       })
