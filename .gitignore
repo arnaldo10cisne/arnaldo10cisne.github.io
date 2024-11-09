@@ -47,3 +47,4 @@ amplifytools.xcconfig
 
 cdk.out
 src/utilities/aws/config.json
+cdk.context.json

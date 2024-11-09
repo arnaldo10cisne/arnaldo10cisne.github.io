@@ -166,29 +166,12 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
       }
     );
 
-    // const originAccessIdentity = new cloudfront.OriginAccessIdentity(
-    //   this,
-    //   resourceName('OAI')
-    // );
-
-    // deploymentBucket.addToResourcePolicy(
-    //   new iam.PolicyStatement({
-    //     actions: ['s3:GetObject'],
-    //     resources: [deploymentBucket.arnForObjects('*')],
-    //     principals: [
-    //       new iam.CanonicalUserPrincipal(
-    //         originAccessIdentity.cloudFrontOriginAccessIdentityS3CanonicalUserId
-    //       ),
-    //     ],
-    //   })
-    // );
-
     const distribution = new cloudfront.Distribution(
       this,
       resourceName('SiteDistribution'),
       {
         defaultRootObject: 'index.html',
-        domainNames: [domainName],
+        domainNames: [domainName, `www.${domainName}`],
         certificate,
         defaultBehavior: {
           origin: new origins.OriginGroup({
@@ -199,6 +182,7 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
           viewerProtocolPolicy:
             cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         },
+        priceClass: cloudfront.PriceClass.PRICE_CLASS_100
       }
     );
 
