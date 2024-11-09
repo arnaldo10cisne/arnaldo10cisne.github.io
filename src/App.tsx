@@ -8,7 +8,6 @@ import Project from './components/pages/Project/Project';
 import About from './components/pages/About/About';
 import CertificateList from './components/pages/CertificateList/CertificateList';
 import Course from './components/pages/Course/Course';
-import Contact from './components/pages/Contact/Contact';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 // Create a client
@@ -23,7 +22,6 @@ const renderContent = (): ReactElement => {
       <SitePage path="/about" component={<About />} />
       <SitePage path="/about/certificates" component={<CertificateList />} />
       <SitePage path="/about/certificates/:id" component={<Course />} />
-      {/* <SitePage path="/contact" component={<Contact />} /> */}
     </>
   );
 };

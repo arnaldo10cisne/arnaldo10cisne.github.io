@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.scss';
-import TestComponent from '../../utilities/TestComponent/TestComponent';
 
 const Hero = () => {
   return (
@@ -25,11 +24,6 @@ const Hero = () => {
         </p>
       </div>
 
-      {/* <div className="actionButtonContainer">
-        <a className="actionButton global__button" href="./contact">
-          Lets Work Together!
-        </a>
-      </div> */}
     </div>
   );
 };

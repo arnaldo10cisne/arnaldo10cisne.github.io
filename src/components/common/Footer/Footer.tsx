@@ -51,6 +51,8 @@ const Footer = () => {
                   )}
                 </>
               );
+            } else {
+              return null;
             }
           })}
         </p>
