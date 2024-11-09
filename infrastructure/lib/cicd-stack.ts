@@ -59,6 +59,13 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
             build: {
               commands: ['npm run build'],
             },
+            post_build: {
+              commands: [
+                'cd ./scripts/load_data',
+                'pip install -r requirements.txt',
+                'python load_data.py',
+              ],
+            }
           },
           artifacts: {
             'base-directory': 'build',
