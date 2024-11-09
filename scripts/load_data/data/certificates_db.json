@@ -1363,7 +1363,7 @@
           "S": "Amazon Web Services"
         },
         "icon": {
-          "S": ""
+          "S": "https://images.credly.com/size/680x680/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png"
         },
         "technologies": {
           "L": [
@@ -1373,10 +1373,10 @@
           ]
         },
         "course_link": {
-          "S": ""
+          "S": "https://aws.amazon.com/es/certification/certified-developer-associate/?ch=sec&sec=rmg&d=1"
         },
         "certificate_link": {
-          "S": ""
+          "S": "https://drive.google.com/file/d/1pnMrq2wf-Lat7kELXdLXWbIcH6jsnpf7/view?usp=drive_link"
         },
         "highlight": {
           "BOOL": true
@@ -1388,7 +1388,7 @@
           "S": "2024"
         },
         "show": {
-          "BOOL": false
+          "BOOL": true
         }
       }
     },
