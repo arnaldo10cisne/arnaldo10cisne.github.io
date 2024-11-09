@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { PersonalWebsiteStack } from '../lib/infrastructure-stack';
+import { PersonalWebsite_Serverless_Stack } from '../lib/serverless-stack';
+import { PersonalWebsite_CICD_Stack } from '../lib/cicd-stack';
 
 const app = new cdk.App();
-new PersonalWebsiteStack(app, 'PersonalWebsiteStack', {
+new PersonalWebsite_Serverless_Stack(app, 'PersonalWebsite-ServerlessStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
@@ -16,3 +17,5 @@ new PersonalWebsiteStack(app, 'PersonalWebsiteStack', {
   // env: { account: '123456789012', region: 'us-east-1' },
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
+
+new PersonalWebsite_CICD_Stack(app, 'PersonalWebsite-CICDStack', {});
