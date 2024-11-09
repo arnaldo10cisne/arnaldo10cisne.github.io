@@ -11,57 +11,62 @@ interface PersonalWebsiteCICDStackProps extends cdk.StackProps {
 }
 
 export class PersonalWebsite_CICD_Stack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: PersonalWebsiteCICDStackProps) {
+  constructor(
+    scope: Construct,
+    id: string,
+    props?: PersonalWebsiteCICDStackProps
+  ) {
     super(scope, id, props);
 
     const projectName = 'PersonalWebsite';
     const resourceName = (name: string) => `${projectName}__${name}`;
 
-    const deploymentBucket = new s3.Bucket(this, resourceName('DeploymentBucket'), {
-      websiteIndexDocument: 'index.html',
-      publicReadAccess: true,
-      blockPublicAccess: new s3.BlockPublicAccess({
-        blockPublicAcls: false,
-        blockPublicPolicy: false,
-        ignorePublicAcls: false,
-        restrictPublicBuckets: false,
-      }),
-      versioned: true,
-      removalPolicy: cdk.RemovalPolicy.DESTROY,
-    });
+    const deploymentBucket = s3.Bucket.fromBucketArn(
+      this,
+      resourceName('DeploymentBucket'),
+      'arn:aws:s3:::arnaldocisneros.com-deployment'
+    );
 
-    const pipeline = new codepipeline.Pipeline(this, resourceName('CodePipeline'), {
-      pipelineName: resourceName('CodePipeline'),
-    })
+    const pipeline = new codepipeline.Pipeline(
+      this,
+      resourceName('CodePipeline'),
+      {
+        pipelineName: resourceName('CodePipeline'),
+      }
+    );
 
-    const codeSourceArtifact = new codepipeline.Artifact()
-    const codeBuildArtifact = new codepipeline.Artifact()
+    const codeSourceArtifact = new codepipeline.Artifact();
+    const codeBuildArtifact = new codepipeline.Artifact();
 
-    const buildProject = new codebuild.PipelineProject(this, resourceName('CodeBuild'), {
-      projectName: resourceName('CodeBuild'),
-      environment: {
-        buildImage: codebuild.LinuxBuildImage.STANDARD_5_0,
-        computeType: codebuild.ComputeType.SMALL,
-      },
-      buildSpec: codebuild.BuildSpec.fromObject({
-        version: 0.2,
-        phases: {
-          install: {
-            commands: ['npm install'],
-          },
-          pre_build: {
-            commands: ['node ./scripts/get_config/generateCloudConfig.js'],
-          },
-          build: {
-            commands: ['npm run build'],
-          },
+    const buildProject = new codebuild.PipelineProject(
+      this,
+      resourceName('CodeBuild'),
+      {
+        projectName: resourceName('CodeBuild'),
+        environment: {
+          buildImage: codebuild.LinuxBuildImage.STANDARD_5_0,
+          computeType: codebuild.ComputeType.SMALL,
         },
-        artifacts: {
-          'base-directory': 'build',
-          files: ['**/*'],
-        },
-      })
-    });
+        buildSpec: codebuild.BuildSpec.fromObject({
+          version: 0.2,
+          phases: {
+            install: {
+              commands: ['npm install'],
+            },
+            pre_build: {
+              commands: ['node ./scripts/get_config/generateCloudConfig.js'],
+            },
+            build: {
+              commands: ['npm run build'],
+            },
+          },
+          artifacts: {
+            'base-directory': 'build',
+            files: ['**/*'],
+          },
+        }),
+      }
+    );
 
     const serverlessStackName = cdk.Stack.of(this).formatArn({
       service: 'cloudformation',
@@ -69,10 +74,12 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
       resourceName: `${props?.serverlessStackName}/*`,
     });
 
-    buildProject.addToRolePolicy(new iam.PolicyStatement({
-      actions: ['cloudformation:DescribeStacks'],
-      resources: [serverlessStackName],
-    }));
+    buildProject.addToRolePolicy(
+      new iam.PolicyStatement({
+        actions: ['cloudformation:DescribeStacks'],
+        resources: [serverlessStackName],
+      })
+    );
 
     deploymentBucket.grantReadWrite(buildProject);
 
@@ -84,13 +91,13 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
           owner: 'arnaldo10cisne',
           repo: 'arnaldo10cisne.github.io',
           oauthToken: cdk.SecretValue.secretsManager('github_access_token', {
-            jsonField: "githubAccessToken",
+            jsonField: 'githubAccessToken',
           }),
           output: codeSourceArtifact,
           branch: 'master',
-        })
-      ]
-    })
+        }),
+      ],
+    });
 
     pipeline.addStage({
       stageName: 'Build',
@@ -118,6 +125,5 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
     new cdk.CfnOutput(this, 'DeploymentBucketName', {
       value: deploymentBucket.bucketName,
     });
-
   }
 }
