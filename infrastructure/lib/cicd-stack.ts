@@ -178,11 +178,12 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
             primaryOrigin:
               origins.S3BucketOrigin.withOriginAccessIdentity(deploymentBucket),
             fallbackOrigin: new origins.HttpOrigin(`www.${domainName}`),
+            fallbackStatusCodes: [404, 403, 500, 502, 503, 504],
           }),
           viewerProtocolPolicy:
             cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         },
-        priceClass: cloudfront.PriceClass.PRICE_CLASS_100
+        priceClass: cloudfront.PriceClass.PRICE_CLASS_100,
       }
     );
 
