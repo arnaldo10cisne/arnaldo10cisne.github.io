@@ -6,9 +6,11 @@ import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 
 export class PersonalWebsite_Serverless_Stack extends cdk.Stack {
+  public readonly serverlessStackName: string;
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
+    this.serverlessStackName = this.stackName;
     const projectName = 'PersonalWebsite';
     const resourceName = (name: string) => `${projectName}__${name}`;
 

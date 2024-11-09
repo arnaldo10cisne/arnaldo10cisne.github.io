@@ -4,7 +4,7 @@ const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-const stackName = 'PersonalWebsiteStack';
+const stackName = 'PersonalWebsite-ServerlessStack';
 
 // File path to store information
 const outputFilePath = path.join(

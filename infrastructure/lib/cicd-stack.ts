@@ -1,13 +1,17 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import * as path from 'path';
 import * as codepipeline from 'aws-cdk-lib/aws-codepipeline';
 import * as codepipeline_actions from 'aws-cdk-lib/aws-codepipeline-actions';
 import * as codebuild from 'aws-cdk-lib/aws-codebuild';
 import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as iam from 'aws-cdk-lib/aws-iam';
+
+interface PersonalWebsiteCICDStackProps extends cdk.StackProps {
+  serverlessStackName: string;
+}
 
 export class PersonalWebsite_CICD_Stack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, props?: PersonalWebsiteCICDStackProps) {
     super(scope, id, props);
 
     const projectName = 'PersonalWebsite';
@@ -45,6 +49,9 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
           install: {
             commands: ['npm install'],
           },
+          pre_build: {
+            commands: ['node ./scripts/get_config/generateCloudConfig.js'],
+          },
           build: {
             commands: ['npm run build'],
           },
@@ -55,6 +62,17 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
         },
       })
     });
+
+    const serverlessStackName = cdk.Stack.of(this).formatArn({
+      service: 'cloudformation',
+      resource: 'stack',
+      resourceName: `${props?.serverlessStackName}/*`,
+    });
+
+    buildProject.addToRolePolicy(new iam.PolicyStatement({
+      actions: ['cloudformation:DescribeStacks'],
+      resources: [serverlessStackName],
+    }));
 
     deploymentBucket.grantReadWrite(buildProject);
 
