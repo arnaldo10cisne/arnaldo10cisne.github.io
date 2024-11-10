@@ -38,7 +38,11 @@ const Course = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={`${courseToDisplay?.icon}`} alt="Course badge" />
+            <img
+              src={`${courseToDisplay?.icon}`}
+              alt="Course badge"
+              className="certificate_badge"
+            />
           </a>
           <p className="course_clickPicture">
             Click on the badge to open the certificate

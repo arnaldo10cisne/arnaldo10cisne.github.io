@@ -316,10 +316,13 @@
         "cloud_services": {
           "L": [
             {
-              "S": "AWS Amplify"
+              "S": "AWS Route 53"
             },
             {
-              "S": "AWS Route 53"
+              "S": "AWS S3"
+            },
+            {
+              "S": "AWS CloudFront"
             },
             {
               "S": "AWS API Gateway"
@@ -331,7 +334,10 @@
               "S": "AWS DynamoDB"
             },
             {
-              "S": "AWS S3"
+              "S": "AWS CloudFormation"
+            },
+            {
+              "S": "AWS CodePipeline"
             }
           ]
         },
@@ -352,7 +358,7 @@
           "S": "https://github.com/arnaldo10cisne/arnaldo10cisne.github.io"
         },
         "description_innerHTML": {
-          "S": "<p class=\"portfolio__about_section__text\">This website was built with lots of love, dedication, and passion. It’s crafted using React JS and TypeScript, and powered by several AWS services. The site is deployed on Amplify, with the domain managed via Route 53. It features an API created with API Gateway, serverless functions running on Lambda to retrieve data from a DynamoDB database, and uses S3 to store assets. Feel free to check out the code on GitHub to explore the effort and care that went into its development.</p>"
+          "S": "<p class=\"portfolio__about_section__text\">This website was built with immense love, dedication, and passion. It’s crafted using React JS and TypeScript, leveraging the power of AWS to deliver a robust experience. The site is deployed through an S3 bucket with CloudFront for global content delivery. Continuous integration and deployment are managed via CodePipeline, using CodeBuild and CodeDeploy. CloudFormation templates, generated with AWS CDK, orchestrate the infrastructure, which includes an API created with API Gateway, serverless functions on Lambda, and data stored in DynamoDB. Assets are securely stored in S3.</p>"
         },
         "thumbnail": {
           "S": "https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/website-cover.PNG"

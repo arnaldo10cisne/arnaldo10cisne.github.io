@@ -25,6 +25,9 @@ import cognito_icon from '../assets/icons/cognito_icon.svg';
 import api_gateway_icon from '../assets/icons/api_gateway_icon.svg';
 import lambda_icon from '../assets/icons/lambda_icon.svg';
 import quicksight_icon from '../assets/icons/quicksight_icon.svg';
+import cloudfront_icon from '../assets/icons/cloudfront_icon.svg';
+import cloudformation_icon from '../assets/icons/cloudformation_icon.svg';
+import codepipeline_icon from '../assets/icons/codepipeline_icon.svg';
 import aws_config from './aws/config.json';
 
 export const EMAIL_REGEX =
@@ -67,6 +70,9 @@ export const CLOUD_SERVICES = {
   AWS_COGNITO: 'AWS Cognito',
   AWS_RDS: 'AWS RDS',
   AWS_QUICKSIGHT: 'AWS QuickSight',
+  AWS_CLOUDFRONT: 'AWS CloudFront',
+  AWS_CLOUDFORMATION: 'AWS CloudFormation',
+  AWS_CODEPIPELINE: 'AWS CodePipeline',
 };
 
 export const LANGUAGES = {
@@ -147,6 +153,18 @@ export const CLOUD_SERVICES_ICONS = [
   {
     name: CLOUD_SERVICES.AWS_QUICKSIGHT,
     icon: quicksight_icon,
+  },
+  {
+    name: CLOUD_SERVICES.AWS_CLOUDFRONT,
+    icon: cloudfront_icon,
+  },
+  {
+    name: CLOUD_SERVICES.AWS_CLOUDFORMATION,
+    icon: cloudformation_icon,
+  },
+  {
+    name: CLOUD_SERVICES.AWS_CODEPIPELINE,
+    icon: codepipeline_icon,
   },
 ];
 
