@@ -351,6 +351,9 @@
             },
             {
               "S": "Typescript"
+            },
+            {
+              "S": "AWS CDK"
             }
           ]
         },

@@ -14,7 +14,7 @@ const LabeledIcon = ({ name, icon }: LabeledIconProps) => {
       <img
         className="course_tech_icon"
         src={icon}
-        alt="Course badge"
+        alt={`${name} icon`}
         onMouseEnter={() => {
           setTooltipIsVisible(true);
         }}
