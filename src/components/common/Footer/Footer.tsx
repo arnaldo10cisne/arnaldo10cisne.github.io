@@ -57,13 +57,6 @@ const Footer = () => {
           })}
         </p>
       </div>
-      <div className="copyright">
-        <div className="copyright__line-1">
-          <span>&nbsp;©</span>
-          <span>&nbsp;COPYRIGHT 2021,&nbsp;</span>
-        </div>
-        <span className="copyright__line-2">&nbsp;ARNALDO CISNEROS&nbsp;</span>
-      </div>
     </div>
   );
 };
