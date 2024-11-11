@@ -1,0 +1,22 @@
+@import './variables';
+
+//Styles to be applied between 0 and 740px
+@mixin responsive-mobile {
+  @media (max-width: $mobile-styles-applied) {
+    @content;
+  }
+}
+
+//Styles to be applied between 740px and 1024px
+@mixin responsive-tablet {
+  @media (min-width: $mobile-styles-applied) and (max-width: $tablet-styles-applied) {
+    @content;
+  }
+}
+
+//Styles to be applied in more than 3000px
+@mixin responsive-4k {
+  @media (min-width: $screen-4k-styles-applied) {
+    @content;
+  }
+}
