@@ -8,17 +8,15 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="projectCell">
+    <a className="projectCell" href={`/portfolio/${project.id}`}>
       <img
         className="projectImage"
         src={`${project.thumbnail}`}
         alt={`${project.name} thumbnail`}
       />
-      <a className="projectName" href={`/portfolio/${project.id}`}>
-        {project.name}
-      </a>
+      <p className="projectName">{project.name}</p>
       <p className="projectDate">{project.date}</p>
-    </div>
+    </a>
   );
 };
 

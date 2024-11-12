@@ -2,42 +2,50 @@
 
 .course_cover {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 100px;
   @include responsive-mobile {
     flex-direction: column;
     margin: 10px;
   }
-  img {
-    border: 6px solid $blue-gray;
-    border-radius: 100px;
-    transition-property: border;
-    transition-duration: 0.2s;
-    &:hover {
-      border: 6px solid $main-yellow;
-    }
-  }
 }
 
 .course_title {
-  font-size: 4vw;
+  font-size: 67px;
   font-family: $main-font;
   color: $main-yellow;
   text-transform: uppercase;
-  max-width: 40vw;
+  max-width: 50vw;
   text-align: center;
+  margin: auto 0;
   @include responsive-mobile {
     font-size: 8vw;
     max-width: 100vw;
     margin-top: 30px;
+  }
+  @include responsive-tablet {
+    font-size: 45px;
   }
 }
 
 .course_linkContainer {
   display: flex;
   flex-direction: column;
+  margin-left: 100px;
   @include responsive-mobile {
     margin: 30px 0;
+  }
+}
+
+.certificate_link {
+  padding: 20px;
+  border-radius: 30px;
+  border: $blue-gray 2px solid;
+  transition-property: border background-color;
+  transition-duration: 0.2s;
+  &:hover {
+    background-color: $blue-gray-darker;
+    border: $main-yellow 2px solid;
   }
 }
 
@@ -52,14 +60,20 @@
 .course_generalInfoGrid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  width: 70%;
+  width: 60%;
   margin-bottom: 20px;
   grid-column: 1/3;
   margin: 70px auto;
   @include responsive-mobile {
-    width: 95%;
+    width: 80%;
     margin: 20px auto;
     margin-bottom: 50px;
+  }
+  @include responsive-tablet {
+    width: 70%;
+  }
+  @include responsive-4k {
+    width: 30%;
   }
 }
 
@@ -94,5 +108,16 @@
     color: $main-yellow;
     border: $main-yellow 2px solid;
     font-weight: 1000;
+  }
+}
+
+.certificate_badge {
+  width: 200px;
+  max-width: 300px;
+  @include responsive-mobile {
+    max-width: 250px;
+  }
+  @include responsive-tablet {
+    max-width: 250px;
   }
 }

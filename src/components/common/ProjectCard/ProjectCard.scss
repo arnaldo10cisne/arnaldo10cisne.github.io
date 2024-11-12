@@ -7,6 +7,15 @@
   align-items: center;
   margin: 30px 15px 0px 15px;
   min-width: 20%;
+  padding: 20px;
+  border-radius: 30px;
+  border: $blue-gray 2px solid;
+  transition-property: border background-color;
+  transition-duration: 0.2s;
+  &:hover {
+    background-color: $blue-gray-darker;
+    border: $main-yellow 2px solid;
+  }
   @include responsive-mobile {
     min-width: 100vw;
     margin: 30px 0px 0px 0px;
@@ -26,11 +35,6 @@
   margin: 10px 0px;
   font-size: 20px;
   font-weight: bold;
-  transition-duration: 0.2s;
-  transition-property: color;
-  &:hover {
-    color: $main-yellow-darker;
-  }
 }
 
 .projectDate {
