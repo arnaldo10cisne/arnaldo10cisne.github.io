@@ -43,10 +43,9 @@ const Course = () => {
               alt="Course badge"
               className="certificate_badge"
             />
+
+            <p className="course_clickPicture">Open certificate</p>
           </a>
-          <p className="course_clickPicture">
-            Click on the badge to open the certificate
-          </p>
         </div>
       </div>
       <CourseInfoTable course={courseToDisplay} />

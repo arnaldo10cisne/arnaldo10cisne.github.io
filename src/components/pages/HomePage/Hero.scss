@@ -1,8 +1,4 @@
-// Global Styles
-@import '../../../utilities/globalStyles';
-
-// Utilities
-@import '../../../utilities/variables';
+@import '../../../utilities/global';
 
 .hero {
   display: flex;
@@ -11,6 +7,13 @@
   height: calc(100vh - 51px);
   background-color: $blue-gray-transparent;
   padding-left: 100px;
+
+  @include responsive-mobile {
+    padding-left: 20px;
+  }
+  @include responsive-tablet {
+    padding-left: 40px;
+  }
 }
 
 .titleContainer {
@@ -19,10 +22,20 @@
   flex-direction: column;
   font-weight: bold;
 
+  @include responsive-mobile {
+    margin-top: -100px;
+  }
+
   .preTitle {
     text-align: start;
     font-size: 30px;
     font-size: 2vw;
+    @include responsive-mobile {
+      font-size: 5vw;
+    }
+    @include responsive-4k {
+      font-size: 1.5vw;
+    }
   }
 
   .title {
@@ -30,12 +43,32 @@
     font-size: 7.8vw;
     color: $main-yellow;
     margin: -10px 0px;
+    @include responsive-mobile {
+      text-align: start;
+      font-size: 14vw;
+      margin: 10px 0px;
+      margin-left: 20px;
+      line-height: 13vw;
+    }
+    @include responsive-tablet {
+      font-size: 9.5vw;
+    }
+    @include responsive-4k {
+      font-size: 5vw;
+    }
   }
 
   .postTitle {
     text-align: start;
     font-size: 30px;
     font-size: 2vw;
+    @include responsive-mobile {
+      font-size: 4vw;
+      margin-left: 20px;
+    }
+    @include responsive-4k {
+      font-size: 1.5vw;
+    }
   }
 }
 
@@ -44,9 +77,20 @@
   font-size: 2vw;
   margin-top: 35px;
   padding-right: 40%;
+  @include responsive-mobile {
+    font-size: 4.5vw;
+    padding-right: 40px;
+    margin-left: 20px;
+  }
+  @include responsive-4k {
+    font-size: 1vw;
+  }
 
   .presentationText {
     text-align: start;
+    @include responsive-mobile {
+      text-align: justify;
+    }
   }
 }
 
@@ -60,67 +104,5 @@
     font-size: 30px;
     font-weight: 600;
     padding: 5px 10px;
-  }
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .hero {
-    padding-left: 20px;
-  }
-  .titleContainer {
-    margin-top: -100px;
-    .preTitle {
-      font-size: 5vw;
-    }
-    .title {
-      text-align: start;
-      font-size: 14vw;
-      margin: 10px 0px;
-      margin-left: 20px;
-      line-height: 13vw;
-    }
-    .postTitle {
-      font-size: 4vw;
-      margin-left: 20px;
-    }
-  }
-  .presentationTextContainer {
-    font-size: 4.5vw;
-    padding-right: 40px;
-    margin-left: 20px;
-    .presentationText {
-      text-align: justify;
-    }
-  }
-}
-
-@media (min-width: $screen-4k-styles-applied) {
-  .hero {
-    // padding-left: 20px;
-  }
-  .titleContainer {
-    // margin-top: -100px;
-    .preTitle {
-      font-size: 1.5vw;
-    }
-    .title {
-      // text-align: start;
-      font-size: 5vw;
-      // margin: 10px 0px;
-      // margin-left: 20px;
-      // line-height: 13vw;
-    }
-    .postTitle {
-      font-size: 1.5vw;
-      // margin-left: 20px;
-    }
-  }
-  .presentationTextContainer {
-    font-size: 1vw;
-    // padding-right: 40px;
-    // margin-left: 20px;
-    .presentationText {
-      // text-align: justify;
-    }
   }
 }

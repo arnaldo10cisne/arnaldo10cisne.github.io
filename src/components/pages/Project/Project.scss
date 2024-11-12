@@ -1,14 +1,13 @@
-// Global Styles
-@import '../../../utilities/globalStyles';
-
-// Utilities
-@import '../../../utilities/variables';
+@import '../../../utilities/global';
 
 .project_cover {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 20px;
+  @include responsive-mobile {
+    flex-direction: column;
+  }
   h1 {
     font-size: 4vw;
     font-family: $main-font;
@@ -16,9 +15,17 @@
     text-transform: uppercase;
     max-width: 50vw;
     text-align: center;
+    @include responsive-mobile {
+      font-size: 8vw;
+      max-width: 100vw;
+    }
   }
   img {
     max-width: 25vw;
+    @include responsive-mobile {
+      max-width: 70vw;
+      margin: 25px 0px;
+    }
   }
 }
 
@@ -27,18 +34,4 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .project_cover {
-    flex-direction: column;
-    h1 {
-      font-size: 8vw;
-      max-width: 100vw;
-    }
-    img {
-      max-width: 70vw;
-      margin: 25px 0px;
-    }
-  }
 }

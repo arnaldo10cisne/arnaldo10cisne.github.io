@@ -1,8 +1,4 @@
-// Global Styles
-@import '../../../utilities/globalStyles';
-
-// Utilities
-@import '../../../utilities/variables';
+@import '../../../utilities/global';
 
 .body {
   min-height: calc(100vh - (61px * 2));
@@ -11,10 +7,16 @@
 
 .navbarContainer {
   display: block;
+  @include responsive-mobile {
+    display: none;
+  }
 }
 
 .navbarMobileContainer {
   display: none;
+  @include responsive-mobile {
+    display: block;
+  }
 }
 
 .homePageBackgroundImage {
@@ -46,14 +48,4 @@
   position: absolute;
   width: 100vw;
   bottom: -61px;
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .navbarContainer {
-    display: none;
-  }
-
-  .navbarMobileContainer {
-    display: block;
-  }
 }

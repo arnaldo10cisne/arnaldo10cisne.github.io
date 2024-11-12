@@ -1,18 +1,11 @@
-// Global Styles
-@import '../../../utilities/globalStyles';
-
-// Utilities
-@import '../../../utilities/variables';
+@import '../../../utilities/global';
 
 .projectList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 40px;
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .projectList {
+  @include responsive-mobile {
     flex-wrap: nowrap;
     justify-content: flex-start;
     overflow-x: scroll;

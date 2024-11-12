@@ -1,8 +1,4 @@
-// Global Styles
-@import '../../../utilities/globalStyles';
-
-// Utilities
-@import '../../../utilities/variables';
+@import '../../../utilities/global';
 
 .certificate_cell {
   display: flex;
@@ -16,6 +12,9 @@
   border-radius: 10px;
   transition-property: border;
   transition-duration: 0.2s;
+  @include responsive-mobile {
+    width: 90%;
+  }
   &:hover {
     border: 3px solid $main-yellow;
   }
@@ -31,17 +30,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include responsive-mobile {
+    display: none;
+  }
 }
 
 .certificate_section_company {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @include responsive-mobile {
+    display: none;
+  }
 }
 
 .course_icon {
   width: 50px;
   margin: 0px 30px;
+  @include responsive-mobile {
+    margin: 0px 10px;
+  }
 }
 
 .course_tech_icon {
@@ -55,19 +63,4 @@
 .course_name {
   margin-left: 10px;
   text-align: start;
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .certificate_cell {
-    width: 90%;
-  }
-  .certificate_section_tech {
-    display: none;
-  }
-  .certificate_section_company {
-    display: none;
-  }
-  .course_icon {
-    margin: 0px 10px;
-  }
 }

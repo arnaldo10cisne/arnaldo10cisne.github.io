@@ -1,8 +1,4 @@
-// Global Styles
-@import '../../../utilities/globalStyles';
-
-// Utilities
-@import '../../../utilities/variables';
+@import '../../../utilities/global';
 
 .screen_list {
   display: flex;
@@ -10,6 +6,12 @@
   flex-wrap: wrap;
   margin: 30px auto;
   width: 60%;
+  @include responsive-mobile {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    width: 100% !important;
+  }
 }
 
 .project_screen {
@@ -34,14 +36,5 @@
       height: 100%;
       align-items: center;
     }
-  }
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .screen_list {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: scroll;
-    width: 100% !important;
   }
 }

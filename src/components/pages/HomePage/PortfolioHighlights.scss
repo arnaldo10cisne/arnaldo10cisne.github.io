@@ -1,8 +1,4 @@
-// Global Styles
-@import '../../../utilities/globalStyles';
-
-// Utilities
-@import '../../../utilities/variables';
+@import '../../../utilities/global';
 
 .portfolioHighlightSection {
   background-color: $blue-gray-transparent;
@@ -13,10 +9,7 @@
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 40px;
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .highlight_projectList {
+  @include responsive-mobile {
     justify-content: flex-start;
     overflow-x: scroll;
   }

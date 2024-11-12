@@ -1,11 +1,7 @@
-// Global Styles
-@import '../../../utilities/globalStyles';
+@import '../../../utilities/global';
 
-// Utilities
-@import '../../../utilities/variables';
-
-@media (max-width: $mobile-styles-applied) {
-  .global__page_title {
+.global__page_title {
+  @include responsive-mobile {
     font-size: 16vw !important;
     text-align: center !important;
   }
