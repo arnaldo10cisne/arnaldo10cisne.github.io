@@ -6,6 +6,10 @@
   display: flex;
   position: relative;
   margin-top: 0px;
+
+  @include responsive-mobile {
+    padding: 20px 0;
+  }
 }
 
 .breadcrumbsLink_basic {
@@ -52,10 +56,4 @@
   background-color: $blue-gray-darker;
   border: $blue-gray-darker solid 2px;
   pointer-events: none;
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .breadcrumbsContainer {
-    padding: 20px 0;
-  }
 }

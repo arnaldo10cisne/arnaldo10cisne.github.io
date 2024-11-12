@@ -14,10 +14,17 @@
 
   flex-direction: row;
   justify-content: space-around;
+
+  @include responsive-mobile {
+    flex-direction: column;
+  }
 }
 
 .linkSeparator {
   color: black;
+  @include responsive-mobile {
+    font-size: 16px;
+  }
 }
 
 .copyright {
@@ -36,40 +43,27 @@
   font-family: $content-font;
   color: $blue-gray;
   font-size: 16px;
+  @include responsive-mobile {
+    font-size: 12px;
+  }
 }
 
 .copyright span:first-child {
   font-size: 20px;
+  @include responsive-mobile {
+    font-size: 15px;
+  }
 }
 
 .social_media__link {
   font-family: $content-font;
   color: $blue-gray;
   font-size: 16px;
+  @include responsive-mobile {
+    font-size: 16px;
+  }
 }
 
 .social_media__link:hover {
   text-decoration: underline;
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .footer {
-    flex-direction: column;
-  }
-
-  .linkSeparator {
-    font-size: 16px;
-  }
-
-  .copyright span {
-    font-size: 12px;
-  }
-
-  .copyright span:first-child {
-    font-size: 15px;
-  }
-
-  .social_media__link {
-    font-size: 16px;
-  }
 }

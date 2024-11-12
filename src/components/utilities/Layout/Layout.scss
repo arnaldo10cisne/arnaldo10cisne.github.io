@@ -7,10 +7,16 @@
 
 .navbarContainer {
   display: block;
+  @include responsive-mobile {
+    display: none;
+  }
 }
 
 .navbarMobileContainer {
   display: none;
+  @include responsive-mobile {
+    display: block;
+  }
 }
 
 .homePageBackgroundImage {
@@ -42,14 +48,4 @@
   position: absolute;
   width: 100vw;
   bottom: -61px;
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .navbarContainer {
-    display: none;
-  }
-
-  .navbarMobileContainer {
-    display: block;
-  }
 }

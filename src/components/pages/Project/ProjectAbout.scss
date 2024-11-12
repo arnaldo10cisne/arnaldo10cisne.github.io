@@ -5,6 +5,10 @@
   justify-content: space-around;
   align-items: center;
   margin: 80px;
+  @include responsive-mobile {
+    flex-direction: column;
+    margin: 40px;
+  }
 }
 
 .project_description {
@@ -12,6 +16,10 @@
   text-align: justify;
   font-family: $content-font;
   font-size: 18px;
+  @include responsive-mobile {
+    width: 90vw;
+    font-size: 16px;
+  }
   a {
     text-decoration: underline;
     color: rgb(96, 172, 202);
@@ -20,16 +28,5 @@
     &:hover {
       color: $main-yellow;
     }
-  }
-}
-
-@media (max-width: $mobile-styles-applied) {
-  .about_container {
-    flex-direction: column;
-    margin: 40px;
-  }
-  .project_description {
-    width: 90vw;
-    font-size: 16px;
   }
 }

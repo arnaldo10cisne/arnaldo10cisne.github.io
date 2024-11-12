@@ -6,6 +6,9 @@
   justify-content: space-between;
   border-bottom: 1px solid $main-yellow;
   width: 400px;
+  @include responsive-mobile {
+    width: 90vw;
+  }
 }
 
 .type-column {
@@ -24,11 +27,8 @@
   font-weight: 500;
 }
 
-@media (max-width: $mobile-styles-applied) {
-  .general_info_grid {
+.general_info_grid {
+  @include responsive-mobile {
     margin-top: 80px;
-  }
-  .table_row {
-    width: 90vw;
   }
 }
