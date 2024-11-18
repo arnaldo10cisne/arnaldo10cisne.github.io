@@ -2,3 +2,5 @@ node_modules
 # Ignore artifacts:
 build
 coverage
+src/utilities/aws/config.json
+README.md
