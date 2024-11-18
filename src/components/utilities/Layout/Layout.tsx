@@ -1,43 +1,62 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import Navbar from '../../common/Navbar/Navbar';
 import Footer from '../../common/Footer/Footer';
 import Breadcrumbs from '../../common/Breadcrumbs/Breadcrumbs';
 import './Layout.scss';
 import NavbarMobile from '../../common/Navbar/NavbarMobile';
+import { useLocation } from 'react-router-dom';
 
 interface LayoutProps {
-  pageToRender: ReactElement;
+  children: React.ReactNode;
 }
 
-const Layout = ({ pageToRender }: LayoutProps) => {
-  const pathname = window.location.pathname;
+interface BreadcrumbItem {
+  label: string;
+  to: string;
+  level: number;
+}
+
+const Layout = ({ children }: LayoutProps) => {
+  const location = useLocation();
+  const pathname = location.pathname;
   const isHomePage = pathname === '/';
 
-  const breadcrumbsGenerator = () => {
-    let addedLevels = [];
-    const pathList = pathname.split('/');
-    pathList.shift();
+  const breadcrumbsGenerator = (): BreadcrumbItem[] => {
+    const additionalBreadcrumbs = [];
+    const pathSegments = pathname.split('/').slice(1);
+    const isCertificates = pathSegments.includes('certificates');
+    const isPortfolio = pathSegments.includes('portfolio');
+    const lastSegment = pathSegments.at(-1) || '';
+    const lastSegmentIsNumber = /\d/.test(lastSegment);
 
-    if (pathList.includes('certificates')) {
-      addedLevels.push({
+    if (isCertificates) {
+      additionalBreadcrumbs.push({
         label: 'Certificates',
         to: '/about/certificates',
         level: 2,
       });
     }
 
-    if (/\d/.test(pathList.at(-1) || '')) {
-      addedLevels.push({
-        label: pathList.includes('certificates')
-          ? 'Course'
-          : pathList.includes('portfolio')
-          ? 'Project'
-          : 'Article',
-        to: pathList.includes('certificates')
-          ? `/about/certificates/${pathList.at(-1)}`
-          : `/portfolio/${pathList.at(-1)}`,
-        level: pathList.includes('certificates') ? 3 : 2,
-      });
+    if (lastSegmentIsNumber) {
+      let label: string;
+      let to: string;
+      let level: number;
+
+      if (isCertificates) {
+        label = 'Course';
+        to = `/about/certificates/${lastSegment}`;
+        level = 3;
+      } else if (isPortfolio) {
+        label = 'Project';
+        to = `/portfolio/${lastSegment}`;
+        level = 2;
+      } else {
+        label = 'Article';
+        to = `/${pathSegments.join('/')}`;
+        level = 2;
+      }
+
+      additionalBreadcrumbs.push({ label, to, level });
     }
 
     return [
@@ -47,16 +66,17 @@ const Layout = ({ pageToRender }: LayoutProps) => {
         level: 0,
       },
       {
-        label: pathList[0].charAt(0).toUpperCase() + pathList[0].slice(1),
-        to: `/${pathList[0]}`,
+        label:
+          pathSegments[0].charAt(0).toUpperCase() + pathSegments[0].slice(1),
+        to: `/${pathSegments[0]}`,
         level: 1,
       },
-      ...addedLevels,
+      ...additionalBreadcrumbs,
     ];
   };
 
   return (
-    <div className={`body ${isHomePage && 'homePageBackgroundImage'}`}>
+    <div className={`body ${isHomePage ? 'homePageBackgroundImage' : ''}`}>
       <div className="navbarContainer">
         <Navbar />
       </div>
@@ -66,7 +86,7 @@ const Layout = ({ pageToRender }: LayoutProps) => {
       <div className="pageContainer">
         {isHomePage && <div className="homepageCurtain" />}
         {!isHomePage && <Breadcrumbs pageList={breadcrumbsGenerator()} />}
-        {pageToRender}
+        {children}
       </div>
       <div className="footerContainer">
         <Footer />

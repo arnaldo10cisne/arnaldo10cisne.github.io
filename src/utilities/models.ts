@@ -35,6 +35,21 @@ export const EMAIL_REGEX =
 
 export const DEFAULT_TITLE = 'Arnaldo Cisneros';
 
+export const HERO_DESCRIPTION =
+  "Originally from cities always hugged by mountains and tropical climates, I've been a passionate student of computer science and software creation since my teenage years. I'm also an enthusiastic follower of self-learning, and support free access to knowledge for everyone through the internet.";
+
+export const ABOUT_ME_TEXT =
+  'Born in Caracas, Venezuela, I enjoy a balance of work and personal passions. Outside of programming, I love playing the piano, reading, and immersing myself in video games. I’m an avid traveler who values meaningful connections, preferring a good dinner with friends over noisy gatherings. I enjoy deep conversations and, for the record, I’m definitely a cat person.';
+
+export const ABOUT_WORK_TEXT =
+  'I approach every project with dedication, focusing on creating scalable web applications, user-friendly interfaces, and robust APIs. My experience includes building SPAs, optimizing performance, and implementing CI/CD pipelines, always delivering high-quality, detail-oriented solutions.';
+
+export const ABOUT_EXPERTISE_TEXT =
+  'I am a Software Engineer specializing in web development and cloud solutions, with expertise in React, TypeScript, Python, and AWS. Certified in AWS Solutions Architecture and Development, I build scalable applications, implement CI/CD pipelines, and deploy secure, serverless solutions using modern cloud technologies.';
+
+export const ABOUT_EDUCATION_TEXT =
+  'These are some of my most important certificates. Click on each image to see a description of the course. You can also see all my certificates in the link below.';
+
 export const PORTFOLIO_ENDPOINT = `${aws_config.apiEndpointUrl}portfolio`;
 
 export const CERTIFICATES_ENDPOINT = `${aws_config.apiEndpointUrl}certificates`;

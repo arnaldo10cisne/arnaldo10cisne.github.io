@@ -8,7 +8,11 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <a className="projectCell" href={`/portfolio/${project.id}`}>
+    <a
+      className="projectCell"
+      href={`/portfolio/${project.id}`}
+      data-testid="project-cell"
+    >
       <img
         className="projectImage"
         src={`${project.thumbnail}`}

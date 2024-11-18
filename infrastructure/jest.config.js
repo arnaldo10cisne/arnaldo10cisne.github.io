@@ -5,4 +5,7 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
+  moduleNameMapper: {
+    '^\\.\\/aws\\/config\\.json$': '<rootDir>/src/__mocks__/aws/config.json',
+  },
 };
