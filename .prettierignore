@@ -3,3 +3,4 @@ node_modules
 build
 coverage
 src/utilities/aws/config.json
+README.md
