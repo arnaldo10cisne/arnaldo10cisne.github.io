@@ -61,7 +61,12 @@ export class PersonalWebsite_CICD_Stack extends cdk.Stack {
               commands: ['npm install'],
             },
             pre_build: {
-              commands: ['node ./scripts/get_config/generateCloudConfig.js'],
+              commands: [
+                'node ./scripts/get_config/generateCloudConfig.js',
+                'npx prettier --check .',
+                'npx eslint . --ext .js,.jsx,.ts,.tsx',
+                'npm test -- --watchAll=false',
+              ],
             },
             build: {
               commands: ['npm run build'],
