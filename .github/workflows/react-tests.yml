@@ -25,5 +25,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Create AWS Config file
+        run: node ./scripts/get_config/generateCloudConfig.js
+
       - name: Run Tests
         run: npm test -- --watchAll=false

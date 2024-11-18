@@ -17,41 +17,45 @@ const outputFilePath = path.join(
   'config.json'
 );
 
-// Running the AWS CLI commando to obtain ids
+// Predefined config with empty values
+const predefinedConfig = {
+  apiEndpointUrl: '',
+};
+
+function writeConfigFile(config) {
+  fs.mkdirSync(path.dirname(outputFilePath), { recursive: true });
+
+  fs.writeFileSync(outputFilePath, JSON.stringify(config, null, 2));
+  console.log(`Config file created at ${outputFilePath}`);
+}
+
 exec(
   `aws cloudformation describe-stacks --stack-name ${stackName} --query "Stacks[0].Outputs" --output json`,
   (error, stdout, stderr) => {
     if (error) {
-      console.error(`Error ejecutando el comando AWS CLI: ${error}`);
+      console.error(`Error executing AWS CLI command: ${error}`);
+      writeConfigFile(predefinedConfig);
       return;
     }
 
     try {
       const outputs = JSON.parse(stdout);
       const config = {};
-      console.log(outputs);
 
       outputs.forEach((output) => {
         switch (output.OutputKey) {
           case 'PersonalWebsiteapiendpointurl':
             config.apiEndpointUrl = output.OutputValue;
             break;
-          // More uses cases go here
           default:
             break;
         }
       });
 
-      // Making sure the Output file path exists
-      fs.mkdirSync(path.dirname(outputFilePath), { recursive: true });
-
-      // Writing JSON
-      fs.writeFileSync(outputFilePath, JSON.stringify(config, null, 2));
-      console.log(`Config file created in ${outputFilePath}`);
+      writeConfigFile(config);
     } catch (parseError) {
-      console.error(
-        `Error parseando la salida del comando AWS CLI: ${parseError}`
-      );
+      console.error(`Error parsing AWS CLI output: ${parseError}`);
+      writeConfigFile(predefinedConfig);
     }
   }
 );

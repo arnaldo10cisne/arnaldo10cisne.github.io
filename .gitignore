@@ -46,5 +46,4 @@ amplifytools.xcconfig
 #amplify-do-not-edit-end
 
 cdk.out
-src/utilities/aws/config.json
 cdk.context.json
