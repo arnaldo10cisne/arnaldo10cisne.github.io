@@ -6,19 +6,10 @@ import {
   ABOUT_EXPERTISE_TEXT,
   ABOUT_ME_TEXT,
   ABOUT_WORK_TEXT,
-  CertificateItem,
 } from '../../../utilities/models';
-import { useQuery } from 'react-query';
-import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
-import { getAllCertificatesFromDynamoDB } from '../../../utilities/aws/awsUtils';
 import CertificatesHighlights from './CertificatesHighlights';
 
 const About = () => {
-  const { data: courses } = useQuery<CertificateItem[]>(
-    ['About', 'courses_list'],
-    () => getAllCertificatesFromDynamoDB(true)
-  );
-
   return (
     <>
       <PageTitle title="About" />

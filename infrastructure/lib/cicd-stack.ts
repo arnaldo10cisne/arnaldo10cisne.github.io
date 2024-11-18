@@ -10,7 +10,6 @@ import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as acm from 'aws-cdk-lib/aws-certificatemanager';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import * as route53_targets from 'aws-cdk-lib/aws-route53-targets';
-import * as s3_deployment from 'aws-cdk-lib/aws-s3-deployment';
 
 interface PersonalWebsiteCICDStackProps extends cdk.StackProps {
   serverlessStackName: string;

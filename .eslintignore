@@ -1,0 +1,7 @@
+scripts/load_data/venv
+cdk.out
+build
+node_modules
+.env
+cdk.context.json
+infrastructure/node_modules

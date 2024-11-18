@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import Navbar from '../../common/Navbar/Navbar';
 import Footer from '../../common/Footer/Footer';
 import Breadcrumbs from '../../common/Breadcrumbs/Breadcrumbs';
