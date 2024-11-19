@@ -20,6 +20,9 @@
     width: 90vw;
     font-size: 16px;
   }
+  @include responsive-4k {
+    font-size: 26px;
+  }
   a {
     text-decoration: underline;
     color: rgb(96, 172, 202);

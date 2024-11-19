@@ -47,7 +47,7 @@ const CourseInfoTable = ({ course }: CourseInfoTableProps) => {
 
   return (
     <>
-      <h2 className="global__section_divider">About this course</h2>
+      <h2 className="global__section_divider">About this certification</h2>
       <div className="course_generalInfoGrid">
         <InfoRow
           label="Tech"
