@@ -9,6 +9,9 @@
   @include responsive-mobile {
     width: 90vw;
   }
+  @include responsive-4k {
+    width: 600px;
+  }
 }
 
 .type-column {
@@ -18,6 +21,10 @@
   font-weight: 700;
   color: $main-yellow;
   font-family: $main-font;
+  @include responsive-4k {
+    font-size: 20px;
+    margin: 10px 0;
+  }
 }
 
 .content-column {
@@ -25,6 +32,10 @@
   width: 60%;
   font-family: $content-font;
   font-weight: 500;
+  @include responsive-4k {
+    font-size: 20px;
+    margin: 10px 0;
+  }
 }
 
 .general_info_grid {

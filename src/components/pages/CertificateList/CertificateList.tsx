@@ -16,7 +16,7 @@ const CertificateList = () => {
   return (
     <>
       <PageTitle title="Certificates" />
-      <h2 className="global__section_divider">Courses</h2>
+      <h2 className="global__section_divider">Certifications</h2>
       {courses ? (
         courses?.map((certificate: CertificateItem) => {
           return <CertificateCell certificate={certificate} />;
