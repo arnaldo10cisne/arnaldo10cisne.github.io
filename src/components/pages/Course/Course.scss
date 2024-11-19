@@ -74,6 +74,7 @@
   }
   @include responsive-4k {
     width: 30%;
+    font-size: 20px;
   }
 }
 
@@ -119,5 +120,8 @@
   }
   @include responsive-tablet {
     max-width: 250px;
+  }
+  @include responsive-4k {
+    width: 400px;
   }
 }

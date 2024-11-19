@@ -30,6 +30,10 @@
   a {
     width: 200px;
     height: 200px;
+    @include responsive-4k {
+      width: 400px;
+      height: 400px;
+    }
 
     img {
       width: 100%;

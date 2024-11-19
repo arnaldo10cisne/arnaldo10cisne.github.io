@@ -5,4 +5,7 @@
     font-size: 16vw !important;
     text-align: center !important;
   }
+  @include responsive-4k {
+    font-size: 150px !important;
+  }
 }
