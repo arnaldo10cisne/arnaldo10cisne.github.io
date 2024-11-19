@@ -26,6 +26,10 @@
   height: 300px;
   width: 300px;
   object-fit: cover;
+  @include responsive-4k {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 .projectName {
@@ -35,9 +39,15 @@
   margin: 10px 0px;
   font-size: 20px;
   font-weight: bold;
+  @include responsive-4k {
+    font-size: 26px;
+  }
 }
 
 .projectDate {
   font-family: $main-font;
   font-style: italic;
+  @include responsive-4k {
+    font-size: 20px;
+  }
 }

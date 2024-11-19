@@ -60,7 +60,7 @@ const Course = () => {
           rel="noopener noreferrer"
           className="global__button global__smallButton"
         >
-          Check this course!
+          Check this certification!
         </a>
       </div>
     </>

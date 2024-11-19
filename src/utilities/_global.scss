@@ -53,6 +53,10 @@
   font-size: 16px;
   font-weight: 500;
   padding: 3px 10px;
+  @include responsive-4k {
+    font-size: 26px;
+    width: 300px;
+  }
 }
 
 a {
