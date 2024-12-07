@@ -177,7 +177,7 @@
           "S": "<p class=\"portfolio__about_section__text\">DataMind Canvas is a data analysis personal project that heavily uses de AWS Cloud</p>"
         },
         "thumbnail": {
-          "S": "https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/website-cover.PNG"
+          "S": ""
         },
         "name": {
           "S": "DataMind Canvas"
@@ -231,7 +231,7 @@
           "S": "<p class=\"portfolio__about_section__text\">This website was made with lots of love, and tons of dedication and passion. There is not a lot more that I can say about it, but I still invite you to check the code on Github, so you can actually see all the work it took.</p>"
         },
         "thumbnail": {
-          "S": "https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/website-cover.PNG"
+          "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/website-cover.PNG"
         },
         "highlight": {
           "BOOL": false
@@ -364,7 +364,7 @@
           "S": "<p class=\"portfolio__about_section__text\">This website was built with immense love, dedication, and passion. It’s crafted using React JS and TypeScript, leveraging the power of AWS to deliver a robust experience. The site is deployed through an S3 bucket with CloudFront for global content delivery. Continuous integration and deployment are managed via CodePipeline, using CodeBuild and CodeDeploy. CloudFormation templates, generated with AWS CDK, orchestrate the infrastructure, which includes an API created with API Gateway, serverless functions on Lambda, and data stored in DynamoDB. Assets are securely stored in S3.</p>"
         },
         "thumbnail": {
-          "S": "https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/website-cover.PNG"
+          "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/website-cover.PNG"
         },
         "name": {
           "S": "Personal website"
