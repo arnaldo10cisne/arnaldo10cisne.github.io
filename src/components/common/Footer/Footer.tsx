@@ -29,7 +29,7 @@ const links = [
   },
 ];
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div className="footer">
       <div className="social_media">
@@ -60,5 +60,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

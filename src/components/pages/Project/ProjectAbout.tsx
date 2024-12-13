@@ -1,13 +1,13 @@
 import React from 'react';
 import { ProjectItem } from '../../../utilities/models';
-import ProjectInfoTable from './ProjectInfoTable';
+import { ProjectInfoTable } from './ProjectInfoTable';
 import './ProjectAbout.scss';
 
 interface ProjectAboutProps {
   project?: ProjectItem;
 }
 
-const ProjectAbout = ({ project }: ProjectAboutProps) => {
+export const ProjectAbout = ({ project }: ProjectAboutProps) => {
   return (
     <>
       <h2 className="global__section_divider">About this project</h2>
@@ -23,5 +23,3 @@ const ProjectAbout = ({ project }: ProjectAboutProps) => {
     </>
   );
 };
-
-export default ProjectAbout;

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Project from './Project';
+import { Project } from './Project';
 import * as ReactQuery from 'react-query';
 import { useParams } from 'react-router-dom';
 import { DEFAULT_TITLE, PROJECT_TYPES } from '../../../utilities/models';

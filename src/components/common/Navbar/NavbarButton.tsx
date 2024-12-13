@@ -7,7 +7,7 @@ interface NavbarButtonProps {
   selected: boolean;
 }
 
-const NavbarButton = ({ label, route, selected }: NavbarButtonProps) => {
+export const NavbarButton = ({ label, route, selected }: NavbarButtonProps) => {
   return (
     <a
       href={`${route}`}
@@ -17,5 +17,3 @@ const NavbarButton = ({ label, route, selected }: NavbarButtonProps) => {
     </a>
   );
 };
-
-export default NavbarButton;

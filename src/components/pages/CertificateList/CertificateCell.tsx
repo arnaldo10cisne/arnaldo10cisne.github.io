@@ -1,13 +1,13 @@
 import React from 'react';
 import { CertificateItem } from '../../../utilities/models';
 import { COMPANY_ICONS, TECHNOLOGIES_ICONS } from '../../../utilities/models';
-import LabeledIcon from '../../common/LabeledIcon/LabeledIcon';
+import { LabeledIcon } from '../../common/LabeledIcon/LabeledIcon';
 
 interface CertificateCellProps {
   certificate: CertificateItem;
 }
 
-const CertificateCell = ({ certificate }: CertificateCellProps) => {
+export const CertificateCell = ({ certificate }: CertificateCellProps) => {
   const academyIcon = COMPANY_ICONS.find((company) => {
     return company.name === certificate.company;
   });
@@ -48,5 +48,3 @@ const CertificateCell = ({ certificate }: CertificateCellProps) => {
     </a>
   );
 };
-
-export default CertificateCell;

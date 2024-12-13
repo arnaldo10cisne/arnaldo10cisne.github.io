@@ -2,10 +2,10 @@ import React from 'react';
 import './About.scss';
 import { CertificateItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
-import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { LoadingSpinner } from '../../utilities/LoadingSpinner/LoadingSpinner';
 import { getAllCertificatesFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
-const CertificatesHighlights = () => {
+export const CertificatesHighlights = () => {
   const { data: courses } = useQuery<CertificateItem[]>(
     ['About', 'courses_list'],
     () => getAllCertificatesFromDynamoDB(true)
@@ -40,5 +40,3 @@ const CertificatesHighlights = () => {
     </div>
   );
 };
-
-export default CertificatesHighlights;

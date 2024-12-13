@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavbarLogo.scss';
 
-const NavbarLogo = () => {
+export const NavbarLogo = () => {
   return (
     <div>
       <a href="/">
@@ -14,5 +14,3 @@ const NavbarLogo = () => {
     </div>
   );
 };
-
-export default NavbarLogo;

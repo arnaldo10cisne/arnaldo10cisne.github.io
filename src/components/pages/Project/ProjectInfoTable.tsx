@@ -6,7 +6,7 @@ import {
   ProjectItem,
 } from '../../../utilities/models';
 import { TECHNOLOGIES_ICONS } from '../../../utilities/models';
-import LabeledIcon from '../../common/LabeledIcon/LabeledIcon';
+import { LabeledIcon } from '../../common/LabeledIcon/LabeledIcon';
 
 interface ProjectInfoTableProps {
   project: ProjectItem | undefined;
@@ -63,7 +63,7 @@ const ProjectTech = ({ technologies }: ProjectTechProps) => {
   );
 };
 
-const ProjectInfoTable = ({ project }: ProjectInfoTableProps) => {
+export const ProjectInfoTable = ({ project }: ProjectInfoTableProps) => {
   return (
     <div className="general_info_grid">
       <ProjectTech technologies={project?.technologies} />
@@ -84,5 +84,3 @@ const ProjectInfoTable = ({ project }: ProjectInfoTableProps) => {
     </div>
   );
 };
-
-export default ProjectInfoTable;
