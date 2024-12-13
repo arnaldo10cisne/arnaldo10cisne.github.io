@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import NavbarLogo from './NavbarLogo';
+import { NavbarLogo } from './NavbarLogo';
 
 describe('NavbarLogo', () => {
   test('renders NavbarLogo component without crashing', () => {
