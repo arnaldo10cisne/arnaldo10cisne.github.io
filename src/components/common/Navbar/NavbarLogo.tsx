@@ -7,7 +7,7 @@ export const NavbarLogo = () => {
       <a href="/">
         <img
           className="navbar_logo"
-          src="https://arnaldo10cisne.github.io/legacy_personal_website/assets/img/logo_small(3).png"
+          src="https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/logo_small(3).png"
           alt="logo"
         />
       </a>
