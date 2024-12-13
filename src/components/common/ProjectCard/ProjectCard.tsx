@@ -6,7 +6,7 @@ interface ProjectCardProps {
   project: ProjectItem;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <a
       className="projectCell"
@@ -23,5 +23,3 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     </a>
   );
 };
-
-export default ProjectCard;

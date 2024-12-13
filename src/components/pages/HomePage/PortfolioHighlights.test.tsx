@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import PortfolioHighlights from './PortfolioHighlights';
+import { PortfolioHighlights } from './PortfolioHighlights';
 import * as ReactQuery from 'react-query';
 
 jest.mock('react-query', () => ({

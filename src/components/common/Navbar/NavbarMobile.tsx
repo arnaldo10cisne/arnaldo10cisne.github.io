@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './NavbarMobile.scss';
-import NavbarButton from './NavbarButton';
+import { NavbarButton } from './NavbarButton';
 import { navbarItems } from './NavbarItems';
 import triangle_icon from '../../../assets/icons/triangle_icon.png';
-import NavbarLogo from './NavbarLogo';
+import { NavbarLogo } from './NavbarLogo';
 
-const NavbarMobile = () => {
+export const NavbarMobile = () => {
   const [menuDeployed, setMenuDeployed] = useState(false);
   const pathname = window.location.pathname;
   const NAVBAR_HEIGHT = 62;
@@ -63,5 +63,3 @@ const NavbarMobile = () => {
     </div>
   );
 };
-
-export default NavbarMobile;

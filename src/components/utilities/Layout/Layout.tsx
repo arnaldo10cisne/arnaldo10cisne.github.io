@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../../common/Navbar/Navbar';
-import Footer from '../../common/Footer/Footer';
-import Breadcrumbs from '../../common/Breadcrumbs/Breadcrumbs';
+import { Navbar } from '../../common/Navbar/Navbar';
+import { Footer } from '../../common/Footer/Footer';
+import { Breadcrumbs } from '../../common/Breadcrumbs/Breadcrumbs';
 import './Layout.scss';
-import NavbarMobile from '../../common/Navbar/NavbarMobile';
+import { NavbarMobile } from '../../common/Navbar/NavbarMobile';
 import { useLocation } from 'react-router-dom';
 
 interface LayoutProps {
@@ -16,7 +16,7 @@ interface BreadcrumbItem {
   level: number;
 }
 
-const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children }: LayoutProps) => {
   const location = useLocation();
   const pathname = location.pathname;
   const isHomePage = pathname === '/';
@@ -94,5 +94,3 @@ const Layout = ({ children }: LayoutProps) => {
     </div>
   );
 };
-
-export default Layout;

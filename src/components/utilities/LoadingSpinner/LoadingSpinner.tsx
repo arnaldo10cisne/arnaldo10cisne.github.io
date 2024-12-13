@@ -1,7 +1,7 @@
 import React from 'react';
 import spinner from '../../../assets/svg/spinner1.svg';
 
-const LoadingSpinner = () => {
+export const LoadingSpinner = () => {
   return (
     <>
       <div className="loading_spinner" data-testid="loading-spinner">
@@ -10,5 +10,3 @@ const LoadingSpinner = () => {
     </>
   );
 };
-
-export default LoadingSpinner;

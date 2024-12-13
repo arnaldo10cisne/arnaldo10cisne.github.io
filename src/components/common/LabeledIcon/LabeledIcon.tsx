@@ -6,7 +6,7 @@ interface LabeledIconProps {
   icon: string | undefined;
 }
 
-const LabeledIcon = ({ name, icon }: LabeledIconProps) => {
+export const LabeledIcon = ({ name, icon }: LabeledIconProps) => {
   const [TooltipIsVisible, setTooltipIsVisible] = useState(false);
 
   return (
@@ -33,5 +33,3 @@ const LabeledIcon = ({ name, icon }: LabeledIconProps) => {
     </span>
   );
 };
-
-export default LabeledIcon;

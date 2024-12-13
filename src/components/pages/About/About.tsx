@@ -1,15 +1,15 @@
 import React from 'react';
 import './About.scss';
-import PageTitle from '../../common/PageTitle/PageTitle';
+import { PageTitle } from '../../common/PageTitle/PageTitle';
 import {
   ABOUT_EDUCATION_TEXT,
   ABOUT_EXPERTISE_TEXT,
   ABOUT_ME_TEXT,
   ABOUT_WORK_TEXT,
 } from '../../../utilities/models';
-import CertificatesHighlights from './CertificatesHighlights';
+import { CertificatesHighlights } from './CertificatesHighlights';
 
-const About = () => {
+export const About = () => {
   return (
     <>
       <PageTitle title="About" />
@@ -45,5 +45,3 @@ const About = () => {
     </>
   );
 };
-
-export default About;

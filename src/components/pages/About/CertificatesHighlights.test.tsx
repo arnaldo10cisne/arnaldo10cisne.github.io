@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 
-import CertificateHighlights from './CertificatesHighlights';
+import { CertificatesHighlights } from './CertificatesHighlights';
 import * as ReactQuery from 'react-query';
 
 jest.mock('react-query', () => ({
@@ -27,7 +27,7 @@ describe('Portfolio Highlights', () => {
       data: mockCertificates,
     });
 
-    render(<CertificateHighlights />);
+    render(<CertificatesHighlights />);
 
     expect(screen.getByText('certificate 1')).toBeInTheDocument();
     expect(screen.getByText('certificate 2')).toBeInTheDocument();
@@ -42,7 +42,7 @@ describe('Portfolio Highlights', () => {
       data: undefined,
     });
 
-    render(<CertificateHighlights />);
+    render(<CertificatesHighlights />);
 
     expect(screen.getByTestId('loading-spinner')).toBeInTheDocument();
   });
