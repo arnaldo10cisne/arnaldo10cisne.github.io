@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { render, screen } from '@testing-library/react';
 
-import About from './About';
+import { About } from './About';
 import {
   ABOUT_EDUCATION_TEXT,
   ABOUT_EXPERTISE_TEXT,
