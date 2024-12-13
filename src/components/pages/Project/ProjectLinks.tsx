@@ -5,7 +5,7 @@ interface ProjectLinksProps {
   project: ProjectItem | undefined;
 }
 
-const ProjectLinks = ({ project }: ProjectLinksProps) => {
+export const ProjectLinks = ({ project }: ProjectLinksProps) => {
   return (
     <>
       <div className="ProjectLinks_linkContainer">
@@ -39,5 +39,3 @@ const ProjectLinks = ({ project }: ProjectLinksProps) => {
     </>
   );
 };
-
-export default ProjectLinks;

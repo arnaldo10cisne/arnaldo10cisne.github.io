@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.scss';
 import { HERO_DESCRIPTION } from '../../../utilities/models';
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <div className="hero">
       <div className="titleContainer">
@@ -20,5 +20,3 @@ const Hero = () => {
     </div>
   );
 };
-
-export default Hero;

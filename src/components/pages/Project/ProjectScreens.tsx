@@ -6,7 +6,7 @@ interface ProjectScreensProps {
   project?: ProjectItem | undefined;
 }
 
-const ProjectScreens = ({ project }: ProjectScreensProps) => {
+export const ProjectScreens = ({ project }: ProjectScreensProps) => {
   if (!project?.screens) {
     return null;
   }
@@ -30,5 +30,3 @@ const ProjectScreens = ({ project }: ProjectScreensProps) => {
     </>
   );
 };
-
-export default ProjectScreens;

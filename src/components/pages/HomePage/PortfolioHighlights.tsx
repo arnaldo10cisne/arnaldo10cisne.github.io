@@ -2,11 +2,11 @@ import React from 'react';
 import './PortfolioHighlights.scss';
 import { ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
-import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
-import ProjectCard from '../../common/ProjectCard/ProjectCard';
+import { LoadingSpinner } from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { ProjectCard } from '../../common/ProjectCard/ProjectCard';
 import { getAllProjectsFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
-const PortfolioHighlights = () => {
+export const PortfolioHighlights = () => {
   const { data: projects } = useQuery<ProjectItem[]>(
     ['PortfolioHighlights', 'project_list'],
     () => getAllProjectsFromDynamoDB(true)
@@ -29,5 +29,3 @@ const PortfolioHighlights = () => {
     </div>
   );
 };
-
-export default PortfolioHighlights;

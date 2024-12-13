@@ -1,6 +1,6 @@
 import React from 'react';
 import { CertificateItem, TECHNOLOGIES_ICONS } from '../../../utilities/models';
-import LabeledIcon from '../../common/LabeledIcon/LabeledIcon';
+import { LabeledIcon } from '../../common/LabeledIcon/LabeledIcon';
 
 interface CourseInfoTableProps {
   course: CertificateItem | undefined;
@@ -40,7 +40,7 @@ const TechList = ({ technologies }: { technologies: string[] | undefined }) => {
   );
 };
 
-const CourseInfoTable = ({ course }: CourseInfoTableProps) => {
+export const CourseInfoTable = ({ course }: CourseInfoTableProps) => {
   if (!course) {
     return <p>No course data available</p>;
   }
@@ -91,5 +91,3 @@ const CourseInfoTable = ({ course }: CourseInfoTableProps) => {
     </>
   );
 };
-
-export default CourseInfoTable;

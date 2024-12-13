@@ -6,7 +6,7 @@ interface BreadcrumbsProps {
   pageList: breadcrumbsLink[];
 }
 
-const Breadcrumbs = ({ pageList }: BreadcrumbsProps) => {
+export const Breadcrumbs = ({ pageList }: BreadcrumbsProps) => {
   return (
     <div className="breadcrumbsContainer">
       {pageList.map((page) => {
@@ -26,5 +26,3 @@ const Breadcrumbs = ({ pageList }: BreadcrumbsProps) => {
     </div>
   );
 };
-
-export default Breadcrumbs;

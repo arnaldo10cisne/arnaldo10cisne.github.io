@@ -38,7 +38,7 @@ const SendingMessageModal = ({
   );
 };
 
-const SendEmailModal = ({
+export const SendEmailModal = ({
   name,
   reason,
   message,
@@ -89,5 +89,3 @@ const SendEmailModal = ({
     </div>
   );
 };
-
-export default SendEmailModal;
