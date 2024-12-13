@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import CourseInfoTable from './CourseInfoTable';
+import { CourseInfoTable } from './CourseInfoTable';
 import './Course.scss';
 import { CertificateItem, DEFAULT_TITLE } from '../../../utilities/models';
 import { useQuery } from 'react-query';
-import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { LoadingSpinner } from '../../utilities/LoadingSpinner/LoadingSpinner';
 import { getCertificateItemFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
-const Course = () => {
+export const Course = () => {
   const { id } = useParams();
 
   const { data: courseToDisplay } = useQuery<CertificateItem | null>(
@@ -66,5 +66,3 @@ const Course = () => {
     </>
   );
 };
-
-export default Course;

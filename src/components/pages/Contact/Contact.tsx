@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.scss';
-import PageTitle from '../../common/PageTitle/PageTitle';
-import SendEmailModal from './SendEmailModal';
+import { PageTitle } from '../../common/PageTitle/PageTitle';
+import { SendEmailModal } from './SendEmailModal';
 import { CONTACT_REASONS } from '../../../utilities/models';
 
 interface RadioButtonProps {
@@ -36,7 +36,7 @@ const RadioButton = ({
   );
 };
 
-const Contact = () => {
+export const Contact = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const [name, setName] = useState<string | null>(null);
   const [reason, setReason] = useState<string | null>(null);
@@ -145,5 +145,3 @@ const Contact = () => {
     </>
   );
 };
-
-export default Contact;

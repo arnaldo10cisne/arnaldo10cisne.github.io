@@ -1,8 +1,8 @@
 import React from 'react';
-import Hero from './Hero';
-import PortfolioHighlights from './PortfolioHighlights';
+import { Hero } from './Hero';
+import { PortfolioHighlights } from './PortfolioHighlights';
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <>
       <Hero />
@@ -10,5 +10,3 @@ const HomePage = () => {
     </>
   );
 };
-
-export default HomePage;

@@ -1,10 +1,10 @@
 import React from 'react';
 import './Navbar.scss';
-import NavbarButton from './NavbarButton';
+import { NavbarButton } from './NavbarButton';
 import { navbarItems } from './NavbarItems';
-import NavbarLogo from './NavbarLogo';
+import { NavbarLogo } from './NavbarLogo';
 
-const Navbar = () => {
+export const Navbar = () => {
   const pathname = window.location.pathname;
 
   return (
@@ -26,5 +26,3 @@ const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;

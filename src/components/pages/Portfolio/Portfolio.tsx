@@ -1,13 +1,13 @@
 import React from 'react';
 import './Portfolio.scss';
-import PageTitle from '../../common/PageTitle/PageTitle';
+import { PageTitle } from '../../common/PageTitle/PageTitle';
 import { useQuery } from 'react-query';
 import { ProjectItem, PROJECT_TYPES } from '../../../utilities/models';
-import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
-import ProjectCard from '../../common/ProjectCard/ProjectCard';
+import { LoadingSpinner } from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { ProjectCard } from '../../common/ProjectCard/ProjectCard';
 import { getAllProjectsFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
-const Portfolio = () => {
+export const Portfolio = () => {
   const {
     data: projects,
     isLoading,
@@ -75,5 +75,3 @@ const Portfolio = () => {
     </>
   );
 };
-
-export default Portfolio;

@@ -1,13 +1,13 @@
 import React from 'react';
-import PageTitle from '../../common/PageTitle/PageTitle';
+import { PageTitle } from '../../common/PageTitle/PageTitle';
 import './CertificateList.scss';
-import CertificateCell from './CertificateCell';
+import { CertificateCell } from './CertificateCell';
 import { CertificateItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
-import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { LoadingSpinner } from '../../utilities/LoadingSpinner/LoadingSpinner';
 import { getAllCertificatesFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
-const CertificateList = () => {
+export const CertificateList = () => {
   const { data: courses } = useQuery<CertificateItem[]>(
     ['CertificateList', 'courses_list'],
     () => getAllCertificatesFromDynamoDB()
@@ -27,5 +27,3 @@ const CertificateList = () => {
     </>
   );
 };
-
-export default CertificateList;

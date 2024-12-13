@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import ProjectScreens from './ProjectScreens';
-import ProjectLinks from './ProjectLinks';
-import ProjectAbout from './ProjectAbout';
+import { ProjectScreens } from './ProjectScreens';
+import { ProjectLinks } from './ProjectLinks';
+import { ProjectAbout } from './ProjectAbout';
 import './Project.scss';
 import { DEFAULT_TITLE, ProjectItem } from '../../../utilities/models';
 import { useQuery } from 'react-query';
-import LoadingSpinner from '../../utilities/LoadingSpinner/LoadingSpinner';
+import { LoadingSpinner } from '../../utilities/LoadingSpinner/LoadingSpinner';
 import { getPortfolioItemFromDynamoDB } from '../../../utilities/aws/awsUtils';
 
-const Project = () => {
+export const Project = () => {
   const { id } = useParams();
 
   const { data: projectToDisplay } = useQuery<ProjectItem | null>(
@@ -41,5 +41,3 @@ const Project = () => {
     </div>
   );
 };
-
-export default Project;
