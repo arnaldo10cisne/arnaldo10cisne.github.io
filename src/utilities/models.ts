@@ -111,12 +111,12 @@ export const COMPANY_ICONS = [
   {
     name: COMPANIES.PLATZI,
     icon_link:
-      'https://s3.amazonaws.com/arnaldocisneros.com/images/platzi-logo-symbol_gklcux.png',
+      'https://s3.amazonaws.com/arnaldocisneros.com/images/platzi-logo-symbol_gklcux.webp',
   },
   {
     name: COMPANIES.AWS,
     icon_link:
-      'https://s3.amazonaws.com/arnaldocisneros.com/images/Amazon-Web-Services-AWS-Logo.png',
+      'https://s3.amazonaws.com/arnaldocisneros.com/images/Amazon-Web-Services-AWS-Logo.webp',
   },
 ];
 
