@@ -15,7 +15,7 @@ describe('NavbarLogo', () => {
     expect(logoImage).toBeInTheDocument();
     expect(logoImage).toHaveAttribute(
       'src',
-      'https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/logo_small(3).png'
+      'https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/logo_small(3).webp'
     );
     expect(logoImage).toHaveAttribute('alt', 'logo');
   });
