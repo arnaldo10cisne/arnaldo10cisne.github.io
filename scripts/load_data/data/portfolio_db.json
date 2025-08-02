@@ -47,7 +47,7 @@
           "S": "NBA App (Web Edition)"
         },
         "show": {
-          "BOOL": true
+          "BOOL": false
         },
         "website_link": {
           "S": "https://arnaldo10cisne.github.io/nba_app__javascript/"
@@ -86,10 +86,10 @@
           "S": "<p class=\"portfolio__about_section__text\">I got inspired to develop this program because it was a test that was given to me in a technical interview. I wasn't sure how to do it back then, so I decided to give it a try. It can encrypt and decrypt arrays of English words. The word API used to validate words and obtain random ones is <a class=\"in-text-link\" target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://random-word-api.herokuapp.com\">https://random-word-api.herokuapp.com</a></p>"
         },
         "thumbnail": {
-          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1637513577/cryptography_app/crypto1_vo8wqt.png"
+          "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/crypto1_vo8wqt.png"
         },
         "highlight": {
-          "BOOL": true
+          "BOOL": false
         },
         "name": {
           "S": "Cryptography App"
@@ -99,6 +99,16 @@
         },
         "website_link": {
           "S": ""
+        },
+        "screens": {
+          "L": [
+            {
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/crypto2_bbpxbj.png"
+            },
+            {
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/crypto3_s9w5wd.png"
+            }
+          ]
         }
       }
     },
@@ -294,7 +304,7 @@
           "S": "https://arnaldo10cisne.github.io/CursoResponsiveDesign/"
         },
         "show": {
-          "BOOL": true
+          "BOOL": false
         }
       }
     },
@@ -364,7 +374,7 @@
           "S": "<p class=\"portfolio__about_section__text\">This website was built with immense love, dedication, and passion. It’s crafted using React JS and TypeScript, leveraging the power of AWS to deliver a robust experience. The site is deployed through an S3 bucket with CloudFront for global content delivery. Continuous integration and deployment are managed via CodePipeline, using CodeBuild and CodeDeploy. CloudFormation templates, generated with AWS CDK, orchestrate the infrastructure, which includes an API created with API Gateway, serverless functions on Lambda, and data stored in DynamoDB. Assets are securely stored in S3.</p>"
         },
         "thumbnail": {
-          "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/website-cover.PNG"
+          "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/website-cover.png"
         },
         "name": {
           "S": "Personal website"
@@ -475,7 +485,7 @@
           "S": "NBA App (Python Edition)"
         },
         "show": {
-          "BOOL": true
+          "BOOL": false
         },
         "website_link": {
           "S": ""
@@ -512,22 +522,22 @@
         "screens": {
           "L": [
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701627/Uno-python-captures/uno-python-cover_hn4o6b.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/uno-python-cover_hn4o6b.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap1_ylmvkm.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/cap1_ylmvkm.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap2_m5ggba.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/cap2_m5ggba.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap3_gcjsuf.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/cap3_gcjsuf.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap4_pydwx0.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/cap4_pydwx0.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701492/Uno-python-captures/cap5_pd7vw4.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/cap5_pd7vw4.png"
             }
           ]
         },
@@ -539,7 +549,7 @@
           ]
         },
         "thumbnail": {
-          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1623701627/Uno-python-captures/uno-python-cover_hn4o6b.png"
+          "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/uno-python-cover_hn4o6b.png"
         },
         "show": {
           "BOOL": true
@@ -582,22 +592,22 @@
         "screens": {
           "L": [
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474079/Marvel-guidebook/marvel2_wkptkq.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/marvel2_wkptkq.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474081/Marvel-guidebook/marvel3_wmg8sa.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/marvel3_wmg8sa.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474082/Marvel-guidebook/marvel4_zaui87.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/marvel4_zaui87.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474086/Marvel-guidebook/marvel5_bh12xf.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/marvel5_bh12xf.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474078/Marvel-guidebook/marvel6_j9qcbc.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/marvel6_j9qcbc.png"
             },
             {
-              "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474079/Marvel-guidebook/marvel7_i1mgbj.png"
+              "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/marvel7_i1mgbj.png"
             }
           ]
         },
@@ -615,7 +625,7 @@
           ]
         },
         "thumbnail": {
-          "S": "https://res.cloudinary.com/arnaldo10cisne/image/upload/v1631474079/Marvel-guidebook/marvel1_sjfctd.png"
+          "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/marvel1_sjfctd.png"
         },
         "show": {
           "BOOL": true
@@ -625,6 +635,91 @@
         },
         "website_link": {
           "S": "https://arnaldo10cisne.github.io/MARVEL_API_PROJECT/"
+        }
+      }
+    },
+    {
+      "Item": {
+        "id": {
+          "N": "11"
+        },
+        "date": {
+          "S": "2025"
+        },
+        "languages": {
+          "L": [
+            {
+              "S": "English"
+            }
+          ]
+        },
+        "project_type": {
+          "S": "cloud"
+        },
+        "technologies": {
+          "L": [
+            {
+              "S": "React JS"
+            },
+            {
+              "S": "Typescript"
+            },
+            {
+              "S": "AWS CDK"
+            },
+            {
+              "S": "Node JS"
+            }
+          ]
+        },
+        "cloud_services": {
+          "L": [
+            {
+              "S": "AWS Route 53"
+            },
+            {
+              "S": "AWS S3"
+            },
+            {
+              "S": "AWS CloudFront"
+            },
+            {
+              "S": "AWS API Gateway"
+            },
+            {
+              "S": "AWS Lambda"
+            },
+            {
+              "S": "AWS DynamoDB"
+            },
+            {
+              "S": "AWS CloudFormation"
+            },
+            {
+              "S": "AWS CodePipeline"
+            }
+          ]
+        },
+        "github_link": {
+          "S": "https://github.com/arnaldo10cisne/materia_shop/"
+        },
+        "description_innerHTML": {
+          "S": "<p class=\"portfolio__about_section__text\">This web application is a simulation of an online store for purchasing “Materia,” the magical orbs from Final Fantasy VII. Users can select one of ten characters from the game, browse through over 20 types of Materia, view descriptions, and add them to their cart. The checkout process involves providing a credit card (sandboxed, no real money), entering personal details, reviewing an order summary with price and terms, and completing the purchase. The frontend, built with React, is styled with SASS and heavily inspired by Final Fantasy VII menus, with matching fonts, colors, and sounds. The backend, powered by NestJS, handles user characters, products (Materia), orders, and payments, integrating with the WOMPI API for sandbox payment processing. The database uses DynamoDB with four tables corresponding to backend modules, and the infrastructure is deployed on AWS using CDK, featuring a serverless stack for Lambda and DynamoDB, and a CICD stack with CodePipeline for automated deployments.</p>"
+        },
+        "thumbnail": {
+          "S": "https://s3.us-east-1.amazonaws.com/arnaldocisneros.com/images/materia_cap1.png"
+        },
+        "highlight": {
+          "BOOL": true
+        },
+        "name": {
+          "S": "The Materia Shop"
+        },
+        "show": {
+          "BOOL": true
+        },
+        "website_link": {
+          "S": "https://materia.arnaldocisneros.com/"
         }
       }
     }

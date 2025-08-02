@@ -22,6 +22,12 @@ export const Navbar = () => {
             }
           />
         ))}
+        <NavbarButton
+          label={'Blog'}
+          route={'https://blog.arnaldocisneros.com'}
+          selected={false}
+          isExternal={true}
+        />
       </div>
     </div>
   );
